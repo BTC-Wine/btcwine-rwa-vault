@@ -1,41 +1,43 @@
-# BTC Wine — RWA Vault Infrastructure on Stellar
+# TERWA Platform Documentation
 
-Technical architecture documentation for the BTC Wine project — a Real-World Asset vault built on Stellar using Soroban smart contracts.
+## Overview
 
-## Quick Start (Docker)
+TERWA is a tokenized wine presale platform built on the Stellar blockchain using Soroban smart contracts. The platform allows users to purchase tokenized wine assets during a presale period, with each token representing proof of ownership and a right to claim the underlying physical wine asset at maturity.
 
-```bash
-docker-compose up --build
-```
+## Documentation
 
-Documentation will be available at [http://localhost:8000](http://localhost:8000).
+This repository contains two core documentation files:
 
-## Quick Start (Local)
+### [ARCHITECTURE.md](ARCHITECTURE.md)
+High-level system architecture and design documentation covering:
+- Platform overview and token design (proof of ownership/utility token)
+- Complete architecture diagram with all system layers
+- Core components: Vault Contract, Token (Classic Asset + SAC), Web Platform, Off-chain Management
+- Capital flow and transaction lifecycle
+- Integration details with Stellar blockchain
+- Development plan and deliverables
+- Phase 2 future extensions (DeFi deployment, cross-ecosystem bridges)
+- Risk assessment and mitigations
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
+### [TECHNICAL.md](TECHNICAL.md)
+Detailed technical implementation specification including:
+- Complete technology stack and repository structure
+- Soroban contract data model, storage keys, and error codes
+- Full contract interface and event definitions
+- Token design: Stellar Classic Asset + SAC wrapper implementation
+- Frontend wallet integration (Stellar Wallet Kit)
+- Valuation service architecture and methodology
+- Comprehensive testing strategy
+- Deployment pipeline and CI/CD
+- Security considerations and Soroban-specific notes
+- Cost estimation for on-chain operations
 
-## Project Structure
+## Key Features
 
-```
-BTCWine/
-├── ARCHITECTURE.md        # Technical architecture (standalone)
-├── Dockerfile
-├── docker-compose.yml
-├── mkdocs.yml             # MkDocs configuration
-├── requirements.txt
-├── docs/
-│   ├── index.md           # Documentation home page
-│   └── architecture.md    # Technical architecture (rendered)
-└── README.md
-```
-
-## Build Static Site
-
-```bash
-mkdocs build
-```
-
-Output will be in the `site/` directory.
+- **Tokenized Presale**: Purchase TERWA tokens with USDC during presale window
+- **Proof of Ownership**: Each token represents a right to claim physical wine assets
+- **Fixed-Term Model**: Capital locked until vault maturity for asset appreciation
+- **Dual Redemption**: At maturity, redeem for USDC (appraised value) or claim physical wine
+- **Multi-Wallet Support**: Stellar Wallet Kit integration (Freighter, xBull, Lobstr, etc.)
+- **Independent Valuation**: Annual wine expert appraisals with transparent methodology
+- **Buyback Guarantee**: Legal commitment from RWA provider (annex available)
