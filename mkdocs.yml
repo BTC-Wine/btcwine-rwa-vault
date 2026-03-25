@@ -1,0 +1,35 @@
+site_name: BTC Wine — RWA Vault Infrastructure
+site_description: Technical Architecture Documentation for BTC Wine on Stellar
+site_author: BTC Wine Team
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: amber
+  font:
+    text: Inter
+    code: Fira Code
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Technical Implementation: technical.md
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details

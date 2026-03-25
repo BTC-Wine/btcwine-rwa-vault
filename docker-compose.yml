@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  docs:
+    build: .
+    container_name: btcwine-docs
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./docs:/docs/docs
+      - ./mkdocs.yml:/docs/mkdocs.yml
+    restart: unless-stopped
