@@ -270,6 +270,7 @@ The frontend is a Next.js 14 application using `@stellar/stellar-sdk` for contra
 **Planned integration pattern:**
 
 - **Wallet connection**: Stellar Wallet Kit provides a unified interface to connect multiple Stellar wallets (Freighter, xBull, Lobstr, and others). The kit handles wallet detection, address retrieval, and network selection.
+- **SEP-10 authentication**: User authentication follows the SEP-10 standard (Stellar Web Authentication). The server issues a challenge transaction that the user signs with their wallet to prove ownership of their Stellar account. This provides secure, passwordless authentication without requiring email or traditional credentials.
 - **Contract calls (write)**: Build transaction → simulate via Soroban RPC (`prepareTransaction`) → sign with connected wallet → submit via `sendTransaction`. This is the standard Soroban contract invocation flow.
 - **Contract calls (read-only)**: Use `simulateTransaction` for functions like `get_vault_value` (no signing required, no fees incurred).
 - **Parameter encoding**: User addresses and amounts are encoded as `ScVal` types using the Stellar SDK's built-in conversion utilities.
@@ -449,8 +450,6 @@ Planned pipeline triggered on push and pull request:
 | Stablecoin depegging | Vault denominated in USDC units |
 | Physical claim fraud | Delivery hash links on-chain claim to off-chain fulfillment record; dispute resolution handled off-chain |
 | Locked capital risk | Lock period clearly communicated at purchase; vault term and maturity date stored on-chain and visible to all participants |
-
-A third-party smart contract audit is planned before mainnet deployment.
 
 ---
 
