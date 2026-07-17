@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "So funktioniert es, TERWA",
+    "description": "Der Ablauf einer en primeur Vorbestellung bei TERWA: Kauf, Lagerung, Bereitstellung und die Garantien in jedem Schritt."
+  },
+  "hero": {
+    "kicker": "Die Bedienungsanleitung",
+    "title": "So funktioniert es",
+    "intro": "En primeur zu kaufen bedeutet, einen Wein vor seiner Markteinführung direkt an der Quelle zu reservieren. Hier ist der vollständige Ablauf und was Sie in jedem Schritt schützt."
+  },
+  "journey": {
+    "title": "Der Ablauf in fünf Schritten"
+  },
+  "steps": {
+    "s1": {
+      "title": "Verbinden Sie Ihr Wallet",
+      "beforeWallets": "Kein Konto anzulegen: Ihr Stellar-Wallet (",
+      "afterWallets": " und andere) ist Ihre Identität. Beim Kauf unterzeichnen Sie eine en primeur Kauferklärung, die unter anderem bestätigt, dass Sie volljährig sind. Diese Signatur ist in die Transaktion selbst eingebettet."
+    },
+    "s2": {
+      "title": "Bestellen Sie Ihre Allocation vor",
+      "beforeLink": "Eine Allocation = 15 Flaschen: 3 Flaschen von jedem der 5 Jahrgänge (2025 bis 2029), bezahlt in USDC zum Festpreis von 905 EUR netto. Ihre Jahrgangszertifikate erscheinen sofort in Ihrem Wallet: ein Token pro Jahrgang, sichtbar in jedem Wallet oder im ",
+      "linkExplorer": "Stellar-Explorer",
+      "afterLink": "."
+    },
+    "s3": {
+      "title": "Der Wein wird erzeugt und ausgebaut",
+      "p1": "Ihre Vorbestellung finanziert die Produktion. Die Flaschen entstehen auf den reservierten Parzellen des ",
+      "linkTerroir": "Peycocut-Terroirs",
+      "p2": ", werden dann unter Zollverschluss bei ",
+      "p3": " gelagert und von ",
+      "p4": " versichert, ohne Kosten für Sie, bis zu ihrer Bereitstellung. Jedes Jahr wird ein indikativer Marktwert in voller Transparenz veröffentlicht."
+    },
+    "s4": {
+      "title": "Jeder Jahrgang erreicht die Reife",
+      "text": "Die Flaschen des Jahrgangs N werden spätestens am 1. Juni des Jahres N+2 bereitgestellt: 2025 im Jahr 2027, 2026 im Jahr 2028 und so weiter bis zum Jahrgang 2029 im Jahr 2031. Sie entscheiden Jahrgang für Jahrgang, es gibt keine Gesamtentscheidung zu treffen."
+    },
+    "s5": {
+      "title": "Sie wählen Ihren Ausstieg",
+      "text": "Für jeden bereitgestellten Jahrgang: Lassen Sie sich Ihre Flaschen nach Hause liefern (in der originalen Holzkiste zu 3 Flaschen, Volljährigkeit bei Empfang geprüft), bewahren Sie sie auf, verkaufen Sie sie frei weiter, indem Sie Ihre Zertifikate übertragen, oder nehmen Sie die Rücknahme durch den Erzeuger an."
+    }
+  },
+  "protections": {
+    "title": "Die Mechanismen, die Sie schützen"
+  },
+  "guarantees": {
+    "g1": {
+      "title": "Ein Eigentumszertifikat, kein Versprechen",
+      "beforeLink": "Jeder Token wird im ",
+      "linkRegistry": "öffentlichen Stellar-Register",
+      "afterLink": " erfasst: Ihre Allocation ist von jedem, jederzeit und ohne Abhängigkeit von TERWA überprüfbar. Das Zertifikat ist übertragbar und seine Einlösung gegen die Flaschen ist ein vertragliches Recht."
+    },
+    "g2": {
+      "title": "Vertraglich reservierte Produktion",
+      "p1": "Die Parzellen des ",
+      "linkTerroir": "Peycocut-Terroirs",
+      "p2": " sind identifiziert und die entsprechende Produktion ist den Inhabern von Allocations im Rahmen der Vereinbarung zwischen TERWA und ",
+      "p3": " vorbehalten. Die Zahl der Allocations ist auf die tatsächliche Produktion begrenzt: 1.660, keine mehr."
+    },
+    "g3": {
+      "title": "Professionelle Lagerung inbegriffen",
+      "p1": "Von der Abfüllung bis zur Bereitstellung werden Ihre Flaschen unter Zollverschluss bei ",
+      "p2": " gelagert, dem von der Handelskammer Bordeaux geschaffenen Lager, und von ",
+      "p3": " versichert. Professionelle Lagerbedingungen, Rückverfolgbarkeit und keine Lagerkosten zu Ihren Lasten in diesem Zeitraum."
+    },
+    "g4": {
+      "title": "Die Verpflichtung zur Rücknahme durch den Erzeuger",
+      "text": "Für jeden bereitgestellten Jahrgang verpflichtet sich der Erzeuger vertraglich, Ihre Flaschen zu einem im Voraus festgelegten Mindestpreis zurückzunehmen. Die Rücknahme erfolgt auf Anfrage, mit Auszahlung in der Regel innerhalb von 72 Stunden. Sie ist ein zusätzlicher Ausweg, nie eine Pflicht: Lieferung, Aufbewahrung oder Weiterverkauf bleiben Ihnen frei."
+    },
+    "g5": {
+      "title": "Die Risiken des Weinbergs, im Vertrag vorgesehen",
+      "text": "Ein ohne Chemie bewirtschafteter Weinberg durchlebt schwierige Jahre: Frost, Trockenheit, geringe Erträge. Wenn eine Ernte es nicht erlaubt, einen Jahrgang zu erfüllen, wird Ihre Allocation auf den folgenden Jahrgang übertragen. Die Regel ist vor Ihrem Kauf festgeschrieben, nicht danach improvisiert."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": {
+      "q": "Was passiert, wenn ich den Zugang zu meinem Wallet verliere?",
+      "before": "Das Zertifikat ist der Anspruch auf die Herausgabe Ihrer Flaschen: seine Verwahrung liegt bei Ihnen, wie die eines Kellerschlüssels. Verwenden Sie ein Wallet, dessen Sicherung (Wiederherstellungsphrase) Sie kontrollieren, und ",
+      "link": "kontaktieren Sie uns",
+      "after": " im Problemfall umgehend."
+    },
+    "q2": {
+      "q": "Muss ich bereits Kryptowährungen besitzen?",
+      "a": "Die Zahlung erfolgt in USDC auf Stellar, einem digitalen Dollar. Sie benötigen daher ein mit USDC ausgestattetes Stellar-Wallet. Die wichtigsten Wallets bieten Käufe per Karte oder Überweisung an."
+    },
+    "q3": {
+      "q": "Gibt es versteckte Gebühren?",
+      "a": "Der Preis der Allocation umfasst die Lagerung unter Zollverschluss und die Versicherung bis zur Bereitstellung jedes Jahrgangs. Zu Ihren Lasten bleiben: die Lieferkosten, wenn Sie den Versand wählen, und die auf Ihre Situation anwendbare Besteuerung."
+    },
+    "q4": {
+      "q": "Kann ich vor der Bereitstellung weiterverkaufen?",
+      "a": "Ihre Zertifikate sind jederzeit von Wallet zu Wallet übertragbar: Sie können sie frei abtreten oder verschenken. TERWA betreibt keinen Marktplatz und kümmert sich nicht um den Weiterverkauf."
+    },
+    "q5": {
+      "q": "Wie kann ich überprüfen, was ich kaufe?",
+      "p1": "Alles wird veröffentlicht: die Parzellen und die Produktion auf der ",
+      "linkDomain": "Domänenseite",
+      "p2": ", die ",
+      "linkPrices": "festgestellten Preise",
+      "p3": " mit ihren Quellen und Daten, die Verträge im ",
+      "linkRegistry": "Stellar-Register",
+      "p4": " und die unabhängigen Händler nur einen Klick entfernt, um die Preise selbst zu vergleichen."
+    }
+  },
+  "cta": {
+    "title": "Cuvée Nr. 1 erwartet Sie",
+    "text": "Les Demoiselles, {appellation}, vom {nom}. 1.660 Allocations, keine mehr.",
+    "button": "Die Cuvée entdecken"
+  }
+}

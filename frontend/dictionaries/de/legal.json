@@ -1,0 +1,109 @@
+{
+  "notice": {
+    "metaTitle": "Impressum, TERWA",
+    "metaDescription": "Impressum der TERWA-Website: Herausgeber, Hosting, Lizenz für den Verkauf von Alkohol, geistiges Eigentum und Verbraucherschlichtung.",
+    "title": "Impressum",
+    "editor": {
+      "heading": "Anbieter der Website",
+      "body": "[FIRMENNAME], [RECHTSFORM] mit einem Stammkapital von [KAPITAL] Euro, eingetragen im Handelsregister von [STADT] unter der Nummer [RCS-NUMMER], mit Sitz in [VOLLSTÄNDIGE ANSCHRIFT].",
+      "vat": "Innergemeinschaftliche USt-IdNr.: [UST-IDNR.].",
+      "director": "Verantwortlicher für die Veröffentlichung: [NAME DES VERANTWORTLICHEN].",
+      "contactLabel": "Kontakt: ",
+      "contactSuffix": ", [TELEFON]."
+    },
+    "hosting": {
+      "heading": "Hosting",
+      "body": "Die Website wird gehostet von [HOSTER], [ANSCHRIFT DES HOSTERS], [TELEFON DES HOSTERS]."
+    },
+    "license": {
+      "heading": "Lizenz für den Alkoholverkauf",
+      "body": "Verkauf von Getränken der 3. Gruppe. [LIZENZREFERENZ ODER ANWENDBARES REGIME]. Der Verkauf von Alkohol an Minderjährige unter 18 Jahren ist untersagt (Artikel L. 3342-1 des französischen Gesetzbuchs für das öffentliche Gesundheitswesen). Ein Altersnachweis wird bei Bestellung und bei Lieferung verlangt."
+    },
+    "ip": {
+      "heading": "Geistiges Eigentum",
+      "body": "Der Name, die Bilder, das Logo und die Auszeichnungen von Château Coutet werden mit Genehmigung des Weinguts im Rahmen der TERWA-Partnerschaft verwendet. Jede Vervielfältigung des Inhalts dieser Website ohne Genehmigung ist untersagt.",
+      "credits": "Bildnachweis: Château Coutet, Familie David Beaulieu."
+    },
+    "mediation": {
+      "heading": "Verbraucherschlichtung",
+      "body": "Gemäß Artikel L. 612-1 des französischen Verbrauchergesetzbuchs kann der Verbraucher kostenlos die folgende Schlichtungsstelle in Anspruch nehmen: [BENANNTE SCHLICHTUNGSSTELLE UND KONTAKTDATEN]. Europäische Plattform zur Online-Streitbeilegung: ec.europa.eu/consumers/odr."
+    }
+  },
+  "terms": {
+    "metaTitle": "AGB, TERWA",
+    "metaDescription": "Bedingungen für die En-primeur-Vorbestellung der Weine von Château Coutet auf TERWA: Allocations, Preis, Bereitstellung, Lieferung und Rücknahme durch den Erzeuger.",
+    "title": "Allgemeine Geschäftsbedingungen",
+    "purpose": {
+      "title": "1. Gegenstand",
+      "body": "Diese Bedingungen regeln den En-primeur-Verkauf von Weinen durch [FIRMENNAME]. Der Käufer bestellt gekennzeichnete Flaschen, die von Château Coutet erzeugt werden, vor deren Bereitstellung vor. Das dem Käufer ausgestellte digitale Zertifikat (ein Token im Stellar-Netzwerk) stellt die Bestätigung seiner Vorbestellung und den Anspruch auf Abholung der Flaschen dar. Es ist weder ein Finanzinstrument noch eine Geldanlage."
+    },
+    "product": {
+      "title": "2. Produkt und Allocation",
+      "body": "Eine Allocation umfasst fünfzehn Flaschen zu 75 cl der Cuvée Les Demoiselles, Saint-Émilion Grand Cru: drei Flaschen aus jedem der Jahrgänge 2025 bis 2029. Die Erzeugung stammt von den Peycocut-Parzellen von Château Coutet. Bei unzureichender Ernte eines Jahrgangs (Frost, Klimarisiko, höhere Gewalt) wird die Allocation auf den folgenden Jahrgang übertragen."
+    },
+    "price": {
+      "title": "3. Preis und Zahlung",
+      "body": "Der Preis beträgt 905 Euro ohne Steuern pro Allocation, das heißt 60,33 Euro ohne Steuern pro Flasche, zahlbar in USDC im Stellar-Netzwerk zum Zeitpunkt der Vorbestellung. [ANWENDBARE MEHRWERTSTEUERREGELUNG ZU PRÄZISIEREN]. Der Preis umfasst die Zolllagerung bei Bordeaux City Bond und die AXA-Versicherung bis zur Bereitstellung jedes Jahrgangs."
+    },
+    "delivery": {
+      "title": "4. Bereitstellung, Lieferung und Rücknahme",
+      "body": "Die Flaschen jedes Jahrgangs N werden spätestens am 1. Juni des Jahres N+2 bereitgestellt. Ab diesem Datum kann der Käufer für jeden Jahrgang: die Lieferung an die Anschrift seiner Wahl verlangen (Lieferkosten und -bedingungen werden bei der Lieferbestellung angegeben, Altersnachweis bei Empfang geprüft), seine Flaschen behalten, sie abtreten oder das Rücknahmeangebot des Erzeugers annehmen. [BEDINGUNGEN UND MINDESTPREIS DER RÜCKNAHME GEMÄSS DER ZUSAGE DES ERZEUGERS ZU PRÄZISIEREN]."
+    },
+    "withdrawal": {
+      "title": "5. Widerrufsrecht",
+      "body": "[VOM RECHTSBEISTAND ZU PRÜFEN: Regelung des 14-tägigen Widerrufsrechts für den Fernabsatz und ihre etwaigen Ausnahmen]. Die Modalitäten der Ausübung und das Widerrufsformular sind im Anhang aufgeführt."
+    },
+    "age": {
+      "title": "6. Volljährigkeit",
+      "body": "Der Verkauf von Alkohol an Minderjährige ist untersagt. Der Käufer erklärt, zum Zeitpunkt der Vorbestellung volljährig zu sein; ein Altersnachweis wird vor jeder physischen Lieferung verlangt."
+    },
+    "certificate": {
+      "title": "7. Digitales Zertifikat",
+      "body": "Das Zertifikat wird im Stellar-Netzwerk in der vom Käufer bezeichneten Wallet ausgestellt, für deren Verwahrung er verantwortlich ist. Die Abtretung des Zertifikats bewirkt die Abtretung des Anspruchs auf Abholung der entsprechenden Flaschen. [HAFTUNG BEI VERLUST DER SCHLÜSSEL ZU PRÄZISIEREN]."
+    },
+    "claims": {
+      "title": "8. Reklamationen und Schlichtung",
+      "body": "Jede Reklamation kann an contact@terwa.io gerichtet werden. Bei ausbleibender Lösung kann der Verbraucher kostenlos die im Impressum benannte Verbraucherschlichtungsstelle oder die europäische Plattform zur Online-Streitbeilegung anrufen."
+    },
+    "law": {
+      "title": "9. Anwendbares Recht",
+      "body": "Diese Bedingungen unterliegen französischem Recht. [ZUSTÄNDIGE GERICHTSBARKEIT ZU PRÄZISIEREN]."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Datenschutz, TERWA",
+    "metaDescription": "Wie TERWA personenbezogene Daten verarbeitet: Wallet-Adresse, Lieferdaten, Aufbewahrungsfristen, Cookies und Ihre Rechte.",
+    "title": "Datenschutzerklärung",
+    "controller": {
+      "heading": "Verantwortlicher",
+      "bodyPrefix": "[FIRMENNAME], [ANSCHRIFT], Kontakt: ",
+      "bodySuffix": "."
+    },
+    "data": {
+      "heading": "Verarbeitete Daten",
+      "body": "Öffentliche Stellar-Wallet-Adresse (für die Ausführung der Vorbestellung erforderlich, naturgemäß in einem öffentlichen Register eingetragen), Volljährigkeitserklärung und zum Zeitpunkt einer Lieferung: Identität, Postanschrift, E-Mail-Adresse und Altersnachweis. Die Lieferdaten werden verschlüsselt; nur ihr Fingerabdruck (Hash) wird im öffentlichen Register eingetragen."
+    },
+    "purposes": {
+      "heading": "Zwecke und Rechtsgrundlagen",
+      "body": "Erfüllung des Kaufvertrags (Vorbestellung, Bereitstellung, Lieferung, Rücknahme), Einhaltung gesetzlicher Pflichten (Volljährigkeit, Bekämpfung der Geldwäsche, internationale Sanktionen) und Bearbeitung von Reklamationen."
+    },
+    "retention": {
+      "heading": "Aufbewahrungsfristen",
+      "body": "Die Lieferdaten werden [DAUER] nach der letzten Bereitstellung aufbewahrt. Buchhaltungsunterlagen werden gemäß dem Gesetz zehn Jahre lang aufbewahrt."
+    },
+    "cookies": {
+      "heading": "Cookies und Tracker",
+      "body": "Die Website verwendet weder Werbe-Cookies noch Tracker von Dritten. Der lokale Speicher des Browsers wird ausschließlich für technische Einstellungen verwendet. [ZU AKTUALISIEREN, FALLS WERKZEUGE ZUR REICHWEITENMESSUNG HINZUGEFÜGT WERDEN]."
+    },
+    "rights": {
+      "heading": "Ihre Rechte",
+      "bodyPrefix": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Übertragbarkeit Ihrer Daten, auszuüben unter ",
+      "bodySuffix": ". Sie können jede Beschwerde bei der CNIL (cnil.fr) einreichen. Einträge in einem öffentlichen Register wie einer Blockchain sind naturgemäß unveränderlich: Personenbezogene Daten werden dort niemals im Klartext geschrieben."
+    }
+  },
+  "comingSoon": {
+    "badge": "Demnächst",
+    "body": "Dieses Dokument wird derzeit mit unserem Rechtsbeistand finalisiert. Es wird hier vor Eröffnung der Vorbestellungen veröffentlicht.",
+    "contact": "Fragen in der Zwischenzeit? Schreiben Sie uns:"
+  }
+}

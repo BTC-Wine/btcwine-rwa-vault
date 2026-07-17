@@ -1,0 +1,65 @@
+{
+  "list": {
+    "metaTitle": "The Estates, TERWA",
+    "metaDescription": "TERWA's partner estates: selected properties, published with the same transparency. First partner: Château Coutet, Saint-Émilion Grand Cru.",
+    "kicker": "The partners",
+    "title": "The Estates",
+    "intro": "TERWA selects exceptional estates and publishes each partnership with the same rigour: the place, the family, the parcels, the production and the prices, all verifiable. The cellar grows estate after estate.",
+    "featuredAlt": "The David Beaulieu family in the vines of Château Coutet",
+    "featuredBadge": "Estate no. 1 · Wine on sale",
+    "featuredSummary": "400 years in the same family, zero chemicals since 1601, Peycocut terroir. Wine offered: Les Demoiselles, vintages 2025 to 2029.",
+    "featuredCta": "Discover the estate",
+    "upcomingName": "Estate no. {n}",
+    "upcomingDescription": "In discussion. Each new estate will be announced with the same transparency."
+  },
+  "estate": {
+    "metaTitle": "The estate, TERWA",
+    "metaDescription": "Château Coutet, Saint-Émilion Grand Cru: 400 years of family history, zero chemicals since 1601, the Peycocut terroir and the Les Demoiselles cuvée.",
+    "heroIntro": "The wine you pre-order comes from a very specific place, family and way of working. Here, in full transparency, is what you are buying.",
+    "heroAlt": "The three winegrowers of the David Beaulieu family in the vines of Château Coutet",
+    "caption": "Alain, Adrien and Matthieu David Beaulieu, three generations at the estate.",
+    "factsTitle": "The estate in six facts",
+    "terroirTitle": "The {name} terroir",
+    "terroirDescription": "Les Demoiselles is born of 4 parcels in the Peycocut lieu-dit (\"where the cuckoo sings\", recorded as early as 1541), on the asteria limestone of the Saint-Martin plateau, the high point of the property, surrounded by premier cru neighbours. 2.7 hectares of vines around 100 years old, of which 1.5 hectares are reserved for TERWA pre-orders.",
+    "terroirAlt": "Map of the Peycocut parcels of the Les Demoiselles cuvée",
+    "storagePre": "The bottles are aged then held in bond at ",
+    "storageMid": " (established by the Bordeaux CCI in 2009), insured by ",
+    "storagePost": ", until they are made available. Each vintage can be delivered in an original 3-bottle wooden case.",
+    "productionTitle": "Ten years of production, in figures",
+    "productionIntro": "Figures provided by the property for the Les Demoiselles cuvée: volume produced and the price observed on the market today (source: Gute Weine Lobenberg, incl. tax, recorded on 2 July 2026), vintage by vintage.",
+    "tableVintage": "Vintage",
+    "tableBottles": "Bottles produced",
+    "tablePrice": "Price observed on the market",
+    "inclTax": "€ incl. tax",
+    "exclTax": "€ excl. tax",
+    "subscription": "(subscription)",
+    "offMarket": "off market",
+    "productionNote": "Production varies from year to year: frosts, droughts and yields are part of the life of a vineyard worked without chemicals. If the harvest is insufficient for a given vintage, the pre-order is carried over to the following vintage."
+  },
+  "facts": {
+    "family": {
+      "valeur": "400 years",
+      "detail": "in the same family, the David Beaulieu, 14th generation, three generations at the estate today"
+    },
+    "chemistry": {
+      "valeur": "0 chemicals",
+      "detail": "no herbicide, pesticide or synthetic fertiliser since 1601, confirmed by independent laboratory analyses. Certified organic since 2012"
+    },
+    "estate": {
+      "valeur": "16.8 ha",
+      "detail": "in a single block, including 13 ha of vines, less than a kilometre from the medieval town of Saint-Émilion"
+    },
+    "horse": {
+      "valeur": "Horse",
+      "detail": "ploughing with a draught horse to preserve the soils, fully manual harvest into small crates"
+    },
+    "genetics": {
+      "valeur": "500 genes/ha",
+      "detail": "sélection massale with no clones, an exceptional genetic diversity (regional average: 2 genes/ha)"
+    },
+    "rating": {
+      "valeur": "96/100",
+      "detail": "RVF 2026 and 100+/100 Lobenberg for the 2022 vintage of the Les Demoiselles cuvée"
+    }
+  }
+}

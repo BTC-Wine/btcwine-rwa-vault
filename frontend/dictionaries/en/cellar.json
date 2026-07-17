@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "My Cellar, TERWA",
+    "description": "Track your Vintages, their release dates and your choices each time a vintage is made available."
+  },
+  "title": "My Cellar",
+  "connect": {
+    "prompt": "Connect your wallet to find your Vintages, their release dates and your upcoming choices.",
+    "button": "Connect my wallet"
+  },
+  "error": "Your cellar could not be loaded at the moment.",
+  "tiles": {
+    "bottles": {
+      "label": "Bottles reserved",
+      "note": "held in bond, insured"
+    },
+    "allocations": {
+      "label": "Allocations",
+      "note": "{n} Vintages each"
+    },
+    "cost": {
+      "label": "Acquisition cost",
+      "value": "{amount} USDC",
+      "note": "that is {amount} € excl. tax"
+    },
+    "nextRelease": {
+      "label": "Next release",
+      "none": "none",
+      "note": "Vintage {vintage}"
+    }
+  },
+  "empty": {
+    "title": "Your cellar is empty",
+    "body": "Wine no. 1, Les Demoiselles from Château Coutet, is on pre-order: 1,660 Allocations, not one more.",
+    "cta": "Discover the wine"
+  },
+  "card": {
+    "kicker": "Wine no. 1",
+    "vintage": "Vintage {vintage}",
+    "bottles": "{n} bottles",
+    "aging": "Ageing",
+    "available": "Available",
+    "releaseOn": "released on {date}",
+    "readyForYou": "available to you",
+    "cost": "{amount} USDC",
+    "costLabel": "acquisition cost",
+    "costEur": "{amount} € excl. tax",
+    "footerNote": "At each release: delivery to your door, free resale, or producer take-back.",
+    "viewEstate": "See the estate"
+  },
+  "paymentBalance": "Payment balance: {amount} USDC (testnet)",
+  "actions": {
+    "deliver": "Request delivery",
+    "redeem": "Producer repurchase",
+    "redeemSoon": "repurchase opens once the producer funds are deposited",
+    "claimPending": "Delivery requested on {date}",
+    "modalClose": "Cancel",
+    "processing": "Signing...",
+    "simulating": "Computing amount...",
+    "demoNote": "(simulation, demo mode)",
+    "redeemTitle": "Producer repurchase",
+    "redeemBody": "The producer repurchases your {bottles} bottles of the {vintage} vintage, as per its repurchase commitment.",
+    "redeemAmount": "You will receive {amount} USDC",
+    "redeemIrreversible": "This operation is final: repurchased certificates are destroyed.",
+    "redeemConfirm": "Accept the repurchase",
+    "redeemSuccess": "Repurchase completed. The USDC is in your wallet.",
+    "deliverTitle": "Delivery of your bottles",
+    "deliverBody": "{bottles} bottles of the {vintage} vintage, in original wooden cases of 3. Proof of legal age is checked on receipt.",
+    "fieldName": "Full name",
+    "fieldAddress": "Address",
+    "fieldPostal": "Postal code",
+    "fieldCity": "City",
+    "fieldCountry": "Country",
+    "fieldEmail": "Email",
+    "fieldPhone": "Phone",
+    "deliverPrivacy": "Your details are never published: only their fingerprint (hash) is recorded on-chain with your request.",
+    "deliverConfirm": "Request delivery",
+    "deliverSuccess": "Delivery request received. Our logistics team will contact you to arrange delivery.",
+    "manage": "Manage",
+    "panelQuestion": "What would you like to do with this vintage?",
+    "deliverDesc": "Receive your bottles at home, in their original wooden cases.",
+    "deliverCta": "Request delivery",
+    "redeemDesc": "The producer repurchases your bottles on request. Payment usually within 72 hours.",
+    "redeemCta": "See the amount",
+    "sellTitle": "Assisted sale",
+    "sellSoonBadge": "coming soon",
+    "sellDesc": "Entrust the sale of your bottles to our dedicated service.",
+    "sellCta": "Learn more",
+    "sellModalBody": "This service will open soon: it will let you entrust the sale of your bottles. Terms and conditions will be published before it opens.",
+    "sellModalNote": "In the meantime, your certificates remain freely transferable from wallet to wallet.",
+    "sellModalOk": "Got it",
+    "manageLocked": "Management available on {date}",
+    "redeemSettledNote": "The producer funds are deposited: your repurchase can be executed immediately.",
+    "requestCta": "Request repurchase",
+    "requestTitle": "Repurchase request",
+    "requestBody": "Repurchase is not automatic: your request is sent to the producer, who approves it and deposits the funds. You then confirm the repurchase here and receive the USDC in your wallet. Usual processing time: within 72 hours.",
+    "requestNote": "Your request goes directly to our team, with your wallet address attached for identification. Nothing personal is published on-chain.",
+    "requestSend": "Send my request",
+    "requestEmail": "Your contact email",
+    "requestSent": "Request sent. The producer usually responds within 72 hours.",
+    "sendFailed": "Your details could not be transmitted automatically.",
+    "sendByEmail": "Send them by email"
+  }
+}

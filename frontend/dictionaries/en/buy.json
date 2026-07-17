@@ -1,0 +1,32 @@
+{
+  "closed": "The pre-order period is over.",
+  "heading": "Pre-order",
+  "subtitle": "An Allocation includes one Vintage from each of the {vintages} years, that is {bottles} bottles.",
+  "allocationsLabel": "Allocations",
+  "decrease": "Decrease",
+  "increase": "Increase",
+  "bottles": "Bottles",
+  "total": "Total",
+  "payWith": "Pay with",
+  "estimate": "that is ≈ {amount} {asset} at the DEX rate (max slippage 1%), converted to USDC in your wallet before purchase",
+  "quoting": "quoting rate...",
+  "reference": "For reference: the 2025 alone sells by subscription at {ttc} € incl. tax from a distributor ({ht} € excl. tax), that is {pct} % more than here. Verifiable below.",
+  "attestationBefore": "I certify that I am of legal age and I accept the ",
+  "attestationLink": "en primeur purchase declaration",
+  "attestationAfter": ", which I sign with my wallet at the time of the pre-order.",
+  "cta": {
+    "connect": "Connect my wallet",
+    "preparing": "Preparing account...",
+    "converting": "Converting to USDC...",
+    "signing": "Signing...",
+    "sending": "Sending pre-order...",
+    "default": "Pre-order"
+  },
+  "status": {
+    "trustlinesCreated": "Your trustlines have been created.",
+    "done": "Your pre-order is confirmed. Your Vintages are in your wallet.",
+    "demoNote": "(simulation, demo mode)",
+    "viewTx": "View the transaction",
+    "genericError": "an error occurred"
+  }
+}

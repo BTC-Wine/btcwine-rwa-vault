@@ -1,0 +1,32 @@
+{
+  "closed": "期酒预订期已结束。",
+  "heading": "预订",
+  "subtitle": "一份配额包含 {vintages} 个年份中每一年的一个年份，即 {bottles} 瓶。",
+  "allocationsLabel": "配额",
+  "decrease": "减少",
+  "increase": "增加",
+  "bottles": "瓶数",
+  "total": "总计",
+  "payWith": "支付方式",
+  "estimate": "即 ≈ {amount} {asset}（按 DEX 汇率，最大滑点 1%），购买前在您的钱包中兑换为 USDC",
+  "quoting": "正在获取汇率……",
+  "reference": "参考：单独的 2025 年份在经销商处以期酒认购价 {ttc} €（含税）出售（{ht} € 不含税），即比这里高 {pct} %。可在下方核实。",
+  "attestationBefore": "我确认已达法定年龄，并接受",
+  "attestationLink": "期酒购买声明",
+  "attestationAfter": "，我将在预订时用我的钱包签署该声明。",
+  "cta": {
+    "connect": "连接我的钱包",
+    "preparing": "正在准备账户……",
+    "converting": "正在兑换为 USDC……",
+    "signing": "正在签名……",
+    "sending": "正在发送预订……",
+    "default": "预订"
+  },
+  "status": {
+    "trustlinesCreated": "您的信任线已创建。",
+    "done": "您的预订已确认。您的年份已存入您的钱包。",
+    "demoNote": "（模拟，演示模式）",
+    "viewTx": "查看交易",
+    "genericError": "发生错误"
+  }
+}

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+}
+
+@layer base {
+  /* Cormorant is loaded in 500/600 only, never render a synthesized 400 */
+  .font-serif {
+    font-weight: 500;
+  }
+
+  :focus-visible {
+    outline: 2px solid #5a1f2b;
+    outline-offset: 2px;
+  }
+}

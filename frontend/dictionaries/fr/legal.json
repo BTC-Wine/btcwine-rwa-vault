@@ -1,0 +1,109 @@
+{
+  "notice": {
+    "metaTitle": "Mentions légales, TERWA",
+    "metaDescription": "Mentions légales du site TERWA : éditeur, hébergement, licence de vente d'alcool, propriété intellectuelle et médiation de la consommation.",
+    "title": "Mentions légales",
+    "editor": {
+      "heading": "Éditeur du site",
+      "body": "[DÉNOMINATION SOCIALE], [FORME JURIDIQUE] au capital de [CAPITAL] euros, immatriculée au RCS de [VILLE] sous le numéro [NUMÉRO RCS], dont le siège social est situé [ADRESSE COMPLÈTE].",
+      "vat": "Numéro de TVA intracommunautaire : [NUMÉRO TVA].",
+      "director": "Directeur de la publication : [NOM DU DIRECTEUR DE LA PUBLICATION].",
+      "contactLabel": "Contact : ",
+      "contactSuffix": ", [TÉLÉPHONE]."
+    },
+    "hosting": {
+      "heading": "Hébergement",
+      "body": "Le site est hébergé par [HÉBERGEUR], [ADRESSE DE L'HÉBERGEUR], [TÉLÉPHONE DE L'HÉBERGEUR]."
+    },
+    "license": {
+      "heading": "Licence de vente d'alcool",
+      "body": "Vente de boissons du 3e groupe. [RÉFÉRENCE DE LA LICENCE OU DU RÉGIME APPLICABLE]. La vente d'alcool est interdite aux mineurs de moins de 18 ans (article L. 3342-1 du Code de la santé publique). Une preuve de majorité est exigée à la commande et à la livraison."
+    },
+    "ip": {
+      "heading": "Propriété intellectuelle",
+      "body": "Le nom, les images, le logo et les distinctions du Château Coutet sont utilisés avec l'autorisation de la propriété, dans le cadre du partenariat TERWA. Toute reproduction du contenu de ce site sans autorisation est interdite.",
+      "credits": "Crédits photographiques : Château Coutet, famille David Beaulieu."
+    },
+    "mediation": {
+      "heading": "Médiation de la consommation",
+      "body": "Conformément à l'article L. 612-1 du Code de la consommation, le consommateur peut recourir gratuitement au médiateur suivant : [MÉDIATEUR DÉSIGNÉ ET COORDONNÉES]. Plateforme européenne de règlement en ligne des litiges : ec.europa.eu/consumers/odr."
+    }
+  },
+  "terms": {
+    "metaTitle": "Conditions générales de vente, TERWA",
+    "metaDescription": "Conditions encadrant la précommande en primeur des vins du Château Coutet sur TERWA : allocations, prix, mise à disposition, livraison et reprise par le producteur.",
+    "title": "Conditions générales de vente",
+    "purpose": {
+      "title": "1. Objet",
+      "body": "Les présentes conditions régissent la vente en primeur de vins par [DÉNOMINATION SOCIALE]. L'acheteur précommande des bouteilles identifiées, produites par le Château Coutet, avant leur mise à disposition. Le certificat numérique remis à l'acheteur (token sur le réseau Stellar) constitue le reçu de sa précommande et le titre de retrait des bouteilles. Il ne constitue ni un instrument financier, ni un placement."
+    },
+    "product": {
+      "title": "2. Produit et allocation",
+      "body": "Une allocation comprend quinze bouteilles de 75 cl de la cuvée Les Demoiselles, Saint-Émilion Grand Cru : trois bouteilles de chacun des millésimes 2025 à 2029. La production est issue des parcelles Peycocut du Château Coutet. En cas de récolte insuffisante sur un millésime (gel, aléa climatique, force majeure), l'allocation est reportée sur le millésime suivant."
+    },
+    "price": {
+      "title": "3. Prix et paiement",
+      "body": "Le prix est de 905 euros hors taxes par allocation, soit 60,33 euros hors taxes par bouteille, payable en USDC sur le réseau Stellar au moment de la précommande. [RÉGIME DE TVA APPLICABLE À PRÉCISER]. Le prix inclut le stockage sous douane chez Bordeaux City Bond et l'assurance AXA jusqu'à la mise à disposition de chaque millésime."
+    },
+    "delivery": {
+      "title": "4. Mise à disposition, livraison et reprise",
+      "body": "Les bouteilles de chaque millésime N sont mises à disposition au plus tard le 1er juin de l'année N+2. À compter de cette date, l'acheteur peut, pour chaque millésime : demander la livraison à l'adresse de son choix (frais et conditions de livraison précisés à la commande de livraison, majorité vérifiée à la réception), conserver ses bouteilles, les céder, ou accepter l'offre de reprise du producteur. [CONDITIONS ET PRIX PLANCHER DE LA REPRISE À PRÉCISER SELON L'ENGAGEMENT DU PRODUCTEUR]."
+    },
+    "withdrawal": {
+      "title": "5. Droit de rétractation",
+      "body": "[À VALIDER PAR LE CONSEIL : régime du droit de rétractation de 14 jours applicable à la vente à distance, et ses exceptions éventuelles]. Les modalités d'exercice et le formulaire de rétractation figurent en annexe."
+    },
+    "age": {
+      "title": "6. Majorité",
+      "body": "La vente d'alcool est interdite aux mineurs. L'acheteur déclare être majeur au moment de la précommande ; une preuve de majorité est exigée avant toute livraison physique."
+    },
+    "certificate": {
+      "title": "7. Certificat numérique",
+      "body": "Le certificat est émis sur le réseau Stellar dans le portefeuille désigné par l'acheteur, qui en assume la garde. La cession du certificat emporte cession du droit de retrait des bouteilles correspondantes. [RESPONSABILITÉS EN CAS DE PERTE DE CLÉS À PRÉCISER]."
+    },
+    "claims": {
+      "title": "8. Réclamations et médiation",
+      "body": "Toute réclamation peut être adressée à contact@terwa.io. À défaut de résolution, le consommateur peut saisir gratuitement le médiateur de la consommation désigné aux mentions légales, ou la plateforme européenne de règlement en ligne des litiges."
+    },
+    "law": {
+      "title": "9. Droit applicable",
+      "body": "Les présentes conditions sont soumises au droit français. [JURIDICTION COMPÉTENTE À PRÉCISER]."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité, TERWA",
+    "metaDescription": "Comment TERWA traite les données personnelles : adresse de wallet, coordonnées de livraison, durées de conservation, cookies et vos droits.",
+    "title": "Politique de confidentialité",
+    "controller": {
+      "heading": "Responsable de traitement",
+      "bodyPrefix": "[DÉNOMINATION SOCIALE], [ADRESSE], contact : ",
+      "bodySuffix": "."
+    },
+    "data": {
+      "heading": "Données traitées",
+      "body": "Adresse publique de portefeuille Stellar (nécessaire à l'exécution de la précommande, inscrite par nature sur un registre public), déclaration de majorité, et, au moment d'une livraison : identité, adresse postale, adresse électronique et preuve de majorité. Les coordonnées de livraison sont chiffrées ; seule leur empreinte (hash) est inscrite sur le registre public."
+    },
+    "purposes": {
+      "heading": "Finalités et bases légales",
+      "body": "Exécution du contrat de vente (précommande, mise à disposition, livraison, reprise), respect des obligations légales (majorité, lutte contre le blanchiment, sanctions internationales), et gestion des réclamations."
+    },
+    "retention": {
+      "heading": "Durées de conservation",
+      "body": "Les données de livraison sont conservées [DURÉE] après la dernière mise à disposition. Les documents comptables sont conservés dix ans conformément à la loi."
+    },
+    "cookies": {
+      "heading": "Cookies et traceurs",
+      "body": "Le site n'utilise ni cookie publicitaire ni traceur tiers. Le stockage local du navigateur est utilisé uniquement pour des préférences techniques. [À METTRE À JOUR SI DES OUTILS DE MESURE D'AUDIENCE SONT AJOUTÉS]."
+    },
+    "rights": {
+      "heading": "Vos droits",
+      "bodyPrefix": "Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité sur vos données, à exercer à l'adresse ",
+      "bodySuffix": ". Vous pouvez saisir la CNIL (cnil.fr) de toute réclamation. Les inscriptions sur un registre public de type blockchain sont par nature immuables : les données personnelles n'y sont jamais écrites en clair."
+    }
+  },
+  "comingSoon": {
+    "badge": "À venir",
+    "body": "Ce document est en cours de finalisation avec notre conseil juridique. Il sera publié ici avant l'ouverture des précommandes.",
+    "contact": "Une question d'ici là ? Écrivez-nous :"
+  }
+}

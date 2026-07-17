@@ -1,0 +1,32 @@
+{
+  "closed": "Der Vorbestellungszeitraum ist beendet.",
+  "heading": "Vorbestellen",
+  "subtitle": "Eine Allocation umfasst einen Jahrgang aus jedem der {vintages} Jahre, also {bottles} Flaschen.",
+  "allocationsLabel": "Allocations",
+  "decrease": "Verringern",
+  "increase": "Erhöhen",
+  "bottles": "Flaschen",
+  "total": "Gesamt",
+  "payWith": "Bezahlen mit",
+  "estimate": "das sind ≈ {amount} {asset} zum DEX-Kurs (max. Slippage 1 %), vor dem Kauf in Ihrer Wallet in USDC umgewandelt",
+  "quoting": "Kurs wird abgerufen...",
+  "reference": "Zum Vergleich: der 2025 allein wird in Subskription für {ttc} € inkl. MwSt bei einem Händler verkauft ({ht} € exkl. MwSt), also {pct} % mehr als hier. Weiter unten nachprüfbar.",
+  "attestationBefore": "Ich bestätige, dass ich volljährig bin, und akzeptiere die ",
+  "attestationLink": "Erklärung zum En-primeur-Kauf",
+  "attestationAfter": ", die ich bei der Vorbestellung mit meiner Wallet unterzeichne.",
+  "cta": {
+    "connect": "Meine Wallet verbinden",
+    "preparing": "Konto wird vorbereitet...",
+    "converting": "Umwandlung in USDC...",
+    "signing": "Signatur läuft...",
+    "sending": "Vorbestellung wird gesendet...",
+    "default": "Vorbestellen"
+  },
+  "status": {
+    "trustlinesCreated": "Ihre Trustlines wurden erstellt.",
+    "done": "Ihre Vorbestellung ist bestätigt. Ihre Jahrgänge liegen in Ihrer Wallet.",
+    "demoNote": "(Simulation, Demo-Modus)",
+    "viewTx": "Transaktion ansehen",
+    "genericError": "ein Fehler ist aufgetreten"
+  }
+}

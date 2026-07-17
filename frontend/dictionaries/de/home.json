@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "Der En-primeur-Keller, onchain zugänglich",
+    "titleLine1": "Erwerben Sie große Weine,",
+    "titleLine2": "zum besten Preis",
+    "subtitle": "TERWA reserviert für Sie Allocations außergewöhnlicher Cuvées, direkt bei den Weingütern, bevor sie auf den Markt kommen. Lassen Sie sie liefern, verkaufen Sie sie weiter oder lassen Sie sie vom Erzeuger zurücknehmen.",
+    "ctaDiscover": "Cuvée Nr. 1 entdecken",
+    "ctaDomain": "Das Weingut",
+    "discountLabel": "Bis zu",
+    "discountCaption": "gegenüber dem Händlerpreis",
+    "discountTitle": "Gegenüber dem höchsten für dieselbe Cuvée bei einem Händler festgestellten Preis, bei vergleichbaren Steuern (festgestellt am 2. Juli 2026)"
+  },
+  "pillars": {
+    "reserved": {
+      "title": "An der Quelle reserviert",
+      "text": "TERWA schließt Verträge direkt mit den Weingütern und reserviert bestimmte Parzellen, bevor sie auf den Markt kommen. Ihr Eigentumszertifikat wird auf Ihren Namen ausgestellt, in Ihrem Wallet."
+    },
+    "conserved": {
+      "title": "Gelagert und versichert",
+      "p1": "Die Flaschen werden im Weingut ausgebaut und dann unter Zollverschluss gelagert bei",
+      "p2": "und versichert durch",
+      "p3": ", bis zu ihrer Bereitstellung, Jahrgang für Jahrgang."
+    },
+    "choose": {
+      "title": "Ihre Wahl",
+      "text": "Zu jeder Fälligkeit lassen Sie Ihre Flaschen nach Hause liefern, verkaufen sie frei weiter oder lassen sie vom Erzeuger zurücknehmen, gemäß seiner Rücknahmeverpflichtung."
+    }
+  },
+  "catalog": {
+    "kicker": "Die Cuvées",
+    "title": "Der TERWA-Keller",
+    "cuvee1Tag": "Cuvée Nr. 1 · Verfügbar",
+    "cuvee1Name": "Les Demoiselles",
+    "cuvee1Sub": "Château Coutet, Saint-Émilion Grand Cru",
+    "priceLine": "{price} USDC pro Allocation",
+    "discover": "Entdecken",
+    "soonName2": "Cuvée Nr. 2",
+    "soonName3": "Cuvée Nr. 3",
+    "soonDesc": "In Vorbereitung. Inhaber von Allocations werden zuerst informiert."
+  },
+  "cuvee": {
+    "tag": "Cuvée Nr. 1 · Verfügbar",
+    "name": "Les Demoiselles",
+    "description": "Château Coutet, Saint-Émilion Grand Cru. Fünf Jahrgänge (2025 bis 2029) von den hundertjährigen Reben des Terroirs Peycocut, {bottles} Flaschen pro Allocation.",
+    "error": "Die Informationen zur Cuvée sind vorübergehend nicht verfügbar."
+  },
+  "stats": {
+    "reserved": "Reservierte Allocations",
+    "price": "Preis einer Allocation",
+    "status": "Status",
+    "statusOpen": "Vorbestellungen offen",
+    "statusClosed": "Vorbestellungen geschlossen"
+  },
+  "vintages": {
+    "title": "Die Jahrgänge",
+    "subtitle": "Die Flaschen des Jahrgangs N werden spätestens am 1. Juni des Jahres N+2 bereitgestellt.",
+    "item": "Jahrgang {year}",
+    "bottlesPerAllocation": "{bottles} Flaschen pro Allocation",
+    "availableOn": "Verfügbar am"
+  },
+  "comparison": {
+    "title": "En primeur, zwei Wege",
+    "intro": "Einen Wein zu kaufen, bevor er bereitgestellt wird, ist keine Erfindung von TERWA: Es ist en primeur, eine Bordeaux-Tradition. Hier ist der Jahrgang 2025 von Les Demoiselles, heute, auf den zwei Wegen.",
+    "col1Label": "En primeur bei einem Händler",
+    "perBottleTTC": "inkl. Steuer pro Flasche",
+    "approxHT": "also etwa {price} € exkl. Steuer",
+    "vintageOnly": "Nur Jahrgang 2025",
+    "delivery": "Lieferung {when}",
+    "storageOwn": "Lagerung und Versicherung zu Ihren Lasten nach der Lieferung",
+    "observedOn": "{distributor}, festgestellt am {date}.",
+    "verify": "Überprüfen",
+    "col2Label": "Als TERWA-Allocation",
+    "perBottleHT": "exkl. Steuer pro Flasche",
+    "feat1": "Fünf Jahrgänge, 2025 bis 2029 (15 Flaschen pro Allocation)",
+    "feat2": "Lagerung unter Zollverschluss (Bordeaux City Bond) und AXA-Versicherung inbegriffen bis zur Bereitstellung",
+    "feat3": "Zu jeder Fälligkeit: Lieferung nach Hause, freier Weiterverkauf oder Rücknahme durch den Erzeuger",
+    "feat4": "Eigentumszertifikat in Ihrem Wallet, übertragbar",
+    "footnote": "905 € exkl. Steuer für die Allocation von 15 Flaschen. Derselbe Preis für alle, während der gesamten Vorbestellung.",
+    "note": "Vergleich öffentlicher Preise, festgestellt am selben Datum, für denselben Wein und denselben Kaufmechanismus. Der deutsche Preis inkl. Steuer enthält 19 % MwSt."
+  },
+  "prices": {
+    "title": "Der Zugang zum besten Ausgangspreis, in voller Transparenz",
+    "intro": "Ihre Vorbestellung entspricht 60,33 € pro Flasche ohne Steuer. Die Abweichungen unten vergleichen diesen Zugangspreis mit den ursprünglichen Markteinführungspreisen derselben Cuvée: am Weingut, beim offiziellen Händler, dann wie heute bei unabhängigen Händlern festgestellt. Danach kommt das Leben des Marktes: Ausbau, Seltenheit und Nachfrage lassen die Preise Jahrgang für Jahrgang steigen, wie die älteren Jahrgänge weiter unten zeigen, teurer oder inzwischen nicht mehr erhältlich. Diese Preise hängen nicht von TERWA ab und können variieren.",
+    "repere": "Zur Orientierung: Der Jahrgang 2025, der erste Ihrer Allocation, wird en primeur zu {ttc} € inkl. Steuer angeboten, also etwa {ht} € exkl. Steuer, bei {distributor} (festgestellt am {date}).",
+    "tableTitle": "Festgestellte Preise nach Jahrgang",
+    "thVintage": "Jahrgang",
+    "thObserved": "Festgestellter Preis (inkl. Steuer)",
+    "badgeSubscription": "en primeur",
+    "htApprox": "≈ {price} € exkl. Steuer",
+    "tableSource": "Quelle: {source}. Die Jahrgänge 2017 bis 2019 sind nicht mehr erhältlich. Ein en primeur verkaufter Wein wird heute bezahlt und nach dem Ausbau geliefert.",
+    "verifyTitle": "Überprüfen Sie es selbst bei den Händlern",
+    "sourcesPrefix": "Quellen: vom Weingut mitgeteilte Preise und Websites der Händler. Um alles über den Weinberg und die Produktion zu erfahren,",
+    "discoverEstateLink": "entdecken Sie das Weingut",
+    "sourcesSuffix": ".",
+    "sourceDetail": "Gute Weine Lobenberg, 75-cl-Flaschen, Preise inkl. MwSt. Deutschland, festgestellt am 2. Juli 2026",
+    "zones": {
+      "aggregator": "Internationaler Aggregator",
+      "switzerland": "Schweiz",
+      "germanyAustria": "Deutschland und Österreich",
+      "usa": "USA"
+    }
+  },
+  "chart": {
+    "countryTitle": "Durchschnittliche festgestellte Einzelhandelspreise nach Markt",
+    "countrySubtitle": "Durchschnitt der letzten 7 Jahrgänge, in Euro pro Flasche.",
+    "countrySource": "Quellen: Weingut, Wine-Searcher, Winedecider Pro, März 2026.",
+    "tileYourPreorderLabel": "Ihre Vorbestellung",
+    "tileYourPreorderValue": "60,33 €",
+    "tileYourPreorderNote": "pro Flasche exkl. Steuer",
+    "tileEstateLabel": "Am Weingut",
+    "tileEstateNote": "öffentlicher Markteinführungspreis exkl. Steuer, aktueller Jahrgang",
+    "tileOfficialLabel": "Offizieller Händler",
+    "tileOfficialNote": "öffentlicher Preis exkl. Steuer, aktueller Jahrgang",
+    "tileDistributorsLabel": "Bei den Händlern",
+    "tileDistributorsValue": "{min} bis {max} €",
+    "tileDistributorsNote": "inkl. Steuer je nach Jahrgang, also etwa {minHT} bis {maxHT} € exkl. Steuer, festgestellt am 2. Juli 2026",
+    "totalPct": "+{pct} % insgesamt",
+    "stepTitle": "Abweichung zwischen den beiden Preisen, ohne Steuer, auf dem höchsten festgestellten Wert",
+    "totalTitle": "Abweichung zwischen Ihrer Vorbestellung und dem höchsten festgestellten Preis, ohne Steuer",
+    "note": "Abweichungen berechnet ohne Steuer auf dem höchsten festgestellten Wert, von einem Preis zum nächsten und dann von Anfang bis Ende, für dieselbe Cuvée."
+  },
+  "countries": {
+    "france": "Frankreich",
+    "belgium": "Belgien",
+    "germany": "Deutschland",
+    "switzerland": "Schweiz",
+    "uk": "Vereinigtes Königreich",
+    "usa": "USA",
+    "russia": "Russland"
+  }
+}

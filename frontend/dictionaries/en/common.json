@@ -1,0 +1,41 @@
+{
+  "testBanner": {
+    "message": "Test version: nothing is on sale. This site runs on the Stellar test network (testnet) and is for demonstration purposes only."
+  },
+  "metadata": {
+    "title": "Terwa.io",
+    "description": "Reserve five vintages before they are produced. Take delivery of the bottles or hand them back to the producer at each release."
+  },
+  "nav": {
+    "cuvees": "The Wines",
+    "domains": "The Estates",
+    "howItWorks": "How It Works",
+    "cellar": "My Cellar"
+  },
+  "wallet": {
+    "connect": "Connect my wallet",
+    "connectShort": "Wallet",
+    "connecting": "Connecting...",
+    "disconnectTitle": "Disconnect"
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "footer": {
+    "tagline": "En primeur purchase of great wines, reserved at source directly from the estates.",
+    "legalNotice": "Legal notice",
+    "terms": "Terms of sale",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "alcohol1": "Alcohol abuse is dangerous for your health. Consume in moderation.",
+    "alcohol2": "The sale of alcohol to minors under 18 is prohibited.",
+    "network": "TERWA. Stellar testnet, development version."
+  },
+  "demo": {
+    "label": "Demo mode",
+    "on": "on",
+    "off": "off",
+    "title": "Simulates a connected wallet holding allocations (UX review)"
+  }
+}

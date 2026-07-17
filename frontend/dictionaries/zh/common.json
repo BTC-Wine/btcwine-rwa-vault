@@ -1,0 +1,41 @@
+{
+  "testBanner": {
+    "message": "测试版本：目前不进行任何销售。本网站运行于 Stellar 测试网（testnet），仅用于演示。"
+  },
+  "metadata": {
+    "title": "Terwa.io",
+    "description": "在五个年份生产之前预订。每次交付时可选择提取酒瓶，或由生产者回收。"
+  },
+  "nav": {
+    "cuvees": "酒款",
+    "domains": "酒庄",
+    "howItWorks": "运作方式",
+    "cellar": "我的酒窖"
+  },
+  "wallet": {
+    "connect": "连接钱包",
+    "connectShort": "钱包",
+    "connecting": "连接中...",
+    "disconnectTitle": "断开连接"
+  },
+  "menu": {
+    "open": "打开菜单",
+    "close": "关闭菜单"
+  },
+  "footer": {
+    "tagline": "以期酒方式预订名庄佳酿，直接向酒庄源头预留。",
+    "legalNotice": "法律声明",
+    "terms": "销售条款",
+    "privacy": "隐私",
+    "contact": "联系",
+    "alcohol1": "过量饮酒有害健康，请适量饮用。",
+    "alcohol2": "禁止向未满18岁的未成年人销售酒精饮品。",
+    "network": "TERWA。Stellar 测试网，开发版本。"
+  },
+  "demo": {
+    "label": "演示模式",
+    "on": "开",
+    "off": "关",
+    "title": "模拟已连接并持有配额的钱包（用户体验测试）"
+  }
+}

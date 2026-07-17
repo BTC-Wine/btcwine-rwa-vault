@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "プリムールのカーヴを、オンチェーンで",
+    "titleLine1": "偉大なワインを、",
+    "titleLine2": "最良の価格で手に入れる",
+    "subtitle": "TERWA は、卓越したキュヴェのアロケーションを、市場に出る前に生産者から直接あなたのために確保します。配送を受ける、転売する、または生産者に買い戻してもらう、いずれも可能です。",
+    "ctaDiscover": "キュヴェ No.1 を見る",
+    "ctaDomain": "ワイナリー紹介",
+    "discountLabel": "最大",
+    "discountCaption": "販売店価格との比較",
+    "discountTitle": "同一キュヴェについて販売店で確認された最高価格との比較（税負担を揃えた条件、2026 年 7 月 2 日確認）"
+  },
+  "pillars": {
+    "reserved": {
+      "title": "源流で確保",
+      "text": "TERWA はワイナリーと直接契約し、市場に出る前に特定の区画を確保します。所有権証明書はあなたの名義で、あなたのウォレットに発行されます。"
+    },
+    "conserved": {
+      "title": "保管と保険",
+      "p1": "ボトルはワイナリーで熟成された後、保税倉庫",
+      "p2": "で保管され、",
+      "p3": "によって保険が付され、引き渡しまでヴィンテージごとに保管されます。"
+    },
+    "choose": {
+      "title": "選ぶのはあなた",
+      "text": "各引き渡し期には、ボトルを自宅に配送する、自由に転売する、または生産者の買い戻し確約に従って生産者に買い戻してもらうことができます。"
+    }
+  },
+  "catalog": {
+    "kicker": "キュヴェ",
+    "title": "TERWA のカーヴ",
+    "cuvee1Tag": "キュヴェ No.1 ・ 販売中",
+    "cuvee1Name": "Les Demoiselles",
+    "cuvee1Sub": "Château Coutet, Saint-Émilion Grand Cru",
+    "priceLine": "1 アロケーションあたり {price} USDC",
+    "discover": "詳しく見る",
+    "soonName2": "キュヴェ No.2",
+    "soonName3": "キュヴェ No.3",
+    "soonDesc": "準備中です。アロケーション保有者に最初にお知らせします。"
+  },
+  "cuvee": {
+    "tag": "キュヴェ No.1 ・ 販売中",
+    "name": "Les Demoiselles",
+    "description": "Château Coutet, Saint-Émilion Grand Cru。Peycocut テロワールの樹齢 100 年のブドウ樹から生まれる 5 つのヴィンテージ（2025 から 2029）、1 アロケーションあたり {bottles} 本。",
+    "error": "キュヴェの情報は一時的に表示できません。"
+  },
+  "stats": {
+    "reserved": "確保済みアロケーション",
+    "price": "1 アロケーションの価格",
+    "status": "ステータス",
+    "statusOpen": "予約受付中",
+    "statusClosed": "予約受付終了"
+  },
+  "vintages": {
+    "title": "ヴィンテージ",
+    "subtitle": "ヴィンテージ N のボトルは、遅くとも N+2 年 6 月 1 日までに引き渡されます。",
+    "item": "ヴィンテージ {year}",
+    "bottlesPerAllocation": "1 アロケーションあたり {bottles} 本",
+    "availableOn": "引き渡し日"
+  },
+  "comparison": {
+    "title": "プリムール、二つの道",
+    "intro": "引き渡し前にワインを購入することは TERWA の発明ではありません。ボルドーの伝統であるプリムールです。こちらが Les Demoiselles の 2025 ヴィンテージ、本日時点で、二つの道による比較です。",
+    "col1Label": "販売店でのプリムール購入",
+    "perBottleTTC": "税込み、1 本あたり",
+    "approxHT": "すなわち約 {price} €（税抜）",
+    "vintageOnly": "2025 ヴィンテージのみ",
+    "delivery": "配送 {when}",
+    "storageOwn": "配送後の保管と保険はお客様のご負担",
+    "observedOn": "{distributor}、{date} 確認。",
+    "verify": "確認する",
+    "col2Label": "TERWA アロケーションとして",
+    "perBottleHT": "税抜き、1 本あたり",
+    "feat1": "5 つのヴィンテージ、2025 から 2029（1 アロケーションあたり 15 本）",
+    "feat2": "保税保管（Bordeaux City Bond）と AXA 保険を引き渡しまで含む",
+    "feat3": "各引き渡し期に、自宅への配送、自由な転売、または生産者による買い戻し",
+    "feat4": "所有権証明書をあなたのウォレットに、譲渡可能",
+    "footnote": "15 本のアロケーションで 905 €（税抜）。予約期間を通じて全員同一価格。",
+    "note": "同一日、同一ワイン、同一の購入方式で確認された公開価格の比較。ドイツの税込価格には 19 % の付加価値税が含まれます。"
+  },
+  "prices": {
+    "title": "最良の初期価格へのアクセスを、完全な透明性で",
+    "intro": "あなたの予約は 1 本あたり 60.33 €（税抜）に相当します。以下の差額は、このアクセス価格を同一キュヴェの初期市場投入価格と比較したものです。ワイナリー価格、公式販売店価格、そして本日独立系販売店で確認された価格です。その後は市場の動きです。熟成、希少性、需要により価格はヴィンテージごとに変化し、下に示す古いヴィンテージが示すとおり、より高価になったり入手困難になったりします。これらの価格は TERWA に依存せず、変動する可能性があります。",
+    "repere": "参考として、あなたのアロケーションの最初のヴィンテージである 2025 は、{distributor} にてプリムールで {ttc} €（税込）、すなわち約 {ht} €（税抜）で提供されています（{date} 確認）。",
+    "tableTitle": "ヴィンテージ別の確認価格",
+    "thVintage": "ヴィンテージ",
+    "thObserved": "確認価格（税込）",
+    "badgeSubscription": "プリムール",
+    "htApprox": "≈ {price} €（税抜）",
+    "tableSource": "出典：{source}。2017 から 2019 のヴィンテージは販売で入手できません。プリムールのワインは本日支払い、熟成後に引き渡されます。",
+    "verifyTitle": "販売店でご自身でご確認ください",
+    "sourcesPrefix": "出典：ワイナリー提供の価格および販売店のウェブサイト。ブドウ畑と生産についてのすべてを知るには、",
+    "discoverEstateLink": "ワイナリーを見る",
+    "sourcesSuffix": "。",
+    "sourceDetail": "Gute Weine Lobenberg、75 cl ボトル、ドイツ税込価格、2026 年 7 月 2 日時点",
+    "zones": {
+      "aggregator": "国際価格比較サイト",
+      "switzerland": "スイス",
+      "germanyAustria": "ドイツ・オーストリア",
+      "usa": "アメリカ"
+    }
+  },
+  "chart": {
+    "countryTitle": "市場別の平均小売価格（確認値）",
+    "countrySubtitle": "直近 7 ヴィンテージの平均、1 本あたりユーロ。",
+    "countrySource": "出典：ワイナリー、Wine-Searcher、Winedecider Pro、2026 年 3 月。",
+    "tileYourPreorderLabel": "あなたの予約",
+    "tileYourPreorderValue": "60.33 €",
+    "tileYourPreorderNote": "1 本あたり税抜",
+    "tileEstateLabel": "ワイナリー価格",
+    "tileEstateNote": "現行ヴィンテージの公開市場投入価格、税抜",
+    "tileOfficialLabel": "公式販売店",
+    "tileOfficialNote": "現行ヴィンテージの公開価格、税抜",
+    "tileDistributorsLabel": "販売店にて",
+    "tileDistributorsValue": "{min} から {max} €",
+    "tileDistributorsNote": "ヴィンテージにより税込、すなわち約 {minHT} から {maxHT} €（税抜）、2026 年 7 月 2 日確認",
+    "totalPct": "合計 +{pct} %",
+    "stepTitle": "確認された最高値における、税抜での二つの価格の差",
+    "totalTitle": "確認された最高価格とあなたの予約との、税抜での差",
+    "note": "差額は確認された最高値に基づき税抜で計算、一つの価格から次へ、そして端から端まで、同一キュヴェについて。"
+  },
+  "countries": {
+    "france": "フランス",
+    "belgium": "ベルギー",
+    "germany": "ドイツ",
+    "switzerland": "スイス",
+    "uk": "イギリス",
+    "usa": "アメリカ",
+    "russia": "ロシア"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "list": {
+    "metaTitle": "ワイナリー, TERWA",
+    "metaDescription": "TERWA のパートナーワイナリー：厳選された生産者を、同じ透明性で公開します。最初のパートナー：Château Coutet, Saint-Émilion Grand Cru。",
+    "kicker": "パートナー",
+    "title": "ワイナリー",
+    "intro": "TERWA は卓越したワイナリーを厳選し、それぞれの提携を同じ厳しさで公開します。土地、家族、区画、生産、そして価格、すべて検証可能です。ワイナリーが増えるごとにカーヴも広がっていきます。",
+    "featuredAlt": "Château Coutet のブドウ畑に立つ David Beaulieu 家",
+    "featuredBadge": "ワイナリー第 1 号 · 販売中のキュヴェ",
+    "featuredSummary": "同じ家族で 400 年、1601 年以来化学薬品ゼロ、Peycocut のテロワール。提供するキュヴェ：Les Demoiselles、2025 から 2029 のヴィンテージ。",
+    "featuredCta": "ワイナリーを見る",
+    "upcomingName": "ワイナリー第 {n} 号",
+    "upcomingDescription": "協議中。新しいワイナリーはすべて同じ透明性で発表されます。"
+  },
+  "estate": {
+    "metaTitle": "ワイナリー, TERWA",
+    "metaDescription": "Château Coutet, Saint-Émilion Grand Cru：400 年の家族の歴史、1601 年以来化学薬品ゼロ、Peycocut のテロワールと Les Demoiselles のキュヴェ。",
+    "heroIntro": "あなたが予約するワインは、非常に具体的な土地、家族、そして仕事のやり方から生まれます。ここに、完全な透明性をもって、あなたが購入するものを示します。",
+    "heroAlt": "Château Coutet のブドウ畑に立つ David Beaulieu 家の三人の造り手",
+    "caption": "Alain、Adrien、Matthieu David Beaulieu、ワイナリーの三世代。",
+    "factsTitle": "6 つの事実で見るワイナリー",
+    "terroirTitle": "{name} のテロワール",
+    "terroirDescription": "Les Demoiselles は、Peycocut という小地名（「カッコウが歌う場所」、1541 年にはすでに記録あり）の 4 区画から生まれます。Saint-Martin 台地のアステリア石灰岩の上、所有地の最高地点にあり、プルミエ・クリュの隣人に囲まれています。樹齢約 100 年のブドウ 2.7 ヘクタールのうち、1.5 ヘクタールが TERWA の予約に充てられています。",
+    "terroirAlt": "Les Demoiselles のキュヴェ、Peycocut 区画の地図",
+    "storagePre": "ボトルは熟成後、保税でこちらに保管されます：",
+    "storageMid": "（2009 年にボルドー商工会議所が設立）、保険は ",
+    "storagePost": " が担い、引き渡しまで続きます。各ヴィンテージは 3 本入りのオリジナル木箱で配送できます。",
+    "productionTitle": "10 年間の生産を数字で",
+    "productionIntro": "Les Demoiselles のキュヴェについて生産者から提供されたデータ：生産量と本日の市場で確認された価格（出典：Gute Weine Lobenberg、税込、2026 年 7 月 2 日取得）、ヴィンテージごとに。",
+    "tableVintage": "ヴィンテージ",
+    "tableBottles": "生産ボトル数",
+    "tablePrice": "市場で確認された価格",
+    "inclTax": "€ 税込",
+    "exclTax": "€ 税抜",
+    "subscription": "(先行販売)",
+    "offMarket": "市場になし",
+    "productionNote": "生産量は年によって変動します。霜、干ばつ、収量は、化学薬品を使わずに耕すブドウ畑の営みの一部です。ある年に収穫が不十分な場合、予約は翌ヴィンテージに繰り越されます。"
+  },
+  "facts": {
+    "family": {
+      "valeur": "400 年",
+      "detail": "同じ David Beaulieu 家、14 代目、現在は三世代がワイナリーに"
+    },
+    "chemistry": {
+      "valeur": "化学薬品ゼロ",
+      "detail": "1601 年以来、除草剤・農薬・合成肥料を一切使用せず、独立した研究所の分析で確認済み。2012 年より有機認証"
+    },
+    "estate": {
+      "valeur": "16.8 ha",
+      "detail": "ひと続きの土地で、うち 13 ha がブドウ畑、中世都市 Saint-Émilion から 1 キロメートル未満"
+    },
+    "horse": {
+      "valeur": "馬",
+      "detail": "土壌を守るための輓馬による耕作、すべて手摘みで小箱に収穫"
+    },
+    "genetics": {
+      "valeur": "500 遺伝子/ha",
+      "detail": "クローンを使わないマサル・セレクション、卓越した遺伝的多様性（地域平均：2 遺伝子/ha）"
+    },
+    "rating": {
+      "valeur": "96/100",
+      "detail": "Les Demoiselles のキュヴェ 2022 ヴィンテージに対する RVF 2026 と Lobenberg 100+/100"
+    }
+  }
+}

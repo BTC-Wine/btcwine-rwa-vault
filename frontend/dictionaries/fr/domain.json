@@ -1,0 +1,65 @@
+{
+  "list": {
+    "metaTitle": "Les domaines, TERWA",
+    "metaDescription": "Les domaines partenaires de TERWA : des propriétés sélectionnées, publiées avec la même transparence. Premier partenaire : Château Coutet, Saint-Émilion Grand Cru.",
+    "kicker": "Les partenaires",
+    "title": "Les domaines",
+    "intro": "TERWA sélectionne des domaines d'exception et publie chaque partenariat avec la même exigence : le lieu, la famille, les parcelles, la production et les prix, vérifiables. La cave s'agrandit domaine après domaine.",
+    "featuredAlt": "La famille David Beaulieu dans les vignes du Château Coutet",
+    "featuredBadge": "Domaine nº 1 · Cuvée en vente",
+    "featuredSummary": "400 ans dans la même famille, zéro chimie depuis 1601, terroir Peycocut. Cuvée proposée : Les Demoiselles, millésimes 2025 à 2029.",
+    "featuredCta": "Découvrir le domaine",
+    "upcomingName": "Domaine nº {n}",
+    "upcomingDescription": "En discussion. Chaque nouveau domaine sera annoncé avec la même transparence."
+  },
+  "estate": {
+    "metaTitle": "Le domaine, TERWA",
+    "metaDescription": "Château Coutet, Saint-Émilion Grand Cru : 400 ans d'histoire familiale, zéro chimie depuis 1601, le terroir Peycocut et la cuvée Les Demoiselles.",
+    "heroIntro": "Le vin que vous précommandez vient d'un lieu, d'une famille et d'une façon de travailler très précis. Voici, en toute transparence, ce que vous achetez.",
+    "heroAlt": "Les trois vignerons de la famille David Beaulieu dans les vignes du Château Coutet",
+    "caption": "Alain, Adrien et Matthieu David Beaulieu, trois générations au domaine.",
+    "factsTitle": "Le domaine en six faits",
+    "terroirTitle": "Le terroir {name}",
+    "terroirDescription": "Les Demoiselles naît de 4 parcelles du lieu-dit Peycocut (« là où chante le coucou », mentionné dès 1541), sur le calcaire à astéries du plateau de Saint-Martin, le point haut de la propriété, entouré de voisins premiers crus. 2,7 hectares de vignes d'environ 100 ans, dont 1,5 hectare est réservé aux précommandes TERWA.",
+    "terroirAlt": "Carte des parcelles Peycocut de la cuvée Les Demoiselles",
+    "storagePre": "Les bouteilles sont élevées puis conservées sous douane chez ",
+    "storageMid": " (créé par la CCI de Bordeaux en 2009), assurées par ",
+    "storagePost": ", jusqu'à leur mise à disposition. Chaque millésime est livrable en caisse bois d'origine de 3 bouteilles.",
+    "productionTitle": "Dix ans de production, en chiffres",
+    "productionIntro": "Données communiquées par la propriété pour la cuvée Les Demoiselles : volume produit et prix constaté aujourd'hui sur le marché (source : Gute Weine Lobenberg, TTC, relevé le 2 juillet 2026), millésime par millésime.",
+    "tableVintage": "Millésime",
+    "tableBottles": "Bouteilles produites",
+    "tablePrice": "Prix constaté sur le marché",
+    "inclTax": "€ TTC",
+    "exclTax": "€ HT",
+    "subscription": "(souscription)",
+    "offMarket": "hors marché",
+    "productionNote": "La production varie avec les années : gels, sécheresses et rendements font partie de la vie d'un vignoble travaillé sans chimie. En cas de récolte insuffisante sur un millésime, la précommande est reportée au millésime suivant."
+  },
+  "facts": {
+    "family": {
+      "valeur": "400 ans",
+      "detail": "dans la même famille, les David Beaulieu, 14e génération, trois générations au domaine aujourd'hui"
+    },
+    "chemistry": {
+      "valeur": "0 chimie",
+      "detail": "aucun herbicide, pesticide ou engrais de synthèse depuis 1601, confirmé par analyses de laboratoire indépendantes. Certifié bio depuis 2012"
+    },
+    "estate": {
+      "valeur": "16,8 ha",
+      "detail": "d'un seul tenant, dont 13 ha de vignes, à moins d'un kilomètre de la cité médiévale de Saint-Émilion"
+    },
+    "horse": {
+      "valeur": "Cheval",
+      "detail": "labour au cheval de trait pour préserver les sols, vendanges entièrement manuelles en cagettes"
+    },
+    "genetics": {
+      "valeur": "500 gènes/ha",
+      "detail": "sélection massale sans clones, une diversité génétique exceptionnelle (moyenne régionale : 2 gènes/ha)"
+    },
+    "rating": {
+      "valeur": "96/100",
+      "detail": "RVF 2026 et 100+/100 Lobenberg pour le millésime 2022 de la cuvée Les Demoiselles"
+    }
+  }
+}

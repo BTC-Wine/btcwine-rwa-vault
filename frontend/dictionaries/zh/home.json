@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "期酒酒窖，链上可及",
+    "titleLine1": "购藏名庄佳酿，",
+    "titleLine2": "尽享最优价格",
+    "subtitle": "TERWA 为您直接向酒庄预留卓越特酿的配额，早于其上市。您可选择配送、转售，或让生产者回收。",
+    "ctaDiscover": "了解 1 号特酿",
+    "ctaDomain": "酒庄介绍",
+    "discountLabel": "最高",
+    "discountCaption": "相较于经销商价格",
+    "discountTitle": "相较于同一特酿在经销商处所观察到的最高价格（税负可比，2026 年 7 月 2 日记录）"
+  },
+  "pillars": {
+    "reserved": {
+      "title": "源头预留",
+      "text": "TERWA 直接与酒庄签约，在上市之前预留特定地块。您的所有权证书以您的名义签发，存入您的钱包。"
+    },
+    "conserved": {
+      "title": "储存并投保",
+      "p1": "酒液在酒庄陈酿，随后保税储存于",
+      "p2": "并由",
+      "p3": "承保，直至逐个年份交付。"
+    },
+    "choose": {
+      "title": "由您选择",
+      "text": "在每个交付期，您可将酒送至家中、自由转售，或按生产者的回收承诺让其回收。"
+    }
+  },
+  "catalog": {
+    "kicker": "特酿系列",
+    "title": "TERWA 酒窖",
+    "cuvee1Tag": "1 号特酿 · 现已开售",
+    "cuvee1Name": "Les Demoiselles",
+    "cuvee1Sub": "Château Coutet, Saint-Émilion Grand Cru",
+    "priceLine": "{price} USDC 每份配额",
+    "discover": "了解详情",
+    "soonName2": "2 号特酿",
+    "soonName3": "3 号特酿",
+    "soonDesc": "筹备中。配额持有者将优先获知。"
+  },
+  "cuvee": {
+    "tag": "1 号特酿 · 现已开售",
+    "name": "Les Demoiselles",
+    "description": "Château Coutet, Saint-Émilion Grand Cru。五个年份（2025 至 2029），来自 Peycocut 风土的百年老藤，每份配额 {bottles} 瓶。",
+    "error": "特酿信息暂时无法显示。"
+  },
+  "stats": {
+    "reserved": "已预留配额",
+    "price": "每份配额价格",
+    "status": "状态",
+    "statusOpen": "预订开放中",
+    "statusClosed": "预订已关闭"
+  },
+  "vintages": {
+    "title": "各年份",
+    "subtitle": "第 N 年份的酒最迟于 N+2 年 6 月 1 日交付。",
+    "item": "{year} 年份",
+    "bottlesPerAllocation": "每份配额 {bottles} 瓶",
+    "availableOn": "交付日期"
+  },
+  "comparison": {
+    "title": "期酒的两条路径",
+    "intro": "在酒款交付之前购买，并非 TERWA 的发明：这是期酒，一项波尔多传统。以下是 Les Demoiselles 2025 年份，于今日，经由两条路径。",
+    "col1Label": "在经销商处以期酒购买",
+    "perBottleTTC": "每瓶含税",
+    "approxHT": "即约 {price} €（不含税）",
+    "vintageOnly": "仅 2025 年份",
+    "delivery": "交付 {when}",
+    "storageOwn": "交付后的储存与保险由您自理",
+    "observedOn": "{distributor}，记录于 {date}。",
+    "verify": "核实",
+    "col2Label": "以 TERWA 配额购买",
+    "perBottleHT": "每瓶不含税",
+    "feat1": "五个年份，2025 至 2029（每份配额 15 瓶）",
+    "feat2": "保税储存（Bordeaux City Bond）及 AXA 保险，直至交付前均包含在内",
+    "feat3": "每个交付期：送至家中、自由转售，或由生产者回收",
+    "feat4": "所有权证书存于您的钱包，可转让",
+    "footnote": "15 瓶配额 905 €（不含税）。整个预订期间对所有人价格一致。",
+    "note": "对同一日期、同一款酒、同一购买机制所观察到的公开价格进行比较。德国含税价格包含 19% 增值税。"
+  },
+  "prices": {
+    "title": "透明地获得最优的初始价格",
+    "intro": "您的预订折合每瓶 60.33 €（不含税）。以下差价将此准入价格与同一特酿的初始上市价格进行比较：酒庄价、官方经销商价，以及今日在独立经销商处观察到的价格。随后是市场的演变：陈酿、稀缺与需求使价格逐年份变化，正如下方更早的年份所示，更昂贵或已难以寻得。这些价格不取决于 TERWA，且可能变动。",
+    "repere": "作为参考：您配额中的首个年份 2025，以期酒形式在 {distributor} 提供，价格为 {ttc} €（含税），即约 {ht} €（不含税），记录于 {date}。",
+    "tableTitle": "各年份观察价格",
+    "thVintage": "年份",
+    "thObserved": "观察价格（含税）",
+    "badgeSubscription": "期酒",
+    "htApprox": "≈ {price} €（不含税）",
+    "tableSource": "来源：{source}。2017 至 2019 年份已难以购得。期酒是今日付款、陈酿后交付的葡萄酒。",
+    "verifyTitle": "在经销商处自行核实",
+    "sourcesPrefix": "来源：酒庄提供的价格及经销商网站。欲全面了解葡萄园与酿造，",
+    "discoverEstateLink": "了解酒庄",
+    "sourcesSuffix": "。",
+    "sourceDetail": "Gute Weine Lobenberg，75 cl 瓶装，德国含税价格，2026 年 7 月 2 日查证",
+    "zones": {
+      "aggregator": "国际比价平台",
+      "switzerland": "瑞士",
+      "germanyAustria": "德国和奥地利",
+      "usa": "美国"
+    }
+  },
+  "chart": {
+    "countryTitle": "各市场观察到的平均零售价格",
+    "countrySubtitle": "最近 7 个年份的平均值，单位为每瓶欧元。",
+    "countrySource": "来源：酒庄、Wine-Searcher、Winedecider Pro，2026 年 3 月。",
+    "tileYourPreorderLabel": "您的预订",
+    "tileYourPreorderValue": "60.33 €",
+    "tileYourPreorderNote": "每瓶不含税",
+    "tileEstateLabel": "酒庄价",
+    "tileEstateNote": "当前年份的公开上市价格，不含税",
+    "tileOfficialLabel": "官方经销商",
+    "tileOfficialNote": "当前年份的公开价格，不含税",
+    "tileDistributorsLabel": "经销商处",
+    "tileDistributorsValue": "{min} 至 {max} €",
+    "tileDistributorsNote": "含税，视年份而定，即约 {minHT} 至 {maxHT} €（不含税），记录于 2026 年 7 月 2 日",
+    "totalPct": "共 +{pct} %",
+    "stepTitle": "两个价格之间的差距，不含税，以观察到的最高值计",
+    "totalTitle": "您的预订与观察到的最高价格之间的差距，不含税",
+    "note": "差距按不含税、以观察到的最高值计算，从一个价格到下一个，再从头到尾，针对同一特酿。"
+  },
+  "countries": {
+    "france": "法国",
+    "belgium": "比利时",
+    "germany": "德国",
+    "switzerland": "瑞士",
+    "uk": "英国",
+    "usa": "美国",
+    "russia": "俄罗斯"
+  }
+}

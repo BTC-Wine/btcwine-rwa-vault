@@ -1,0 +1,65 @@
+{
+  "list": {
+    "metaTitle": "Die Weingüter, TERWA",
+    "metaDescription": "Die Partnerweingüter von TERWA: ausgewählte Anwesen, mit derselben Transparenz veröffentlicht. Erster Partner: Château Coutet, Saint-Émilion Grand Cru.",
+    "kicker": "Die Partner",
+    "title": "Die Weingüter",
+    "intro": "TERWA wählt außergewöhnliche Weingüter aus und veröffentlicht jede Partnerschaft mit derselben Sorgfalt: der Ort, die Familie, die Parzellen, die Produktion und die Preise, alles überprüfbar. Der Weinkeller wächst Weingut für Weingut.",
+    "featuredAlt": "Die Familie David Beaulieu in den Reben von Château Coutet",
+    "featuredBadge": "Weingut Nr. 1 · Cuvée im Verkauf",
+    "featuredSummary": "400 Jahre in derselben Familie, null Chemie seit 1601, Terroir Peycocut. Angebotene Cuvée: Les Demoiselles, Jahrgänge 2025 bis 2029.",
+    "featuredCta": "Das Weingut entdecken",
+    "upcomingName": "Weingut Nr. {n}",
+    "upcomingDescription": "In Gesprächen. Jedes neue Weingut wird mit derselben Transparenz angekündigt."
+  },
+  "estate": {
+    "metaTitle": "Das Weingut, TERWA",
+    "metaDescription": "Château Coutet, Saint-Émilion Grand Cru: 400 Jahre Familiengeschichte, null Chemie seit 1601, das Terroir Peycocut und die Cuvée Les Demoiselles.",
+    "heroIntro": "Der Wein, den Sie vorbestellen, stammt von einem ganz bestimmten Ort, einer Familie und einer Arbeitsweise. Hier ist, in aller Transparenz, was Sie kaufen.",
+    "heroAlt": "Die drei Winzer der Familie David Beaulieu in den Reben von Château Coutet",
+    "caption": "Alain, Adrien und Matthieu David Beaulieu, drei Generationen auf dem Weingut.",
+    "factsTitle": "Das Weingut in sechs Fakten",
+    "terroirTitle": "Das Terroir {name}",
+    "terroirDescription": "Les Demoiselles entsteht aus 4 Parzellen der Lage Peycocut („dort, wo der Kuckuck singt“, bereits 1541 erwähnt), auf dem Asterienkalk des Plateaus von Saint-Martin, dem höchsten Punkt des Anwesens, umgeben von Premier-Cru-Nachbarn. 2,7 Hektar Reben von rund 100 Jahren, von denen 1,5 Hektar den TERWA-Vorbestellungen vorbehalten sind.",
+    "terroirAlt": "Karte der Peycocut-Parzellen der Cuvée Les Demoiselles",
+    "storagePre": "Die Flaschen werden ausgebaut und dann unter Zollverschluss gelagert bei ",
+    "storageMid": " (2009 von der Handelskammer Bordeaux gegründet), versichert durch ",
+    "storagePost": ", bis sie zur Verfügung gestellt werden. Jeder Jahrgang ist in einer originalen Holzkiste mit 3 Flaschen lieferbar.",
+    "productionTitle": "Zehn Jahre Produktion, in Zahlen",
+    "productionIntro": "Von der Eigentümerin für die Cuvée Les Demoiselles mitgeteilte Daten: erzeugte Menge und der heute am Markt festgestellte Preis (Quelle: Gute Weine Lobenberg, inkl. MwSt., erhoben am 2. Juli 2026), Jahrgang für Jahrgang.",
+    "tableVintage": "Jahrgang",
+    "tableBottles": "Erzeugte Flaschen",
+    "tablePrice": "Am Markt festgestellter Preis",
+    "inclTax": "€ inkl. MwSt.",
+    "exclTax": "€ exkl. MwSt.",
+    "subscription": "(Subskription)",
+    "offMarket": "nicht am Markt",
+    "productionNote": "Die Produktion schwankt von Jahr zu Jahr: Fröste, Trockenheit und Erträge gehören zum Leben eines ohne Chemie bewirtschafteten Weinbergs. Reicht die Ernte eines Jahrgangs nicht aus, wird die Vorbestellung auf den folgenden Jahrgang verschoben."
+  },
+  "facts": {
+    "family": {
+      "valeur": "400 Jahre",
+      "detail": "in derselben Familie, den David Beaulieu, 14. Generation, heute drei Generationen auf dem Weingut"
+    },
+    "chemistry": {
+      "valeur": "0 Chemie",
+      "detail": "kein Herbizid, Pestizid oder synthetischer Dünger seit 1601, bestätigt durch unabhängige Laboranalysen. Biozertifiziert seit 2012"
+    },
+    "estate": {
+      "valeur": "16,8 ha",
+      "detail": "an einem Stück, davon 13 ha Reben, weniger als einen Kilometer von der mittelalterlichen Stadt Saint-Émilion entfernt"
+    },
+    "horse": {
+      "valeur": "Pferd",
+      "detail": "Bearbeitung mit dem Zugpferd zum Schutz der Böden, vollständig manuelle Lese in Kisten"
+    },
+    "genetics": {
+      "valeur": "500 Gene/ha",
+      "detail": "sélection massale ohne Klone, eine außergewöhnliche genetische Vielfalt (regionaler Durchschnitt: 2 Gene/ha)"
+    },
+    "rating": {
+      "valeur": "96/100",
+      "detail": "RVF 2026 und 100+/100 Lobenberg für den Jahrgang 2022 der Cuvée Les Demoiselles"
+    }
+  }
+}

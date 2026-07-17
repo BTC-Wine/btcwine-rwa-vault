@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Ma cave, TERWA",
+    "description": "Suivez vos millésimes, leurs échéances et vos choix à chaque mise à disposition."
+  },
+  "title": "Ma cave",
+  "connect": {
+    "prompt": "Connectez votre wallet pour retrouver vos millésimes, leurs échéances et vos choix à venir.",
+    "button": "Connecter mon wallet"
+  },
+  "error": "Impossible de charger votre cave pour le moment.",
+  "tiles": {
+    "bottles": {
+      "label": "Bouteilles réservées",
+      "note": "conservées sous douane, assurées"
+    },
+    "allocations": {
+      "label": "Allocations",
+      "note": "{n} millésimes chacune"
+    },
+    "cost": {
+      "label": "Coût d'acquisition",
+      "value": "{amount} USDC",
+      "note": "soit {amount} € HT"
+    },
+    "nextRelease": {
+      "label": "Prochaine échéance",
+      "none": "aucune",
+      "note": "millésime {vintage}"
+    }
+  },
+  "empty": {
+    "title": "Votre cave est vide",
+    "body": "La cuvée nº 1, Les Demoiselles du Château Coutet, est en précommande : 1 660 allocations, pas une de plus.",
+    "cta": "Découvrir la cuvée"
+  },
+  "card": {
+    "kicker": "Cuvée nº 1",
+    "vintage": "Millésime {vintage}",
+    "bottles": "{n} bouteilles",
+    "aging": "En élevage",
+    "available": "Disponible",
+    "releaseOn": "mise à disposition le {date}",
+    "readyForYou": "à votre disposition",
+    "cost": "{amount} USDC",
+    "costLabel": "coût d'acquisition",
+    "costEur": "{amount} € HT",
+    "footerNote": "À chaque mise à disposition : livraison chez vous, revente libre, ou reprise par le producteur.",
+    "viewEstate": "Voir le domaine"
+  },
+  "paymentBalance": "Solde de paiement : {amount} USDC (testnet)",
+  "actions": {
+    "deliver": "Faire livrer",
+    "redeem": "Reprise producteur",
+    "redeemSoon": "reprise ouverte après le dépôt des fonds du producteur",
+    "claimPending": "Livraison demandée le {date}",
+    "modalClose": "Annuler",
+    "processing": "Signature en cours...",
+    "simulating": "Calcul du montant...",
+    "demoNote": "(simulation, mode démo)",
+    "redeemTitle": "Reprise par le producteur",
+    "redeemBody": "Le producteur reprend vos {bottles} bouteilles du millésime {vintage}, conformément à son engagement de reprise.",
+    "redeemAmount": "Vous recevrez {amount} USDC",
+    "redeemIrreversible": "Cette opération est définitive : les certificats repris sont détruits.",
+    "redeemConfirm": "Accepter la reprise",
+    "redeemSuccess": "Reprise effectuée. Les USDC sont dans votre wallet.",
+    "deliverTitle": "Livraison de vos bouteilles",
+    "deliverBody": "{bottles} bouteilles du millésime {vintage}, en caisses bois d'origine de 3. La majorité est vérifiée à la réception.",
+    "fieldName": "Nom complet",
+    "fieldAddress": "Adresse",
+    "fieldPostal": "Code postal",
+    "fieldCity": "Ville",
+    "fieldCountry": "Pays",
+    "fieldEmail": "Email",
+    "fieldPhone": "Téléphone",
+    "deliverPrivacy": "Vos coordonnées ne sont pas publiées : seule leur empreinte (hash) est inscrite on-chain avec votre demande.",
+    "deliverConfirm": "Demander la livraison",
+    "deliverSuccess": "Demande de livraison bien reçue. Notre équipe logistique vous contactera pour organiser la livraison.",
+    "manage": "Gérer",
+    "panelQuestion": "Que souhaitez-vous faire de ce millésime ?",
+    "deliverDesc": "Recevez vos bouteilles chez vous, en caisses bois d'origine.",
+    "deliverCta": "Demander la livraison",
+    "redeemDesc": "Le producteur reprend vos bouteilles sur demande. Règlement généralement sous 72 heures.",
+    "redeemCta": "Voir le montant",
+    "sellTitle": "Mise en vente",
+    "sellSoonBadge": "à venir",
+    "sellDesc": "Confiez la vente de vos bouteilles à notre service dédié.",
+    "sellCta": "En savoir plus",
+    "sellModalBody": "Ce service ouvrira prochainement : il vous permettra de confier la mise en vente de vos bouteilles. Les conditions et modalités seront publiées avant son ouverture.",
+    "sellModalNote": "En attendant, vos certificats restent librement transférables de wallet à wallet.",
+    "sellModalOk": "Compris",
+    "manageLocked": "Gestion disponible le {date}",
+    "redeemSettledNote": "Les fonds du producteur sont déposés : votre reprise est exécutable immédiatement.",
+    "requestCta": "Demander la reprise",
+    "requestTitle": "Demande de reprise",
+    "requestBody": "La reprise n'est pas automatique : votre demande est transmise au producteur, qui l'approuve et dépose les fonds. Vous validez ensuite la reprise ici et recevez les USDC dans votre wallet. Délai habituel : sous 72 heures.",
+    "requestNote": "Votre demande part directement à notre équipe, avec votre adresse de wallet pour identification. Rien de personnel n'est publié on-chain.",
+    "requestSend": "Envoyer ma demande",
+    "requestEmail": "Votre email de contact",
+    "requestSent": "Demande envoyée. Le producteur répond généralement sous 72 heures.",
+    "sendFailed": "Vos informations n'ont pas pu être transmises automatiquement.",
+    "sendByEmail": "Les envoyer par email"
+  }
+}

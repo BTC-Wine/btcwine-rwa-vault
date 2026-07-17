@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "The en primeur cellar, accessible onchain",
+    "titleLine1": "Acquire great wines,",
+    "titleLine2": "at the best price",
+    "subtitle": "TERWA reserves allocations of exceptional cuvées for you, directly from the estates, before they reach the market. Have them delivered, resell them, or let the producer take them back.",
+    "ctaDiscover": "Discover cuvée No. 1",
+    "ctaDomain": "The estate",
+    "discountLabel": "Up to",
+    "discountCaption": "compared with the distributor price",
+    "discountTitle": "Compared with the highest price observed for the same cuvée at a distributor, at comparable taxes (observed on 2 July 2026)"
+  },
+  "pillars": {
+    "reserved": {
+      "title": "Reserved at source",
+      "text": "TERWA contracts directly with the estates and reserves identified parcels, before they reach the market. Your certificate of ownership is issued in your name, in your wallet."
+    },
+    "conserved": {
+      "title": "Stored and insured",
+      "p1": "The bottles are aged at the estate then held in bond at",
+      "p2": "and insured by",
+      "p3": ", until they are made available, vintage by vintage."
+    },
+    "choose": {
+      "title": "Your choice",
+      "text": "At each release, have your bottles delivered to your home, resell them freely, or let the producer take them back, in line with its take-back commitment."
+    }
+  },
+  "catalog": {
+    "kicker": "The cuvées",
+    "title": "The TERWA cellar",
+    "cuvee1Tag": "Cuvée No. 1 · Available",
+    "cuvee1Name": "Les Demoiselles",
+    "cuvee1Sub": "Château Coutet, Saint-Émilion Grand Cru",
+    "priceLine": "{price} USDC per Allocation",
+    "discover": "Discover",
+    "soonName2": "Cuvée No. 2",
+    "soonName3": "Cuvée No. 3",
+    "soonDesc": "In preparation. Allocation holders will be notified first."
+  },
+  "cuvee": {
+    "tag": "Cuvée No. 1 · Available",
+    "name": "Les Demoiselles",
+    "description": "Château Coutet, Saint-Émilion Grand Cru. Five vintages (2025 to 2029) from the century-old vines of the Peycocut terroir, {bottles} bottles per Allocation.",
+    "error": "The cuvée information is temporarily unavailable."
+  },
+  "stats": {
+    "reserved": "Allocations reserved",
+    "price": "Price of one Allocation",
+    "status": "Status",
+    "statusOpen": "Pre-orders open",
+    "statusClosed": "Pre-orders closed"
+  },
+  "vintages": {
+    "title": "The vintages",
+    "subtitle": "The bottles of vintage N are made available by 1 June of year N+2 at the latest.",
+    "item": "Vintage {year}",
+    "bottlesPerAllocation": "{bottles} bottles per Allocation",
+    "availableOn": "Available on"
+  },
+  "comparison": {
+    "title": "En primeur, two paths",
+    "intro": "Buying a wine before it is made available is not a TERWA invention: it is en primeur, a Bordeaux tradition. Here is the 2025 vintage of Les Demoiselles, today, by the two paths.",
+    "col1Label": "En primeur at a distributor",
+    "perBottleTTC": "incl. tax per bottle",
+    "approxHT": "about {price} € excl. tax",
+    "vintageOnly": "2025 vintage only",
+    "delivery": "Delivery {when}",
+    "storageOwn": "Storage and insurance at your expense after delivery",
+    "observedOn": "{distributor}, observed on {date}.",
+    "verify": "Verify",
+    "col2Label": "As a TERWA Allocation",
+    "perBottleHT": "excl. tax per bottle",
+    "feat1": "Five vintages, 2025 to 2029 (15 bottles per Allocation)",
+    "feat2": "In-bond storage (Bordeaux City Bond) and AXA insurance included until the wines are made available",
+    "feat3": "At each release: delivery to your home, free resale, or take-back by the producer",
+    "feat4": "Certificate of ownership in your wallet, transferable",
+    "footnote": "905 € excl. tax for the Allocation of 15 bottles. The same price for everyone, throughout the pre-order.",
+    "note": "Comparison of public prices observed on the same date, for the same wine and the same purchase mechanism. The German incl.-tax price includes 19 % VAT."
+  },
+  "prices": {
+    "title": "Access to the best initial price, in full transparency",
+    "intro": "Your pre-order works out to 60.33 € per bottle excluding tax. The gaps below compare this access price with the initial market-release prices of the same cuvée: at the estate, at the official distributor, then as observed today at independent distributors. Then comes the life of the market: ageing, scarcity and demand move prices vintage after vintage, as the older vintages further down show, more expensive or now unobtainable. These prices do not depend on TERWA and may vary.",
+    "repere": "For reference: the 2025 vintage, the first in your Allocation, is offered en primeur at {ttc} € incl. tax, about {ht} € excl. tax, at {distributor} (observed on {date}).",
+    "tableTitle": "Prices observed by vintage",
+    "thVintage": "Vintage",
+    "thObserved": "Observed price (incl. tax)",
+    "badgeSubscription": "en primeur",
+    "htApprox": "≈ {price} € excl. tax",
+    "tableSource": "Source: {source}. The 2017 to 2019 vintages are unobtainable for sale. A wine sold en primeur is paid for today and delivered after ageing.",
+    "verifyTitle": "Check for yourself at the distributors",
+    "sourcesPrefix": "Sources: prices provided by the estate and the distributors' websites. To learn all about the vineyard and the production,",
+    "discoverEstateLink": "discover the estate",
+    "sourcesSuffix": ".",
+    "sourceDetail": "Gute Weine Lobenberg, 75 cl bottles, prices incl. VAT Germany, observed on 2 July 2026",
+    "zones": {
+      "aggregator": "International aggregator",
+      "switzerland": "Switzerland",
+      "germanyAustria": "Germany and Austria",
+      "usa": "United States"
+    }
+  },
+  "chart": {
+    "countryTitle": "Average retail prices observed by market",
+    "countrySubtitle": "Average of the last 7 vintages, in euros per bottle.",
+    "countrySource": "Sources: the estate, Wine-Searcher, Winedecider Pro, March 2026.",
+    "tileYourPreorderLabel": "Your pre-order",
+    "tileYourPreorderValue": "60.33 €",
+    "tileYourPreorderNote": "per bottle excl. tax",
+    "tileEstateLabel": "At the estate",
+    "tileEstateNote": "public market-release price excl. tax, current vintage",
+    "tileOfficialLabel": "Official distributor",
+    "tileOfficialNote": "public price excl. tax, current vintage",
+    "tileDistributorsLabel": "At the distributors",
+    "tileDistributorsValue": "{min} to {max} €",
+    "tileDistributorsNote": "incl. tax depending on the vintage, about {minHT} to {maxHT} € excl. tax, observed on 2 July 2026",
+    "totalPct": "+{pct} % in total",
+    "stepTitle": "Gap between the two prices, excluding tax, on the highest observed value",
+    "totalTitle": "Gap between your pre-order and the highest observed price, excluding tax",
+    "note": "Gaps calculated excluding tax on the highest observed value, from one price to the next then end to end, for the same cuvée."
+  },
+  "countries": {
+    "france": "France",
+    "belgium": "Belgium",
+    "germany": "Germany",
+    "switzerland": "Switzerland",
+    "uk": "United Kingdom",
+    "usa": "United States",
+    "russia": "Russia"
+  }
+}

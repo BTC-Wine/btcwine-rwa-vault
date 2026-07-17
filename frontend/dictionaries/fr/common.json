@@ -1,0 +1,41 @@
+{
+  "testBanner": {
+    "message": "Version de test : rien n'est en vente. Le site fonctionne sur le réseau d'essai Stellar (testnet) et sert uniquement à des démonstrations."
+  },
+  "metadata": {
+    "title": "Terwa.io",
+    "description": "Réservez cinq millésimes avant leur production. Livraison des bouteilles ou reprise par le producteur à chaque mise à disposition."
+  },
+  "nav": {
+    "cuvees": "Les cuvées",
+    "domains": "Les domaines",
+    "howItWorks": "Comment ça marche",
+    "cellar": "Ma cave"
+  },
+  "wallet": {
+    "connect": "Connecter mon wallet",
+    "connectShort": "Wallet",
+    "connecting": "Connexion...",
+    "disconnectTitle": "Se déconnecter"
+  },
+  "menu": {
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu"
+  },
+  "footer": {
+    "tagline": "Achat en primeur de grands vins, réservés à la source auprès des domaines.",
+    "legalNotice": "Mentions légales",
+    "terms": "CGV",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "alcohol1": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.",
+    "alcohol2": "La vente d'alcool est interdite aux mineurs de moins de 18 ans.",
+    "network": "TERWA. Réseau Stellar testnet, version de développement."
+  },
+  "demo": {
+    "label": "Mode démo",
+    "on": "activé",
+    "off": "désactivé",
+    "title": "Simule un wallet connecté détenant des allocations (revue UX)"
+  }
+}

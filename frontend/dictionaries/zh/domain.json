@@ -1,0 +1,65 @@
+{
+  "list": {
+    "metaTitle": "酒庄, TERWA",
+    "metaDescription": "TERWA 的合作酒庄：经过甄选的产业，以同样的透明度公布。首个合作伙伴：Château Coutet, Saint-Émilion Grand Cru。",
+    "kicker": "合作伙伴",
+    "title": "酒庄",
+    "intro": "TERWA 精选卓越的酒庄，并以同样的严谨公布每一次合作：地块、家族、田块、产量与价格，均可核实。酒窖随着一个个酒庄不断扩充。",
+    "featuredAlt": "David Beaulieu 家族在 Château Coutet 的葡萄园中",
+    "featuredBadge": "第 1 号酒庄 · 在售酒款",
+    "featuredSummary": "400 年同一家族传承，自 1601 年起零化学品，Peycocut 风土。所提供酒款：Les Demoiselles，2025 至 2029 年份。",
+    "featuredCta": "了解该酒庄",
+    "upcomingName": "第 {n} 号酒庄",
+    "upcomingDescription": "洽谈中。每个新酒庄都将以同样的透明度公布。"
+  },
+  "estate": {
+    "metaTitle": "酒庄, TERWA",
+    "metaDescription": "Château Coutet, Saint-Émilion Grand Cru：400 年家族历史，自 1601 年起零化学品，Peycocut 风土与 Les Demoiselles 酒款。",
+    "heroIntro": "您预订的葡萄酒来自一处非常具体的土地、一个家族和一种耕作方式。以下是您所购买内容的完整透明呈现。",
+    "heroAlt": "David Beaulieu 家族的三位酿酒人在 Château Coutet 的葡萄园中",
+    "caption": "Alain、Adrien 与 Matthieu David Beaulieu，酒庄的三代人。",
+    "factsTitle": "六个事实认识酒庄",
+    "terroirTitle": "{name} 风土",
+    "terroirDescription": "Les Demoiselles 出自 Peycocut 地块（“布谷鸟歌唱之地”，早在 1541 年即有记载）的 4 个田块，位于 Saint-Martin 高地的星石灰岩之上，即产业的最高点，四周皆为一级庄邻居。2.7 公顷约 100 年树龄的葡萄园，其中 1.5 公顷预留给 TERWA 预订。",
+    "terroirAlt": "Les Demoiselles 酒款 Peycocut 田块地图",
+    "storagePre": "酒款经陈酿后保税存放于 ",
+    "storageMid": "（由波尔多工商会于 2009 年设立），由 ",
+    "storagePost": " 承保，直至交付为止。每个年份均可以 3 瓶装原木箱交付。",
+    "productionTitle": "十年产量，数据一览",
+    "productionIntro": "由庄园就 Les Demoiselles 酒款提供的数据：产量与当今市场的实际价格（来源：Gute Weine Lobenberg，含税，采集于 2026 年 7 月 2 日），逐个年份列示。",
+    "tableVintage": "年份",
+    "tableBottles": "产出瓶数",
+    "tablePrice": "市场实际价格",
+    "inclTax": "€ 含税",
+    "exclTax": "€ 不含税",
+    "subscription": "(预售)",
+    "offMarket": "市面无售",
+    "productionNote": "产量因年份而异：霜冻、干旱与产量波动都是无化学耕作葡萄园生命的一部分。若某一年份收成不足，预订将顺延至下一年份。"
+  },
+  "facts": {
+    "family": {
+      "valeur": "400 年",
+      "detail": "同属 David Beaulieu 家族，第 14 代，如今三代人同在酒庄"
+    },
+    "chemistry": {
+      "valeur": "0 化学品",
+      "detail": "自 1601 年起不使用任何除草剂、农药或合成肥料，经独立实验室分析确认。自 2012 年起有机认证"
+    },
+    "estate": {
+      "valeur": "16.8 公顷",
+      "detail": "连成一片，其中 13 公顷为葡萄园，距 Saint-Émilion 中世纪古城不足一公里"
+    },
+    "horse": {
+      "valeur": "马耕",
+      "detail": "以挽马耕作以保护土壤，全程人工采收并置于小箱中"
+    },
+    "genetics": {
+      "valeur": "500 基因/公顷",
+      "detail": "玛萨选种法，不使用无性系，具有卓越的遗传多样性（区域平均：2 基因/公顷）"
+    },
+    "rating": {
+      "valeur": "96/100",
+      "detail": "Les Demoiselles 酒款 2022 年份，RVF 2026 及 Lobenberg 100+/100"
+    }
+  }
+}

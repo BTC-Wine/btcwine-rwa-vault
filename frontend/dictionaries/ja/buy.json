@@ -1,0 +1,32 @@
+{
+  "closed": "プリムール予約の受付は終了しました。",
+  "heading": "予約する",
+  "subtitle": "1つのアロケーションには {vintages} 年分の各年から1つのヴィンテージが含まれ、合計 {bottles} 本になります。",
+  "allocationsLabel": "アロケーション",
+  "decrease": "減らす",
+  "increase": "増やす",
+  "bottles": "ボトル",
+  "total": "合計",
+  "payWith": "支払い方法",
+  "estimate": "つまり ≈ {amount} {asset}（DEXレート、最大スリッページ 1%）。購入前にウォレット内でUSDCに変換されます",
+  "quoting": "レートを取得中...",
+  "reference": "参考：2025単体はディストリビューターでプリムール予約価格 {ttc} €（税込）で販売されています（{ht} € 税抜）。つまりここより {pct} % 高くなります。下記で確認できます。",
+  "attestationBefore": "私は成人であることを証明し、",
+  "attestationLink": "プリムール購入宣言",
+  "attestationAfter": "に同意します。この宣言は予約時にウォレットで署名します。",
+  "cta": {
+    "connect": "ウォレットを接続",
+    "preparing": "アカウントを準備中...",
+    "converting": "USDCに変換中...",
+    "signing": "署名中...",
+    "sending": "予約を送信中...",
+    "default": "予約する"
+  },
+  "status": {
+    "trustlinesCreated": "トラストラインが作成されました。",
+    "done": "予約が確定しました。ヴィンテージはあなたのウォレットに入っています。",
+    "demoNote": "（シミュレーション、デモモード）",
+    "viewTx": "取引を表示",
+    "genericError": "エラーが発生しました"
+  }
+}

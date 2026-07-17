@@ -1,0 +1,32 @@
+{
+  "closed": "La période de précommande est terminée.",
+  "heading": "Précommander",
+  "subtitle": "Une allocation comprend un millésime de chacune des {vintages} années, soit {bottles} bouteilles.",
+  "allocationsLabel": "Allocations",
+  "decrease": "Réduire",
+  "increase": "Augmenter",
+  "bottles": "Bouteilles",
+  "total": "Total",
+  "payWith": "Payer avec",
+  "estimate": "soit ≈ {amount} {asset} au taux du DEX (glissement max 1 %), convertis en USDC dans votre wallet avant l'achat",
+  "quoting": "cotation du taux en cours...",
+  "reference": "Repère : le 2025 seul se vend en souscription {ttc} € TTC chez un distributeur ({ht} € HT), soit {pct} % de plus qu'ici. Vérifiable plus bas.",
+  "attestationBefore": "Je certifie être majeur et j'accepte la ",
+  "attestationLink": "déclaration d'achat en primeur",
+  "attestationAfter": ", que je signe avec mon wallet au moment de la précommande.",
+  "cta": {
+    "connect": "Connecter mon wallet",
+    "preparing": "Préparation du compte...",
+    "converting": "Conversion en USDC...",
+    "signing": "Signature en cours...",
+    "sending": "Envoi de la précommande...",
+    "default": "Précommander"
+  },
+  "status": {
+    "trustlinesCreated": "Vos lignes de confiance ont été créées.",
+    "done": "Votre précommande est confirmée. Vos millésimes sont dans votre wallet.",
+    "demoNote": "(simulation, mode démo)",
+    "viewTx": "Voir la transaction",
+    "genericError": "une erreur est survenue"
+  }
+}

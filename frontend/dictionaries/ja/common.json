@@ -1,0 +1,41 @@
+{
+  "testBanner": {
+    "message": "テスト版：販売は行っていません。本サイトはStellarテストネット上で動作しており、デモ専用です。"
+  },
+  "metadata": {
+    "title": "Terwa.io",
+    "description": "生産前に5つのヴィンテージを予約。各引き渡し時に、ボトルの受け取り、または生産者による買い戻しを選べます。"
+  },
+  "nav": {
+    "cuvees": "ワイン",
+    "domains": "生産者",
+    "howItWorks": "仕組み",
+    "cellar": "マイセラー"
+  },
+  "wallet": {
+    "connect": "ウォレットを接続",
+    "connectShort": "ウォレット",
+    "connecting": "接続中...",
+    "disconnectTitle": "切断"
+  },
+  "menu": {
+    "open": "メニューを開く",
+    "close": "メニューを閉じる"
+  },
+  "footer": {
+    "tagline": "偉大なワインをプリムールで予約、生産者から直接確保。",
+    "legalNotice": "法的表記",
+    "terms": "販売条件",
+    "privacy": "プライバシー",
+    "contact": "お問い合わせ",
+    "alcohol1": "アルコールの過剰摂取は健康を害します。適量をお楽しみください。",
+    "alcohol2": "18歳未満の未成年者への酒類の販売は禁止されています。",
+    "network": "TERWA。Stellar テストネット、開発版。"
+  },
+  "demo": {
+    "label": "デモモード",
+    "on": "オン",
+    "off": "オフ",
+    "title": "アロケーションを保有する接続済みウォレットをシミュレート（UXレビュー）"
+  }
+}

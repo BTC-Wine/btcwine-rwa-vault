@@ -1,0 +1,12 @@
+target/
+node_modules/
+.env
+.env.*
+*.wasm
+.DS_Store
+Terwa-rwa-vault/
+contracts/terwa-vault/test_snapshots/
+scripts/.deploy-testnet.env
+.gstack/
+TERWA Dataroom/
+scripts/.deploy-demo.env

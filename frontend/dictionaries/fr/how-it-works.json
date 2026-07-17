@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "Comment ça marche, TERWA",
+    "description": "Le parcours d'une précommande en primeur chez TERWA : achat, conservation, mise à disposition, et les garanties à chaque étape."
+  },
+  "hero": {
+    "kicker": "Le mode d'emploi",
+    "title": "Comment ça marche",
+    "intro": "Acheter en primeur, c'est réserver un vin avant sa mise en marché, directement à la source. Voici le parcours complet, et ce qui vous protège à chaque étape."
+  },
+  "journey": {
+    "title": "Le parcours, en cinq étapes"
+  },
+  "steps": {
+    "s1": {
+      "title": "Connectez votre wallet",
+      "beforeWallets": "Aucun compte à créer : votre wallet Stellar (",
+      "afterWallets": " et autres) est votre identité. Au moment d'acheter, vous signez une déclaration d'achat en primeur qui atteste notamment de votre majorité. Cette signature est intégrée à la transaction elle-même."
+    },
+    "s2": {
+      "title": "Précommandez votre allocation",
+      "beforeLink": "Une allocation = 15 bouteilles : 3 bouteilles de chacun des 5 millésimes (2025 à 2029), payées en USDC au prix fixe de 905 € HT. Vos certificats de millésime arrivent immédiatement dans votre wallet : un token par millésime, visible dans n'importe quel wallet ou ",
+      "linkExplorer": "explorateur Stellar",
+      "afterLink": "."
+    },
+    "s3": {
+      "title": "Le vin est produit et élevé",
+      "p1": "Votre précommande finance la production. Les bouteilles naissent des parcelles réservées du ",
+      "linkTerroir": "terroir Peycocut",
+      "p2": ", puis sont conservées sous douane chez ",
+      "p3": " et assurées par ",
+      "p4": ", sans frais pour vous, jusqu'à leur mise à disposition. Chaque année, une valeur indicative de marché est publiée en toute transparence."
+    },
+    "s4": {
+      "title": "Chaque millésime arrive à maturité",
+      "text": "Les bouteilles du millésime N sont mises à disposition au plus tard le 1er juin de l'année N+2 : 2025 en 2027, 2026 en 2028, et ainsi de suite jusqu'au millésime 2029 en 2031. Vous décidez millésime par millésime, il n'y a pas de décision globale à prendre."
+    },
+    "s5": {
+      "title": "Vous choisissez votre sortie",
+      "text": "Pour chaque millésime mis à disposition : faites livrer vos bouteilles chez vous (en caisse bois d'origine de 3, majorité vérifiée à la réception), conservez-les, revendez-les librement en transférant vos certificats, ou acceptez la reprise du producteur."
+    }
+  },
+  "protections": {
+    "title": "Les mécanismes qui vous protègent"
+  },
+  "guarantees": {
+    "g1": {
+      "title": "Un certificat de propriété, pas une promesse",
+      "beforeLink": "Chaque token est inscrit sur le ",
+      "linkRegistry": "registre public Stellar",
+      "afterLink": " : votre allocation est vérifiable par n'importe qui, à tout moment, sans dépendre de TERWA. Le certificat est transférable et sa remise contre les bouteilles est un droit contractuel."
+    },
+    "g2": {
+      "title": "Une production réservée par contrat",
+      "p1": "Les parcelles du ",
+      "linkTerroir": "terroir Peycocut",
+      "p2": " sont identifiées et la production correspondante est réservée aux détenteurs d'allocations dans le cadre de l'accord entre TERWA et le ",
+      "p3": ". Le nombre d'allocations est plafonné à la production réelle : 1 660, pas une de plus."
+    },
+    "g3": {
+      "title": "Conservation professionnelle incluse",
+      "p1": "De la mise en bouteille à la mise à disposition, vos bouteilles sont stockées sous douane chez ",
+      "p2": ", l'entrepôt créé par la CCI de Bordeaux, et assurées par ",
+      "p3": ". Conditions de garde professionnelles, traçabilité, et aucun frais de stockage à votre charge sur cette période."
+    },
+    "g4": {
+      "title": "L'engagement de reprise du producteur",
+      "text": "Pour chaque millésime mis à disposition, le producteur s'engage contractuellement à reprendre vos bouteilles à un prix plancher défini à l'avance. La reprise se fait sur demande, avec un règlement généralement sous 72 heures. C'est une porte de sortie en plus des autres, jamais une obligation : vous restez libre de faire livrer, conserver ou revendre."
+    },
+    "g5": {
+      "title": "Les aléas de la vigne, prévus au contrat",
+      "text": "Un vignoble travaillé sans chimie connaît des années difficiles : gel, sécheresse, petits rendements. Si une récolte ne permet pas d'honorer un millésime, votre allocation est reportée sur le millésime suivant. La règle est écrite avant votre achat, pas improvisée après."
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "q1": {
+      "q": "Que se passe-t-il si je perds l'accès à mon wallet ?",
+      "before": "Le certificat est le titre de retrait de vos bouteilles : sa garde vous appartient, comme celle d'une clé de cave. Utilisez un wallet dont vous maîtrisez la sauvegarde (phrase de récupération) et ",
+      "link": "contactez-nous",
+      "after": " rapidement en cas de problème."
+    },
+    "q2": {
+      "q": "Dois-je déjà posséder des cryptomonnaies ?",
+      "a": "Le paiement se fait en USDC sur Stellar, un dollar numérique. Il vous faut donc un wallet Stellar approvisionné en USDC. Les principaux wallets proposent des achats par carte ou virement."
+    },
+    "q3": {
+      "q": "Y a-t-il des frais cachés ?",
+      "a": "Le prix de l'allocation inclut le stockage sous douane et l'assurance jusqu'à la mise à disposition de chaque millésime. Restent à votre charge : les frais de livraison si vous choisissez l'expédition, et la fiscalité applicable selon votre situation."
+    },
+    "q4": {
+      "q": "Puis-je revendre avant la mise à disposition ?",
+      "a": "Vos certificats sont transférables à tout moment, de wallet à wallet : vous pouvez les céder ou les offrir librement. TERWA n'opère pas de place de marché et ne s'occupe pas de la revente."
+    },
+    "q5": {
+      "q": "Comment puis-je vérifier ce que j'achète ?",
+      "p1": "Tout est publié : les parcelles et la production sur la ",
+      "linkDomain": "page du domaine",
+      "p2": ", les ",
+      "linkPrices": "prix constatés",
+      "p3": " avec leurs sources et dates, les contrats sur le ",
+      "linkRegistry": "registre Stellar",
+      "p4": ", et les distributeurs indépendants en un clic pour comparer les prix par vous-même."
+    }
+  },
+  "cta": {
+    "title": "La cuvée nº 1 vous attend",
+    "text": "Les Demoiselles, {appellation}, du {nom}. 1 660 allocations, pas une de plus.",
+    "button": "Découvrir la cuvée"
+  }
+}

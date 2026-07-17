@@ -1,0 +1,41 @@
+{
+  "testBanner": {
+    "message": "Testversion: Es steht nichts zum Verkauf. Diese Website läuft im Stellar-Testnetz (Testnet) und dient ausschließlich Demonstrationszwecken."
+  },
+  "metadata": {
+    "title": "Terwa.io",
+    "description": "Reservieren Sie fünf Jahrgänge vor ihrer Erzeugung. Lassen Sie sich die Flaschen liefern oder geben Sie sie bei jeder Freigabe an den Erzeuger zurück."
+  },
+  "nav": {
+    "cuvees": "Die Weine",
+    "domains": "Die Weingüter",
+    "howItWorks": "So funktioniert es",
+    "cellar": "Mein Weinkeller"
+  },
+  "wallet": {
+    "connect": "Wallet verbinden",
+    "connectShort": "Wallet",
+    "connecting": "Verbindung...",
+    "disconnectTitle": "Trennen"
+  },
+  "menu": {
+    "open": "Menü öffnen",
+    "close": "Menü schließen"
+  },
+  "footer": {
+    "tagline": "Vorbestellung großer Weine en primeur, direkt an der Quelle bei den Weingütern reserviert.",
+    "legalNotice": "Impressum",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt",
+    "alcohol1": "Alkoholmissbrauch ist gesundheitsschädlich. In Maßen genießen.",
+    "alcohol2": "Der Verkauf von Alkohol an Minderjährige unter 18 Jahren ist verboten.",
+    "network": "TERWA. Stellar-Testnet, Entwicklungsversion."
+  },
+  "demo": {
+    "label": "Demo-Modus",
+    "on": "an",
+    "off": "aus",
+    "title": "Simuliert eine verbundene Wallet mit Allokationen (UX-Test)"
+  }
+}

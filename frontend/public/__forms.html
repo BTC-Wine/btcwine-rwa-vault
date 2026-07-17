@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head><title>forms</title></head>
+  <body>
+    <!-- Formulaires statiques detectes par Netlify Forms au deploiement
+         (l'option form detection doit etre active sur le site Netlify).
+         Les modales du site postent ici en arriere-plan : les donnees
+         arrivent dans le dashboard Netlify (prive), jamais on-chain. -->
+    <form name="delivery-request" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="vintage" />
+      <input name="tokens" />
+      <input name="bottles" />
+      <input name="wallet" />
+      <input name="hash" />
+      <input name="nonce" />
+      <input name="name" />
+      <input name="address" />
+      <input name="postal" />
+      <input name="city" />
+      <input name="country" />
+      <input name="email" />
+      <input name="phone" />
+    </form>
+    <form name="repurchase-request" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="vintage" />
+      <input name="bottles" />
+      <input name="wallet" />
+      <input name="email" />
+    </form>
+  </body>
+</html>

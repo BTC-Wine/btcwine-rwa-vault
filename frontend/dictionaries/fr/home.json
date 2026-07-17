@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "kicker": "La cave en primeur, accessible onchain",
+    "titleLine1": "Acquérez les grands vins,",
+    "titleLine2": "au meilleur prix",
+    "subtitle": "TERWA réserve pour vous des allocations de cuvées d'exception, directement auprès des domaines, avant leur mise en marché. Faites-les livrer, revendez-les, ou laissez le producteur les reprendre.",
+    "ctaDiscover": "Découvrir la cuvée nº 1",
+    "ctaDomain": "Le domaine",
+    "discountLabel": "Jusqu'à",
+    "discountCaption": "par rapport au prix distributeur",
+    "discountTitle": "Par rapport au prix le plus élevé constaté pour la même cuvée chez un distributeur, à taxes comparables (relevé du 2 juillet 2026)"
+  },
+  "pillars": {
+    "reserved": {
+      "title": "Réservé à la source",
+      "text": "TERWA contracte directement avec les domaines et réserve des parcelles identifiées, avant la mise en marché. Votre certificat de propriété est émis à votre nom, dans votre wallet."
+    },
+    "conserved": {
+      "title": "Conservé et assuré",
+      "p1": "Les bouteilles sont élevées au domaine puis conservées sous douane chez",
+      "p2": "et assurées par",
+      "p3": ", jusqu'à leur mise à disposition, millésime par millésime."
+    },
+    "choose": {
+      "title": "À vous de choisir",
+      "text": "À chaque échéance, faites livrer vos bouteilles chez vous, revendez-les librement, ou laissez le producteur les reprendre, conformément à son engagement de reprise."
+    }
+  },
+  "catalog": {
+    "kicker": "Les cuvées",
+    "title": "La cave TERWA",
+    "cuvee1Tag": "Cuvée nº 1 · Disponible",
+    "cuvee1Name": "Les Demoiselles",
+    "cuvee1Sub": "Château Coutet, Saint-Émilion Grand Cru",
+    "priceLine": "{price} USDC l'allocation",
+    "discover": "Découvrir",
+    "soonName2": "Cuvée nº 2",
+    "soonName3": "Cuvée nº 3",
+    "soonDesc": "En préparation. Les détenteurs d'allocations seront informés en premier."
+  },
+  "cuvee": {
+    "tag": "Cuvée nº 1 · Disponible",
+    "name": "Les Demoiselles",
+    "description": "Château Coutet, Saint-Émilion Grand Cru. Cinq millésimes (2025 à 2029) issus des vignes centenaires du terroir Peycocut, {bottles} bouteilles par allocation.",
+    "error": "Les informations de la cuvée sont momentanément indisponibles."
+  },
+  "stats": {
+    "reserved": "Allocations réservées",
+    "price": "Prix d'une allocation",
+    "status": "Statut",
+    "statusOpen": "Précommandes ouvertes",
+    "statusClosed": "Précommandes closes"
+  },
+  "vintages": {
+    "title": "Les millésimes",
+    "subtitle": "Les bouteilles du millésime N sont mises à disposition au plus tard le 1er juin de l'année N+2.",
+    "item": "Millésime {year}",
+    "bottlesPerAllocation": "{bottles} bouteilles par allocation",
+    "availableOn": "Disponible le"
+  },
+  "comparison": {
+    "title": "La souscription, deux chemins",
+    "intro": "Acheter un vin avant sa mise à disposition n'est pas une invention de TERWA : c'est la souscription, une tradition bordelaise. Voici le millésime 2025 des Demoiselles, aujourd'hui, par les deux chemins.",
+    "col1Label": "En souscription chez un distributeur",
+    "perBottleTTC": "TTC la bouteille",
+    "approxHT": "soit environ {price} € HT",
+    "vintageOnly": "Millésime 2025 uniquement",
+    "delivery": "Livraison {when}",
+    "storageOwn": "Stockage et assurance à votre charge après livraison",
+    "observedOn": "{distributor}, relevé le {date}.",
+    "verify": "Vérifier",
+    "col2Label": "En allocation TERWA",
+    "perBottleHT": "HT la bouteille",
+    "feat1": "Cinq millésimes, 2025 à 2029 (15 bouteilles par allocation)",
+    "feat2": "Stockage sous douane (Bordeaux City Bond) et assurance AXA inclus jusqu'à la mise à disposition",
+    "feat3": "À chaque échéance : livraison chez vous, revente libre ou reprise par le producteur",
+    "feat4": "Certificat de propriété dans votre wallet, transférable",
+    "footnote": "905 € HT l'allocation de 15 bouteilles. Prix identique pour tous, pendant toute la précommande.",
+    "note": "Comparaison de prix publics constatés à la même date, pour le même vin et le même mécanisme d'achat. Le prix TTC allemand inclut 19 % de TVA."
+  },
+  "prices": {
+    "title": "L'accès au meilleur prix initial, en toute transparence",
+    "intro": "Votre précommande revient à 60,33 € la bouteille hors taxes. Les écarts ci-dessous comparent ce prix d'accès aux prix initiaux de mise en marché de la même cuvée : à la propriété, chez le distributeur officiel, puis tels que constatés aujourd'hui chez des distributeurs indépendants. Vient ensuite la vie du marché : l'élevage, la rareté et la demande font évoluer les prix millésime après millésime, comme le montrent plus bas les millésimes anciens, plus chers ou devenus introuvables. Ces prix ne dépendent pas de TERWA et peuvent varier.",
+    "repere": "À titre de repère : le millésime 2025, le premier de votre allocation, est proposé en souscription à {ttc} € TTC, soit environ {ht} € HT, chez {distributor} (relevé du {date}).",
+    "tableTitle": "Prix constatés par millésime",
+    "thVintage": "Millésime",
+    "thObserved": "Prix constaté (TTC)",
+    "badgeSubscription": "en souscription",
+    "htApprox": "≈ {price} € HT",
+    "tableSource": "Source : {source}. Les millésimes 2017 à 2019 sont introuvables à la vente. Un vin en souscription se paie aujourd'hui et se livre après élevage.",
+    "verifyTitle": "Vérifiez par vous-même chez les distributeurs",
+    "sourcesPrefix": "Sources : prix communiqués par la propriété et sites des distributeurs. Pour tout savoir sur le vignoble et la production,",
+    "discoverEstateLink": "découvrez le domaine",
+    "sourcesSuffix": ".",
+    "sourceDetail": "Gute Weine Lobenberg, bouteilles de 75 cl, prix TTC Allemagne, relevé le 2 juillet 2026",
+    "zones": {
+      "aggregator": "Agrégateur international",
+      "switzerland": "Suisse",
+      "germanyAustria": "Allemagne et Autriche",
+      "usa": "États-Unis"
+    }
+  },
+  "chart": {
+    "countryTitle": "Prix de détail moyens constatés par marché",
+    "countrySubtitle": "Moyenne des 7 derniers millésimes, en euros par bouteille.",
+    "countrySource": "Sources : propriété, Wine-Searcher, Winedecider Pro, mars 2026.",
+    "tileYourPreorderLabel": "Votre précommande",
+    "tileYourPreorderValue": "60,33 €",
+    "tileYourPreorderNote": "par bouteille HT",
+    "tileEstateLabel": "À la propriété",
+    "tileEstateNote": "prix public de mise en marché HT, millésime en cours",
+    "tileOfficialLabel": "Distributeur officiel",
+    "tileOfficialNote": "prix public HT, millésime en cours",
+    "tileDistributorsLabel": "Chez les distributeurs",
+    "tileDistributorsValue": "{min} à {max} €",
+    "tileDistributorsNote": "TTC selon le millésime, soit environ {minHT} à {maxHT} € HT, relevé le 2 juillet 2026",
+    "totalPct": "+{pct} % au total",
+    "stepTitle": "Écart entre les deux prix, hors taxes, sur la valeur haute constatée",
+    "totalTitle": "Écart entre votre précommande et le prix le plus élevé constaté, hors taxes",
+    "note": "Écarts calculés hors taxes sur la valeur haute constatée, d'un prix au suivant puis de bout en bout, pour la même cuvée."
+  },
+  "countries": {
+    "france": "France",
+    "belgium": "Belgique",
+    "germany": "Allemagne",
+    "switzerland": "Suisse",
+    "uk": "Royaume-Uni",
+    "usa": "États-Unis",
+    "russia": "Russie"
+  }
+}

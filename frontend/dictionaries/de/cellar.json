@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Mein Weinkeller, TERWA",
+    "description": "Verfolgen Sie Ihre Jahrgänge, ihre Termine und Ihre Wahlmöglichkeiten bei jeder Bereitstellung."
+  },
+  "title": "Mein Weinkeller",
+  "connect": {
+    "prompt": "Verbinden Sie Ihr Wallet, um Ihre Jahrgänge, deren Auslieferungstermine und Ihre anstehenden Entscheidungen zu sehen.",
+    "button": "Mein Wallet verbinden"
+  },
+  "error": "Ihr Weinkeller konnte momentan nicht geladen werden.",
+  "tiles": {
+    "bottles": {
+      "label": "Reservierte Flaschen",
+      "note": "unter Zollverschluss gelagert, versichert"
+    },
+    "allocations": {
+      "label": "Allocations",
+      "note": "je {n} Jahrgänge"
+    },
+    "cost": {
+      "label": "Anschaffungskosten",
+      "value": "{amount} USDC",
+      "note": "das sind {amount} € exkl. MwSt."
+    },
+    "nextRelease": {
+      "label": "Nächster Termin",
+      "none": "keiner",
+      "note": "Jahrgang {vintage}"
+    }
+  },
+  "empty": {
+    "title": "Ihr Weinkeller ist leer",
+    "body": "Wein Nr. 1, Les Demoiselles vom Château Coutet, ist im Vorverkauf: 1.660 Allocations, keine mehr.",
+    "cta": "Den Wein entdecken"
+  },
+  "card": {
+    "kicker": "Wein Nr. 1",
+    "vintage": "Jahrgang {vintage}",
+    "bottles": "{n} Flaschen",
+    "aging": "In der Reifung",
+    "available": "Verfügbar",
+    "releaseOn": "Auslieferung am {date}",
+    "readyForYou": "zu Ihrer Verfügung",
+    "cost": "{amount} USDC",
+    "costLabel": "Anschaffungskosten",
+    "costEur": "{amount} € exkl. MwSt.",
+    "footerNote": "Bei jeder Auslieferung: Lieferung zu Ihnen nach Hause, freier Weiterverkauf oder Rücknahme durch den Erzeuger.",
+    "viewEstate": "Das Weingut ansehen"
+  },
+  "paymentBalance": "Zahlungssaldo: {amount} USDC (Testnet)",
+  "actions": {
+    "deliver": "Lieferung anfordern",
+    "redeem": "Rücknahme durch den Erzeuger",
+    "redeemSoon": "Rücknahme öffnet nach Einzahlung der Erzeugermittel",
+    "claimPending": "Lieferung angefordert am {date}",
+    "modalClose": "Abbrechen",
+    "processing": "Signierung...",
+    "simulating": "Betrag wird berechnet...",
+    "demoNote": "(Simulation, Demo-Modus)",
+    "redeemTitle": "Rücknahme durch den Erzeuger",
+    "redeemBody": "Der Erzeuger nimmt Ihre {bottles} Flaschen des Jahrgangs {vintage} gemäß seiner Rücknahmeverpflichtung zurück.",
+    "redeemAmount": "Sie erhalten {amount} USDC",
+    "redeemIrreversible": "Dieser Vorgang ist endgültig: zurückgenommene Zertifikate werden vernichtet.",
+    "redeemConfirm": "Rücknahme akzeptieren",
+    "redeemSuccess": "Rücknahme abgeschlossen. Die USDC sind in Ihrer Wallet.",
+    "deliverTitle": "Lieferung Ihrer Flaschen",
+    "deliverBody": "{bottles} Flaschen des Jahrgangs {vintage}, in Original-Holzkisten zu 3. Volljährigkeit wird bei Erhalt geprüft.",
+    "fieldName": "Vollständiger Name",
+    "fieldAddress": "Adresse",
+    "fieldPostal": "Postleitzahl",
+    "fieldCity": "Stadt",
+    "fieldCountry": "Land",
+    "fieldEmail": "E-Mail",
+    "fieldPhone": "Telefon",
+    "deliverPrivacy": "Ihre Daten werden nie veröffentlicht: nur ihr Fingerabdruck (Hash) wird mit Ihrer Anfrage on-chain gespeichert.",
+    "deliverConfirm": "Lieferung anfordern",
+    "deliverSuccess": "Lieferanfrage erhalten. Unser Logistikteam meldet sich bei Ihnen, um die Lieferung zu organisieren.",
+    "manage": "Verwalten",
+    "panelQuestion": "Was möchten Sie mit diesem Jahrgang tun?",
+    "deliverDesc": "Erhalten Sie Ihre Flaschen nach Hause, in Original-Holzkisten.",
+    "deliverCta": "Lieferung anfordern",
+    "redeemDesc": "Der Erzeuger nimmt Ihre Flaschen auf Anfrage zurück. Auszahlung in der Regel innerhalb von 72 Stunden.",
+    "redeemCta": "Betrag ansehen",
+    "sellTitle": "Verkaufsservice",
+    "sellSoonBadge": "demnächst",
+    "sellDesc": "Vertrauen Sie den Verkauf Ihrer Flaschen unserem Service an.",
+    "sellCta": "Mehr erfahren",
+    "sellModalBody": "Dieser Service startet in Kürze: Sie können den Verkauf Ihrer Flaschen anvertrauen. Die Bedingungen werden vor dem Start veröffentlicht.",
+    "sellModalNote": "Bis dahin bleiben Ihre Zertifikate frei von Wallet zu Wallet übertragbar.",
+    "sellModalOk": "Verstanden",
+    "manageLocked": "Verwaltung verfügbar am {date}",
+    "redeemSettledNote": "Die Mittel des Erzeugers sind hinterlegt: Ihre Rücknahme ist sofort ausführbar.",
+    "requestCta": "Rücknahme anfragen",
+    "requestTitle": "Rücknahmeanfrage",
+    "requestBody": "Die Rücknahme erfolgt nicht automatisch: Ihre Anfrage geht an den Erzeuger, der sie genehmigt und die Mittel hinterlegt. Anschließend bestätigen Sie die Rücknahme hier und erhalten die USDC in Ihre Wallet. Übliche Bearbeitungszeit: innerhalb von 72 Stunden.",
+    "requestNote": "Ihre Anfrage geht direkt an unser Team, mit Ihrer Wallet-Adresse zur Identifikation. Nichts Persönliches wird on-chain veröffentlicht.",
+    "requestSend": "Anfrage senden",
+    "requestEmail": "Ihre Kontakt-E-Mail",
+    "requestSent": "Anfrage gesendet. Der Erzeuger antwortet in der Regel innerhalb von 72 Stunden.",
+    "sendFailed": "Ihre Angaben konnten nicht automatisch übermittelt werden.",
+    "sendByEmail": "Per E-Mail senden"
+  }
+}

@@ -41,3 +41,13 @@ Detailed technical implementation specification including:
 - **Multi-Wallet Support**: Stellar Wallet Kit integration (Freighter, xBull, Lobstr, etc.)
 - **Independent Valuation**: Annual wine expert appraisals with transparent methodology
 - **Buyback Guarantee**: Legal commitment from RWA provider (annex available)
+
+## Milestone 1 Implementation
+
+The MVP delivery for milestone 1 lives in this repository:
+
+- `contracts/` : Soroban vault and allocation-sale contracts, with unit tests
+- `frontend/` : the web platform deployed at https://terwa.io
+- `scripts/` : testnet deployment and environment scripts
+- `legal/` : buyer attestation text (its hash is signed on-chain at purchase)
+- [`MILESTONE-1.md`](MILESTONE-1.md) : delivery report with completion criteria, deployed contract addresses and a step-by-step verification procedure

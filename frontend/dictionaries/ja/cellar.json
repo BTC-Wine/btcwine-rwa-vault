@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "マイセラー, TERWA",
+    "description": "ご自身のヴィンテージ、その提供時期、提供時の選択肢をご確認いただけます。"
+  },
+  "title": "マイセラー",
+  "connect": {
+    "prompt": "ウォレットを接続して、ご自身のヴィンテージ、その受け取り時期、今後の選択をご確認ください。",
+    "button": "ウォレットを接続"
+  },
+  "error": "現在、セラーを読み込めませんでした。",
+  "tiles": {
+    "bottles": {
+      "label": "予約済みボトル数",
+      "note": "保税倉庫で保管、保険付き"
+    },
+    "allocations": {
+      "label": "アロケーション",
+      "note": "各 {n} ヴィンテージ"
+    },
+    "cost": {
+      "label": "取得コスト",
+      "value": "{amount} USDC",
+      "note": "つまり {amount} € 税抜"
+    },
+    "nextRelease": {
+      "label": "次の受け取り時期",
+      "none": "なし",
+      "note": "{vintage} ヴィンテージ"
+    }
+  },
+  "empty": {
+    "title": "セラーは空です",
+    "body": "ワイン No.1、Château Coutet の Les Demoiselles は予約受付中です：1,660 アロケーション、それ以上はありません。",
+    "cta": "このワインを見る"
+  },
+  "card": {
+    "kicker": "ワイン No.1",
+    "vintage": "{vintage} ヴィンテージ",
+    "bottles": "{n} 本",
+    "aging": "熟成中",
+    "available": "受け取り可能",
+    "releaseOn": "{date} に受け取り可能",
+    "readyForYou": "お受け取りいただけます",
+    "cost": "{amount} USDC",
+    "costLabel": "取得コスト",
+    "costEur": "{amount} € 税抜",
+    "footerNote": "受け取りのたびに：ご自宅への配送、自由な再販売、または生産者による買い戻し。",
+    "viewEstate": "生産者を見る"
+  },
+  "paymentBalance": "支払い残高：{amount} USDC（テストネット）",
+  "actions": {
+    "deliver": "配送を依頼",
+    "redeem": "生産者買い戻し",
+    "redeemSoon": "生産者の資金入金後に買い戻しが可能になります",
+    "claimPending": "{date} に配送を依頼済み",
+    "modalClose": "キャンセル",
+    "processing": "署名中...",
+    "simulating": "金額を計算中...",
+    "demoNote": "（シミュレーション、デモモード）",
+    "redeemTitle": "生産者による買い戻し",
+    "redeemBody": "生産者が買い戻し保証に基づき、{vintage} 年ヴィンテージの {bottles} 本を買い戻します。",
+    "redeemAmount": "{amount} USDC を受け取ります",
+    "redeemIrreversible": "この操作は取り消せません。買い戻された証書は破棄されます。",
+    "redeemConfirm": "買い戻しを承認",
+    "redeemSuccess": "買い戻しが完了しました。USDC はウォレットに入金されています。",
+    "deliverTitle": "ボトルの配送",
+    "deliverBody": "{vintage} 年ヴィンテージ {bottles} 本、3 本入りオリジナル木箱でお届け。受取時に年齢確認があります。",
+    "fieldName": "氏名",
+    "fieldAddress": "住所",
+    "fieldPostal": "郵便番号",
+    "fieldCity": "市区町村",
+    "fieldCountry": "国",
+    "fieldEmail": "メール",
+    "fieldPhone": "電話番号",
+    "deliverPrivacy": "お客様の情報は公開されません。チェーン上にはそのハッシュのみが記録されます。",
+    "deliverConfirm": "配送を依頼",
+    "deliverSuccess": "配送リクエストを承りました。物流チームより配送の手配についてご連絡いたします。",
+    "manage": "管理",
+    "panelQuestion": "このヴィンテージをどうしますか？",
+    "deliverDesc": "オリジナル木箱でご自宅にお届けします。",
+    "deliverCta": "配送を依頼",
+    "redeemDesc": "生産者はリクエストに応じてボトルを買い戻します。通常 72 時間以内に支払われます。",
+    "redeemCta": "金額を確認",
+    "sellTitle": "販売代行",
+    "sellSoonBadge": "近日公開",
+    "sellDesc": "ボトルの販売を当社の専用サービスにお任せください。",
+    "sellCta": "詳しく見る",
+    "sellModalBody": "このサービスは近日公開予定です。ボトルの販売を委託できるようになります。条件は公開前に発表されます。",
+    "sellModalNote": "それまでは、証書はウォレット間で自由に転送できます。",
+    "sellModalOk": "了解",
+    "manageLocked": "{date} から管理可能",
+    "redeemSettledNote": "生産者の資金が入金済みです。買い戻しをすぐに実行できます。",
+    "requestCta": "買い戻しを申請",
+    "requestTitle": "買い戻し申請",
+    "requestBody": "買い戻しは自動ではありません。申請は生産者に送られ、承認後に資金が入金されます。その後ここで買い戻しを確定すると、USDC がウォレットに届きます。通常の処理時間：72 時間以内。",
+    "requestNote": "リクエストはウォレットアドレスとともに当チームへ直接送信されます。個人情報がオンチェーンに公開されることはありません。",
+    "requestSend": "申請を送信",
+    "requestEmail": "連絡先メールアドレス",
+    "requestSent": "リクエストを送信しました。生産者は通常72時間以内に回答します。",
+    "sendFailed": "情報の自動送信に失敗しました。",
+    "sendByEmail": "メールで送信する"
+  }
+}

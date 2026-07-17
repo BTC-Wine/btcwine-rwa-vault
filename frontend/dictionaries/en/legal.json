@@ -1,0 +1,109 @@
+{
+  "notice": {
+    "metaTitle": "Legal notice, TERWA",
+    "metaDescription": "Legal notice of the TERWA site: publisher, hosting, alcohol sale licence, intellectual property and consumer mediation.",
+    "title": "Legal notice",
+    "editor": {
+      "heading": "Site publisher",
+      "body": "[COMPANY NAME], [LEGAL FORM] with share capital of [CAPITAL] euros, registered with the [CITY] Trade and Companies Register under number [RCS NUMBER], with its registered office at [FULL ADDRESS].",
+      "vat": "Intra-community VAT number: [VAT NUMBER].",
+      "director": "Publication director: [NAME OF THE PUBLICATION DIRECTOR].",
+      "contactLabel": "Contact: ",
+      "contactSuffix": ", [PHONE]."
+    },
+    "hosting": {
+      "heading": "Hosting",
+      "body": "The site is hosted by [HOST], [HOST ADDRESS], [HOST PHONE]."
+    },
+    "license": {
+      "heading": "Alcohol sale licence",
+      "body": "Sale of third-group beverages. [LICENCE REFERENCE OR APPLICABLE REGIME]. The sale of alcohol is prohibited to minors under 18 (article L. 3342-1 of the French Public Health Code). Proof of legal age is required at order and at delivery."
+    },
+    "ip": {
+      "heading": "Intellectual property",
+      "body": "The name, images, logo and distinctions of Château Coutet are used with the authorisation of the estate, within the TERWA partnership. Any reproduction of the content of this site without authorisation is prohibited.",
+      "credits": "Photo credits: Château Coutet, David Beaulieu family."
+    },
+    "mediation": {
+      "heading": "Consumer mediation",
+      "body": "In accordance with article L. 612-1 of the French Consumer Code, the consumer may use the following mediator free of charge: [DESIGNATED MEDIATOR AND CONTACT DETAILS]. European online dispute resolution platform: ec.europa.eu/consumers/odr."
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms of sale, TERWA",
+    "metaDescription": "Terms governing the en primeur pre-order of Château Coutet wines on TERWA: allocations, price, availability, delivery and producer buy-back.",
+    "title": "Terms of sale",
+    "purpose": {
+      "title": "1. Purpose",
+      "body": "These terms govern the en primeur sale of wines by [COMPANY NAME]. The buyer pre-orders identified bottles, produced by Château Coutet, before they are made available. The digital certificate issued to the buyer (a token on the Stellar network) constitutes the receipt for the pre-order and the title to collect the bottles. It is neither a financial instrument nor a financial placement."
+    },
+    "product": {
+      "title": "2. Product and allocation",
+      "body": "An Allocation comprises fifteen 75 cl bottles of the Les Demoiselles cuvée, Saint-Émilion Grand Cru: three bottles of each of the 2025 to 2029 vintages. Production comes from Château Coutet's Peycocut plots. In the event of an insufficient harvest for a vintage (frost, climate hazard, force majeure), the Allocation is carried over to the following vintage."
+    },
+    "price": {
+      "title": "3. Price and payment",
+      "body": "The price is 905 euros excluding tax per Allocation, i.e. 60.33 euros excluding tax per bottle, payable in USDC on the Stellar network at the time of the pre-order. [APPLICABLE VAT REGIME TO BE SPECIFIED]. The price includes bonded storage at Bordeaux City Bond and AXA insurance until each vintage is made available."
+    },
+    "delivery": {
+      "title": "4. Availability, delivery and buy-back",
+      "body": "The bottles of each vintage N are made available no later than 1 June of year N+2. From that date, the buyer may, for each vintage: request delivery to the address of their choice (delivery costs and conditions specified when the delivery is ordered, legal age verified on receipt), keep their bottles, transfer them, or accept the producer's buy-back offer. [BUY-BACK CONDITIONS AND FLOOR PRICE TO BE SPECIFIED ACCORDING TO THE PRODUCER'S COMMITMENT]."
+    },
+    "withdrawal": {
+      "title": "5. Right of withdrawal",
+      "body": "[TO BE VALIDATED BY COUNSEL: the 14-day right of withdrawal regime applicable to distance selling, and its possible exceptions]. The terms of exercise and the withdrawal form appear in the appendix."
+    },
+    "age": {
+      "title": "6. Legal age",
+      "body": "The sale of alcohol is prohibited to minors. The buyer declares that they are of legal age at the time of the pre-order; proof of legal age is required before any physical delivery."
+    },
+    "certificate": {
+      "title": "7. Digital certificate",
+      "body": "The certificate is issued on the Stellar network in the wallet designated by the buyer, who is responsible for its custody. Transfer of the certificate entails transfer of the right to collect the corresponding bottles. [LIABILITY IN THE EVENT OF KEY LOSS TO BE SPECIFIED]."
+    },
+    "claims": {
+      "title": "8. Claims and mediation",
+      "body": "Any claim may be sent to contact@terwa.io. Failing resolution, the consumer may refer the matter free of charge to the consumer mediator designated in the legal notice, or to the European online dispute resolution platform."
+    },
+    "law": {
+      "title": "9. Applicable law",
+      "body": "These terms are governed by French law. [COMPETENT JURISDICTION TO BE SPECIFIED]."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy policy, TERWA",
+    "metaDescription": "How TERWA processes personal data: wallet address, delivery details, retention periods, cookies and your rights.",
+    "title": "Privacy policy",
+    "controller": {
+      "heading": "Data controller",
+      "bodyPrefix": "[COMPANY NAME], [ADDRESS], contact: ",
+      "bodySuffix": "."
+    },
+    "data": {
+      "heading": "Data processed",
+      "body": "Public Stellar wallet address (necessary to perform the pre-order, inherently recorded on a public ledger), age declaration, and, at the time of a delivery: identity, postal address, email address and proof of legal age. Delivery details are encrypted; only their fingerprint (hash) is recorded on the public ledger."
+    },
+    "purposes": {
+      "heading": "Purposes and legal bases",
+      "body": "Performance of the sale contract (pre-order, availability, delivery, buy-back), compliance with legal obligations (legal age, anti-money-laundering, international sanctions), and handling of claims."
+    },
+    "retention": {
+      "heading": "Retention periods",
+      "body": "Delivery data is kept [DURATION] after the last availability. Accounting records are kept for ten years in accordance with the law."
+    },
+    "cookies": {
+      "heading": "Cookies and trackers",
+      "body": "The site uses neither advertising cookies nor third-party trackers. Browser local storage is used only for technical preferences. [TO BE UPDATED IF AUDIENCE MEASUREMENT TOOLS ARE ADDED]."
+    },
+    "rights": {
+      "heading": "Your rights",
+      "bodyPrefix": "You have the rights of access, rectification, erasure, restriction, objection and portability over your data, to be exercised at ",
+      "bodySuffix": ". You may lodge any complaint with the CNIL (cnil.fr). Entries on a public ledger such as a blockchain are inherently immutable: personal data is never written there in clear text."
+    }
+  },
+  "comingSoon": {
+    "badge": "Coming soon",
+    "body": "This document is being finalised with our legal counsel. It will be published here before pre-orders open.",
+    "contact": "A question in the meantime? Write to us:"
+  }
+}

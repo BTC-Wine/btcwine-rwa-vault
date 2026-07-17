@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "我的酒窖, TERWA",
+    "description": "跟踪您的年份酒、各年份的供货时间以及每次供货时的处置选择。"
+  },
+  "title": "我的酒窖",
+  "connect": {
+    "prompt": "连接您的钱包，查看您的年份酒、交付日期以及即将到来的选择。",
+    "button": "连接我的钱包"
+  },
+  "error": "暂时无法加载您的酒窖。",
+  "tiles": {
+    "bottles": {
+      "label": "已预留瓶数",
+      "note": "保税仓储，已投保"
+    },
+    "allocations": {
+      "label": "配额",
+      "note": "每份 {n} 个年份"
+    },
+    "cost": {
+      "label": "购置成本",
+      "value": "{amount} USDC",
+      "note": "即 {amount} € 不含税"
+    },
+    "nextRelease": {
+      "label": "下一个交付日期",
+      "none": "无",
+      "note": "{vintage} 年份"
+    }
+  },
+  "empty": {
+    "title": "您的酒窖是空的",
+    "body": "第一款酒，Château Coutet 的 Les Demoiselles，正在期酒预售：1,660 份配额，不多一份。",
+    "cta": "了解这款酒"
+  },
+  "card": {
+    "kicker": "第一款酒",
+    "vintage": "{vintage} 年份",
+    "bottles": "{n} 瓶",
+    "aging": "陈酿中",
+    "available": "可交付",
+    "releaseOn": "{date} 交付",
+    "readyForYou": "可供您支配",
+    "cost": "{amount} USDC",
+    "costLabel": "购置成本",
+    "costEur": "{amount} € 不含税",
+    "footerNote": "每次交付时：送货上门、自由转售，或由生产者回收。",
+    "viewEstate": "查看酒庄"
+  },
+  "paymentBalance": "支付余额：{amount} USDC（测试网）",
+  "actions": {
+    "deliver": "申请配送",
+    "redeem": "酒庄回购",
+    "redeemSoon": "酒庄资金到账后开放回购",
+    "claimPending": "已于 {date} 申请配送",
+    "modalClose": "取消",
+    "processing": "签名中...",
+    "simulating": "正在计算金额...",
+    "demoNote": "（模拟，演示模式）",
+    "redeemTitle": "酒庄回购",
+    "redeemBody": "酒庄将按照其回购承诺回购您 {vintage} 年份的 {bottles} 瓶葡萄酒。",
+    "redeemAmount": "您将收到 {amount} USDC",
+    "redeemIrreversible": "此操作不可撤销：被回购的凭证将被销毁。",
+    "redeemConfirm": "接受回购",
+    "redeemSuccess": "回购完成。USDC 已到账您的钱包。",
+    "deliverTitle": "配送您的葡萄酒",
+    "deliverBody": "{vintage} 年份 {bottles} 瓶，原装 3 瓶木箱。签收时需核验年龄。",
+    "fieldName": "姓名",
+    "fieldAddress": "地址",
+    "fieldPostal": "邮编",
+    "fieldCity": "城市",
+    "fieldCountry": "国家",
+    "fieldEmail": "邮箱",
+    "fieldPhone": "电话",
+    "deliverPrivacy": "您的信息不会被公开：链上只记录其指纹（哈希）。",
+    "deliverConfirm": "申请配送",
+    "deliverSuccess": "已收到您的配送请求。我们的物流团队将与您联系安排配送。",
+    "manage": "管理",
+    "panelQuestion": "您想如何处理这一年份？",
+    "deliverDesc": "以原装木箱将您的葡萄酒送货上门。",
+    "deliverCta": "申请配送",
+    "redeemDesc": "酒庄按您的申请回购葡萄酒。款项通常在 72 小时内到账。",
+    "redeemCta": "查看金额",
+    "sellTitle": "代售服务",
+    "sellSoonBadge": "即将上线",
+    "sellDesc": "将您的葡萄酒委托给我们的专属代售服务。",
+    "sellCta": "了解更多",
+    "sellModalBody": "该服务即将上线：您将可以委托出售您的葡萄酒。相关条款将在上线前公布。",
+    "sellModalNote": "在此期间，您的凭证仍可在钱包之间自由转让。",
+    "sellModalOk": "知道了",
+    "manageLocked": "将于 {date} 开放管理",
+    "redeemSettledNote": "酒庄资金已到账：您的回购可立即执行。",
+    "requestCta": "申请回购",
+    "requestTitle": "回购申请",
+    "requestBody": "回购并非自动执行：您的申请将发送给酒庄，由其批准并存入资金。之后您在此确认回购，USDC 将到账您的钱包。通常处理时间：72 小时内。",
+    "requestNote": "您的请求直接发送给我们的团队，并附上您的钱包地址以便识别。链上不会公开任何个人信息。",
+    "requestSend": "发送申请",
+    "requestEmail": "您的联系邮箱",
+    "requestSent": "请求已发送。生产者通常在72小时内回复。",
+    "sendFailed": "您的信息未能自动发送。",
+    "sendByEmail": "通过电子邮件发送"
+  }
+}

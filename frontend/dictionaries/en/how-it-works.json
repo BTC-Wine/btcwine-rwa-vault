@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "How it works, TERWA",
+    "description": "The journey of an en primeur pre-order at TERWA: purchase, storage, release, and the guarantees at every step."
+  },
+  "hero": {
+    "kicker": "The user guide",
+    "title": "How it works",
+    "intro": "Buying en primeur means reserving a wine before it goes to market, directly at the source. Here is the full journey, and what protects you at every step."
+  },
+  "journey": {
+    "title": "The journey, in five steps"
+  },
+  "steps": {
+    "s1": {
+      "title": "Connect your wallet",
+      "beforeWallets": "No account to create: your Stellar wallet (",
+      "afterWallets": " and others) is your identity. When you buy, you sign an en primeur purchase declaration that confirms, among other things, that you are of legal age. This signature is embedded in the transaction itself."
+    },
+    "s2": {
+      "title": "Pre-order your Allocation",
+      "beforeLink": "An Allocation = 15 bottles: 3 bottles of each of the 5 vintages (2025 to 2029), paid in USDC at the fixed price of EUR 905 excl. tax. Your vintage certificates arrive in your wallet immediately: one token per vintage, visible in any wallet or ",
+      "linkExplorer": "Stellar explorer",
+      "afterLink": "."
+    },
+    "s3": {
+      "title": "The wine is produced and aged",
+      "p1": "Your pre-order funds production. The bottles are born from the reserved plots of the ",
+      "linkTerroir": "Peycocut terroir",
+      "p2": ", then kept in bond at ",
+      "p3": " and insured by ",
+      "p4": ", at no cost to you, until they are made available. Each year, an indicative market value is published in full transparency."
+    },
+    "s4": {
+      "title": "Each vintage reaches maturity",
+      "text": "The bottles of vintage N are made available no later than 1 June of year N+2: 2025 in 2027, 2026 in 2028, and so on through the 2029 vintage in 2031. You decide vintage by vintage, there is no overall decision to make."
+    },
+    "s5": {
+      "title": "You choose your exit",
+      "text": "For each vintage made available: have your bottles delivered to your home (in the original wooden case of 3, legal age verified on receipt), keep them, resell them freely by transferring your certificates, or accept the producer take-back."
+    }
+  },
+  "protections": {
+    "title": "The mechanisms that protect you"
+  },
+  "guarantees": {
+    "g1": {
+      "title": "A certificate of ownership, not a promise",
+      "beforeLink": "Each token is recorded on the ",
+      "linkRegistry": "public Stellar ledger",
+      "afterLink": ": your Allocation is verifiable by anyone, at any time, without relying on TERWA. The certificate is transferable and redeeming it for the bottles is a contractual right."
+    },
+    "g2": {
+      "title": "Production reserved by contract",
+      "p1": "The plots of the ",
+      "linkTerroir": "Peycocut terroir",
+      "p2": " are identified and the corresponding production is reserved for Allocation holders under the agreement between TERWA and ",
+      "p3": ". The number of Allocations is capped at actual production: 1,660, not one more."
+    },
+    "g3": {
+      "title": "Professional storage included",
+      "p1": "From bottling to release, your bottles are stored in bond at ",
+      "p2": ", the warehouse created by the Bordeaux Chamber of Commerce, and insured by ",
+      "p3": ". Professional custody conditions, traceability, and no storage cost charged to you over this period."
+    },
+    "g4": {
+      "title": "The producer take-back commitment",
+      "text": "For each released vintage, the producer contractually commits to repurchasing your bottles at a floor price set in advance. Repurchase happens on request, with payment usually within 72 hours. It is one more exit among the others, never an obligation: you remain free to take delivery, keep or resell."
+    },
+    "g5": {
+      "title": "The hazards of the vine, provided for in the contract",
+      "text": "A vineyard worked without chemicals goes through difficult years: frost, drought, small yields. If a harvest does not allow a vintage to be honoured, your Allocation is carried over to the following vintage. The rule is written before your purchase, not improvised afterwards."
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": {
+      "q": "What happens if I lose access to my wallet?",
+      "before": "The certificate is the title to withdraw your bottles: its safekeeping is yours, like that of a cellar key. Use a wallet whose backup (recovery phrase) you control and ",
+      "link": "contact us",
+      "after": " quickly in case of a problem."
+    },
+    "q2": {
+      "q": "Do I already need to own cryptocurrencies?",
+      "a": "Payment is made in USDC on Stellar, a digital dollar. You therefore need a Stellar wallet funded with USDC. The main wallets offer purchases by card or bank transfer."
+    },
+    "q3": {
+      "q": "Are there any hidden fees?",
+      "a": "The price of the Allocation includes storage in bond and insurance until each vintage is made available. Remaining at your expense: delivery costs if you choose shipping, and the taxation applicable to your situation."
+    },
+    "q4": {
+      "q": "Can I resell before the wine is made available?",
+      "a": "Your certificates are transferable at any time, from wallet to wallet: you can hand them over or give them away freely. TERWA does not operate a marketplace and does not handle resale."
+    },
+    "q5": {
+      "q": "How can I verify what I am buying?",
+      "p1": "Everything is published: the plots and production on the ",
+      "linkDomain": "domain page",
+      "p2": ", the ",
+      "linkPrices": "observed prices",
+      "p3": " with their sources and dates, the contracts on the ",
+      "linkRegistry": "Stellar ledger",
+      "p4": ", and the independent distributors one click away to compare the prices yourself."
+    }
+  },
+  "cta": {
+    "title": "Cuvée no. 1 awaits you",
+    "text": "Les Demoiselles, {appellation}, from {nom}. 1,660 Allocations, not one more.",
+    "button": "Discover the cuvée"
+  }
+}
