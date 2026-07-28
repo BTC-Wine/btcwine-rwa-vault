@@ -114,3 +114,64 @@ delivery data, on-chain claim, fulfilment tracking), producer settlement and
 repurchase flow, annual valuation oracle service, holder notifications,
 admin operations console, maturity extension function (force majeure clause),
 and a full end-to-end dry run on a short-maturity test vault.
+
+## Addendum (28 July 2026)
+
+Addendum following the review feedback received for the validation of
+tranche 1. For clarity: the
+report above measures delivery against the acceptance criteria of the funded
+architecture, D1 to D3 (ARCHITECTURE.md, section 8, "Development Plan"),
+which are the criteria of the approved submission. The confirmations
+requested are recorded below.
+
+### 1. Token transferability and compliance model
+
+Confirmed. The five vintage assets (TERWA2025 to TERWA2029) are standard
+Stellar Classic Assets issued with no authorization flags: AUTH_REQUIRED,
+AUTH_REVOCABLE and AUTH_CLAWBACK_ENABLED are all unset on the issuer
+account (testnet issuer
+GDNW7VWWCTBU3N3X6GKK3LOKTBTS34CHWLONYQH2D57RVXQJCSYW6DMA, flags verifiable
+via Horizon). Certificates are therefore freely transferable and resellable
+on Stellar, and are presented as such on the platform.
+
+Compliance controls are enforced at the vault contract level, not at the
+asset level: purchase requires an on-chain signed buyer declaration, and
+both exit paths (redeem, claim_physical) require the holder to be on the
+vault's on-chain allowlist (KYC at exit only). The tranche 2 and 3
+whitelisting criteria should therefore be read against this contract-level
+allowlist model rather than asset-level authorization flags.
+
+This choice is settled for mainnet: the mainnet issuer account will be
+created without these flags before any trustline is opened, in full
+knowledge that clawback cannot be enabled retroactively on existing
+trustlines.
+
+### 2. SEP-10 authentication
+
+SEP-10 web authentication (described in TECHNICAL.md) belongs to the
+backend layer, which is out of scope for milestone 1. It is deferred to
+tranche 2 together with the backend services (indexer, claims service,
+notifications). In milestone 1, wallet ownership is proven by transaction
+signature at purchase, which covers all delivered flows.
+
+### 3. Test coverage
+
+Measured with cargo-llvm-cov on the contracts workspace, all unit tests
+passing:
+
+| Scope | Line coverage | Region coverage |
+|---|---|---|
+| Contract code (test harness excluded) | 89.7% | 91.9% |
+| Whole workspace (test code included) | 94.3% | 96.0% |
+
+Both figures are above the 85% threshold referenced in the review.
+Reproduce with:
+
+```bash
+cd contracts && cargo llvm-cov --workspace --summary-only --ignore-filename-regex 'test\.rs'
+```
+
+### 4. License
+
+The repository is now licensed under the Apache License 2.0 (see the
+LICENSE file at the repository root).
