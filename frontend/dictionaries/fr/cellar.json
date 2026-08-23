@@ -93,12 +93,94 @@
     "redeemSettledNote": "Les fonds du producteur sont déposés : votre reprise est exécutable immédiatement.",
     "requestCta": "Demander la reprise",
     "requestTitle": "Demande de reprise",
-    "requestBody": "La reprise n'est pas automatique : votre demande est transmise au producteur, qui l'approuve et dépose les fonds. Vous validez ensuite la reprise ici et recevez les USDC dans votre wallet. Délai habituel : sous 72 heures.",
+    "requestBody": "La reprise n'est pas automatique : votre demande est transmise au producteur, qui l'approuve et dépose les fonds. Vous validez ensuite la reprise ici et recevez les USDC dans votre wallet. Règlement généralement sous 72 heures : ce délai est d'usage, jamais garanti.",
     "requestNote": "Votre demande part directement à notre équipe, avec votre adresse de wallet pour identification. Rien de personnel n'est publié on-chain.",
+    "requestQueueNote": "Votre demande est signée avec votre wallet et rejoint notre file de traitement. Rien de personnel n'est publié on-chain.",
     "requestSend": "Envoyer ma demande",
     "requestEmail": "Votre email de contact",
-    "requestSent": "Demande envoyée. Le producteur répond généralement sous 72 heures.",
+    "requestSent": "Demande envoyée. Le producteur répond généralement sous 72 heures, sans que ce délai soit garanti.",
+    "requestQueued": "Demande envoyée. Le château est notifié et règle généralement sous 72 heures, sans que ce délai soit garanti. Suivez l'avancement depuis Ma cave.",
     "sendFailed": "Vos informations n'ont pas pu être transmises automatiquement.",
-    "sendByEmail": "Les envoyer par email"
+    "sendByEmail": "Les envoyer par email",
+    "claimTracking": "Suivi : {status}",
+    "claimStatus": {
+      "draft": "demande reçue",
+      "onchain": "inscrite on-chain",
+      "preparing": "livraison en préparation",
+      "shipped": "expédiée",
+      "fulfilled": "livrée"
+    },
+    "close": "Fermer"
+  },
+  "tracking": {
+    "title": "Mon suivi",
+    "kyc": {
+      "title": "Vérification d'identité",
+      "status": {
+        "none": "non commencée",
+        "pending": "en cours d'examen",
+        "approved": "vérifiée",
+        "rejected": "non validée"
+      },
+      "body": {
+        "none": "L'achat est libre. La vérification ne sera demandée qu'à la sortie : reprise producteur ou livraison de vos bouteilles.",
+        "pending": "Votre dossier est en cours d'examen. Aucune action n'est attendue de votre part.",
+        "approved": "Votre identité est vérifiée : la reprise producteur et la livraison sont ouvertes pour cette adresse.",
+        "rejected": "Votre dossier n'a pas pu être validé. Écrivez-nous à contact@terwa.io pour l'examiner ensemble."
+      },
+      "startCta": "Commencer la vérification",
+      "startBusy": "Ouverture...",
+      "unavailable": "La vérification ouvre bientôt. Merci de repasser un peu plus tard.",
+      "failed": "Le service de vérification n'a pas répondu. Merci de réessayer.",
+      "sdkError": "Le module de vérification n'a pas pu se charger. Fermez cette fenêtre et réessayez.",
+      "allowlisted": "Votre adresse est activée on-chain pour la reprise et la livraison.",
+      "allowlistPending": "L'activation on-chain de votre adresse est en cours."
+    },
+    "unlock": {
+      "body": "Confirmez que vous contrôlez cette adresse pour afficher votre statut de vérification et vos demandes. Votre wallet signe une simple preuve : rien n'est publié, rien ne quitte votre wallet.",
+      "cta": "Afficher mon suivi",
+      "busy": "En attente du wallet..."
+    },
+    "repurchases": {
+      "title": "Demandes de reprise",
+      "empty": "Aucune demande de reprise pour le moment.",
+      "row": "{bottles} bouteilles, millésime {vintage}",
+      "rowUnknown": "{bottles} bouteilles",
+      "requestedOn": "demandée le {date}",
+      "note": "Le producteur règle sur demande, généralement sous 72 heures. Ce délai est d'usage, jamais garanti.",
+      "status": {
+        "requested": "demande envoyée",
+        "notified": "château notifié",
+        "funded": "règlement disponible",
+        "redeemed": "reprise effectuée",
+        "cancelled": "annulée"
+      },
+      "fundedHint": "Les fonds du producteur sont déposés : ouvrez le millésime ci-dessus et validez la reprise pour recevoir vos USDC."
+    }
+  },
+  "history": {
+    "title": "Historique",
+    "empty": "Aucune opération enregistrée pour cette adresse pour le moment.",
+    "rows": {
+      "deposit": "Achat en primeur",
+      "transferIn": "Certificats reçus par transfert",
+      "transferOut": "Certificats envoyés par transfert",
+      "redeem": "Reprise producteur",
+      "claim": "Demande de livraison",
+      "mint": "Certificats émis"
+    },
+    "detail": "{n} bouteilles, millésime {vintage}",
+    "detailNoVintage": "{n} bouteilles",
+    "paid": "{amount} USDC",
+    "received": "{amount} USDC reçus",
+    "noEntryCost": "acquisition par transfert, sans coût d'entrée",
+    "viewTx": "voir la transaction",
+    "note": "Opérations les plus récentes en premier, telles qu'inscrites au registre public Stellar."
+  },
+  "demo": {
+    "tag": "Aperçu",
+    "note": "Données d'exemple : ce que vous verrez une fois votre wallet connecté.",
+    "kycHint": "La vérification d'identité s'ouvrira ici une fois votre wallet réel connecté.",
+    "rowTag": "exemple"
   }
 }

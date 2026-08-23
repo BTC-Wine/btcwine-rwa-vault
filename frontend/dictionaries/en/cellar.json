@@ -93,12 +93,94 @@
     "redeemSettledNote": "The producer funds are deposited: your repurchase can be executed immediately.",
     "requestCta": "Request repurchase",
     "requestTitle": "Repurchase request",
-    "requestBody": "Repurchase is not automatic: your request is sent to the producer, who approves it and deposits the funds. You then confirm the repurchase here and receive the USDC in your wallet. Usual processing time: within 72 hours.",
+    "requestBody": "Repurchase is not automatic: your request is sent to the producer, who approves it and deposits the funds. You then confirm the repurchase here and receive the USDC in your wallet. Settlement usually takes about 72 hours; this timing is customary, never guaranteed.",
     "requestNote": "Your request goes directly to our team, with your wallet address attached for identification. Nothing personal is published on-chain.",
+    "requestQueueNote": "Your request is signed with your wallet and joins our processing queue. Nothing personal is published on-chain.",
     "requestSend": "Send my request",
     "requestEmail": "Your contact email",
-    "requestSent": "Request sent. The producer usually responds within 72 hours.",
+    "requestSent": "Request sent. The producer usually responds within 72 hours, though this timing is never guaranteed.",
+    "requestQueued": "Request sent. The estate is being notified and usually settles within 72 hours, though this timing is never guaranteed. Track progress from My Cellar.",
     "sendFailed": "Your details could not be transmitted automatically.",
-    "sendByEmail": "Send them by email"
+    "sendByEmail": "Send them by email",
+    "claimTracking": "Tracking: {status}",
+    "claimStatus": {
+      "draft": "request received",
+      "onchain": "recorded on-chain",
+      "preparing": "delivery in preparation",
+      "shipped": "shipped",
+      "fulfilled": "delivered"
+    },
+    "close": "Close"
+  },
+  "tracking": {
+    "title": "My tracking",
+    "kyc": {
+      "title": "Identity verification",
+      "status": {
+        "none": "not started",
+        "pending": "under review",
+        "approved": "verified",
+        "rejected": "not validated"
+      },
+      "body": {
+        "none": "Purchasing is open to everyone. Verification will only be required on the way out: producer repurchase or delivery of your bottles.",
+        "pending": "Your file is under review. No action is needed on your side.",
+        "approved": "Your identity is verified: producer repurchase and delivery are open to this address.",
+        "rejected": "Your file could not be validated. Write to us at contact@terwa.io so we can look at it together."
+      },
+      "startCta": "Start verification",
+      "startBusy": "Opening...",
+      "unavailable": "Verification is opening soon. Please come back a little later.",
+      "failed": "The verification service did not respond. Please try again.",
+      "sdkError": "The verification module could not load. Close this window and try again.",
+      "allowlisted": "Your address is enabled on-chain for repurchase and delivery.",
+      "allowlistPending": "On-chain enablement of your address is in progress."
+    },
+    "unlock": {
+      "body": "Confirm that you control this address to view your verification status and your requests. Your wallet signs a simple proof: nothing is published, nothing leaves your wallet.",
+      "cta": "Show my tracking",
+      "busy": "Waiting for the wallet..."
+    },
+    "repurchases": {
+      "title": "Repurchase requests",
+      "empty": "No repurchase request at the moment.",
+      "row": "{bottles} bottles, vintage {vintage}",
+      "rowUnknown": "{bottles} bottles",
+      "requestedOn": "requested on {date}",
+      "note": "The producer settles on request, usually within 72 hours. This timing is customary, never guaranteed.",
+      "status": {
+        "requested": "request sent",
+        "notified": "estate notified",
+        "funded": "settlement available",
+        "redeemed": "repurchase completed",
+        "cancelled": "cancelled"
+      },
+      "fundedHint": "The producer funds are deposited: open the vintage above and confirm the repurchase to receive your USDC."
+    }
+  },
+  "history": {
+    "title": "History",
+    "empty": "No activity recorded for this address yet.",
+    "rows": {
+      "deposit": "En primeur purchase",
+      "transferIn": "Certificates received by transfer",
+      "transferOut": "Certificates sent by transfer",
+      "redeem": "Producer repurchase",
+      "claim": "Delivery request",
+      "mint": "Certificates issued"
+    },
+    "detail": "{n} bottles, vintage {vintage}",
+    "detailNoVintage": "{n} bottles",
+    "paid": "{amount} USDC",
+    "received": "{amount} USDC received",
+    "noEntryCost": "acquired by transfer, no entry cost",
+    "viewTx": "view the transaction",
+    "note": "Most recent first, as recorded on the public Stellar register."
+  },
+  "demo": {
+    "tag": "Preview",
+    "note": "Sample data: what you will see once your wallet is connected.",
+    "kycHint": "Identity verification will open here once your real wallet is connected.",
+    "rowTag": "example"
   }
 }

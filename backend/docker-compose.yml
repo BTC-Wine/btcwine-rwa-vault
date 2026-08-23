@@ -1,0 +1,18 @@
+# Local development stack. Production runs on managed services (Render),
+# this compose only mirrors it for offline work.
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: terwa
+      POSTGRES_PASSWORD: terwa
+      POSTGRES_DB: terwa
+    ports:
+      # bound to loopback so the dev database is never exposed on a shared network
+      - "127.0.0.1:5433:5432"
+    volumes:
+      # postgres 18 images moved the data volume up one level
+      - dbdata:/var/lib/postgresql
+
+volumes:
+  dbdata:

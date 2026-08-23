@@ -190,7 +190,7 @@ export function BuyCard({ overview }: { overview: VaultOverview }) {
         />
         <span>
           {t("attestationBefore")}
-          <a href="/attestation-v1.md" target="_blank" className="underline hover:text-[#5a1f2b]">
+          <a href="/attestation-v1.md" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#5a1f2b]">
             {t("attestationLink")}
           </a>
           {t("attestationAfter")}
@@ -230,6 +230,7 @@ export function BuyCard({ overview }: { overview: VaultOverview }) {
             <a
               href={`https://stellar.expert/explorer/testnet/tx/${txHash}`}
               target="_blank"
+              rel="noopener noreferrer"
               className="underline"
             >
               {t("status.viewTx")}

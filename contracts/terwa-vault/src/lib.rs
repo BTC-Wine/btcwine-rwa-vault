@@ -10,7 +10,9 @@ mod test;
 use soroban_sdk::{contract, contractimpl, token, Address, BytesN, Env};
 
 use errors::VaultError;
-use storage::{ClaimData, DataKey, VaultState, TOKEN_UNIT, TTL_EXTEND, TTL_THRESHOLD};
+use storage::{
+    ClaimData, DataKey, VaultState, MAX_MATURITY_EXTENSION, TOKEN_UNIT, TTL_EXTEND, TTL_THRESHOLD,
+};
 
 #[contract]
 pub struct TerwaVault;
@@ -54,6 +56,13 @@ fn state_now(env: &Env) -> VaultState {
     }
 }
 
+fn allowlist_manager(env: &Env) -> Address {
+    env.storage()
+        .instance()
+        .get(&DataKey::AllowlistManager)
+        .unwrap_or_else(|| admin(env))
+}
+
 fn require_not_paused(env: &Env) -> Result<(), VaultError> {
     if get::<bool>(env, &DataKey::Paused) {
         return Err(VaultError::ContractPaused);
@@ -76,9 +85,16 @@ fn require_exit_allowed(env: &Env, user: &Address) -> Result<(), VaultError> {
 }
 
 fn burn_lots(env: &Env, user: &Address, lots: i128) -> Result<(), VaultError> {
+    // circulating tracks lots minted through the sale; it must never go
+    // negative. Refusing a burn beyond it caps what any exit can ever drain
+    // from the pool to the lots legitimately issued, even if tokens were ever
+    // minted out of band (a defence in depth around the token admin role).
+    let circulating: i128 = get(env, &DataKey::CirculatingLots);
+    if lots > circulating {
+        return Err(VaultError::InvalidAmount);
+    }
     let vault_token: Address = get(env, &DataKey::VaultToken);
     token::TokenClient::new(env, &vault_token).burn(user, &(lots * TOKEN_UNIT));
-    let circulating: i128 = get(env, &DataKey::CirculatingLots);
     set(env, &DataKey::CirculatingLots, &(circulating - lots));
     Ok(())
 }
@@ -214,12 +230,15 @@ impl TerwaVault {
         Ok(())
     }
 
-    /// The producer honours its repurchase commitment: `from` deposits the
-    /// repurchase funds and USDC redemptions open. One shot by design.
+    /// The producer honours its repurchase commitment: `from` deposits
+    /// repurchase funds and USDC redemptions open. Repeatable: the producer
+    /// funds repurchases on demand, so the pool grows with each deposit and
+    /// redeem always pays against the funds actually deposited so far.
     pub fn settle(env: Env, from: Address, amount: i128) -> Result<(), VaultError> {
         require_admin(&env);
         from.require_auth();
-        if state_now(&env) != VaultState::Matured {
+        let state = state_now(&env);
+        if state != VaultState::Matured && state != VaultState::Settled {
             return Err(VaultError::WrongState);
         }
         if amount <= 0 {
@@ -231,12 +250,20 @@ impl TerwaVault {
             &env.current_contract_address(),
             &amount,
         );
-        let redeemable: i128 = get(&env, &DataKey::CirculatingLots);
-        set(&env, &DataKey::SettledPool, &amount);
-        set(&env, &DataKey::RedeemableLots, &redeemable);
-        set(&env, &DataKey::StoredState, &VaultState::Settled);
+        let pool: i128 = env
+            .storage()
+            .instance()
+            .get(&DataKey::SettledPool)
+            .unwrap_or(0);
+        let pool = pool.checked_add(amount).ok_or(VaultError::InvalidAmount)?;
+        set(&env, &DataKey::SettledPool, &pool);
+        if state == VaultState::Matured {
+            let redeemable: i128 = get(&env, &DataKey::CirculatingLots);
+            set(&env, &DataKey::RedeemableLots, &redeemable);
+            set(&env, &DataKey::StoredState, &VaultState::Settled);
+        }
         bump(&env);
-        events::settled(&env, amount, redeemable);
+        events::settled(&env, amount, get(&env, &DataKey::RedeemableLots));
         Ok(())
     }
 
@@ -255,6 +282,11 @@ impl TerwaVault {
 
         let pool: i128 = get(&env, &DataKey::SettledPool);
         let redeemable: i128 = get(&env, &DataKey::RedeemableLots);
+        // every circulating lot went to delivery before settlement: nothing to
+        // redeem against, and dividing by zero would trap rather than reject
+        if redeemable <= 0 {
+            return Err(VaultError::WrongState);
+        }
         let payout = pool
             .checked_mul(lots)
             .ok_or(VaultError::InvalidAmount)?
@@ -333,6 +365,28 @@ impl TerwaVault {
         Ok(())
     }
 
+    /// Pushes maturity back, force majeure clause (late harvest, logistics).
+    /// Extension only, never a shortening, and never after settlement: buyers
+    /// may have to wait longer but the lock can never end earlier than
+    /// announced, and settled redemptions are never reopened.
+    pub fn extend_maturity(env: Env, new_maturity: u64) -> Result<(), VaultError> {
+        require_admin(&env);
+        if stored_state(&env) == VaultState::Settled {
+            return Err(VaultError::WrongState);
+        }
+        let current: u64 = get(&env, &DataKey::MaturityTs);
+        // never earlier, and never more than a year in a single step: repeated
+        // deliberate extensions can push maturity as far as a genuine force
+        // majeure needs, but one mistaken call cannot lock holders in for good.
+        if new_maturity <= current || new_maturity > current + MAX_MATURITY_EXTENSION {
+            return Err(VaultError::InvalidAmount);
+        }
+        set(&env, &DataKey::MaturityTs, &new_maturity);
+        bump(&env);
+        events::maturity_extended(&env, current, new_maturity);
+        Ok(())
+    }
+
     /// Annual appraisal, indicative only. Bounded to half/double the previous
     /// value so a compromised key cannot post absurd numbers.
     pub fn report_rwa_value(env: Env, value: i128) -> Result<(), VaultError> {
@@ -356,12 +410,30 @@ impl TerwaVault {
     /// who took delivery instead of the repurchase.
     pub fn sweep(env: Env, to: Address, amount: i128) -> Result<(), VaultError> {
         require_admin(&env);
+        require_not_paused(&env)?;
         if state_now(&env) != VaultState::Settled {
             return Err(VaultError::WrongState);
         }
         let stablecoin: Address = get(&env, &DataKey::Stablecoin);
         let client = token::TokenClient::new(&env, &stablecoin);
-        if amount <= 0 || client.balance(&env.current_contract_address()) < amount {
+        let balance = client.balance(&env.current_contract_address());
+        if amount <= 0 || balance < amount {
+            return Err(VaultError::InsufficientFunds);
+        }
+        // funds still owed to holders who have not redeemed are off limits: each
+        // circulating lot keeps its pro-rata claim on the pool. Only the share
+        // of lots that left through physical delivery is genuinely surplus.
+        let redeemable: i128 = get(&env, &DataKey::RedeemableLots);
+        let owed: i128 = if redeemable > 0 {
+            let pool: i128 = get(&env, &DataKey::SettledPool);
+            let circulating: i128 = get(&env, &DataKey::CirculatingLots);
+            pool.checked_mul(circulating)
+                .ok_or(VaultError::InvalidAmount)?
+                / redeemable
+        } else {
+            0
+        };
+        if balance - amount < owed {
             return Err(VaultError::InsufficientFunds);
         }
         client.transfer(&env.current_contract_address(), &to, &amount);
@@ -371,9 +443,14 @@ impl TerwaVault {
 
     /// Hands the token admin role to another address. Escape hatch for
     /// contract migrations, without it the token is bound to this instance
-    /// forever.
+    /// forever. Refused once settled: with the repurchase pool in place there
+    /// is no legitimate reason to move the mint authority, and doing so would
+    /// be a way to mint against the funds owed to redeemers.
     pub fn transfer_token_admin(env: Env, new_admin: Address) -> Result<(), VaultError> {
         require_admin(&env);
+        if state_now(&env) == VaultState::Settled {
+            return Err(VaultError::WrongState);
+        }
         let vault_token: Address = get(&env, &DataKey::VaultToken);
         token::StellarAssetClient::new(&env, &vault_token).set_admin(&new_admin);
         Ok(())
@@ -381,8 +458,10 @@ impl TerwaVault {
 
     // admin and config
 
+    /// Managed by the allowlist manager (the KYC backend), never by the
+    /// admin key on a server. Falls back to the admin when no manager is set.
     pub fn set_allowed(env: Env, addr: Address, status: bool) -> Result<(), VaultError> {
-        require_admin(&env);
+        allowlist_manager(&env).require_auth();
         let key = DataKey::Allowed(addr.clone());
         env.storage().persistent().set(&key, &status);
         env.storage()
@@ -390,6 +469,20 @@ impl TerwaVault {
             .extend_ttl(&key, TTL_THRESHOLD, TTL_EXTEND);
         events::allowed(&env, &addr, status);
         Ok(())
+    }
+
+    /// Hands allowlist management to a dedicated low-privilege key. Only the
+    /// admin can appoint or rotate it, and it can only allow or revoke
+    /// addresses, never touch funds or configuration.
+    pub fn set_allowlist_manager(env: Env, manager: Address) -> Result<(), VaultError> {
+        require_admin(&env);
+        set(&env, &DataKey::AllowlistManager, &manager);
+        events::allowlist_manager(&env, &manager);
+        Ok(())
+    }
+
+    pub fn get_allowlist_manager(env: Env) -> Address {
+        allowlist_manager(&env)
     }
 
     pub fn set_exit_check(env: Env, required: bool) -> Result<(), VaultError> {

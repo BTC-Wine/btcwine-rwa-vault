@@ -1,0 +1,115 @@
+# Render blueprint: API, worker and Postgres, all in Frankfurt.
+# Create the blueprint from this file (backend/render.yaml) on the private
+# backup repo; secrets are sync: false and get pasted once in the dashboard,
+# they never live in git. Full wiring guide: DEPLOY.md at the repo root.
+#
+# npm ci runs with --include=dev because Render sets NODE_ENV=production on
+# node services, which would otherwise skip typescript at build time.
+
+services:
+  - name: terwa-api
+    type: web
+    runtime: node
+    plan: starter
+    region: frankfurt
+    rootDir: backend
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node dist/api/server.js
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: terwa-db
+          property: connectionString
+      # secrets, entered in the dashboard at blueprint creation
+      - key: DELIVERY_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: SEP10_SIGNING_SECRET
+        sync: false
+      - key: SUMSUB_WEBHOOK_SECRET
+        sync: false
+      - key: SUMSUB_APP_TOKEN
+        sync: false
+      - key: SUMSUB_APP_SECRET
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false
+      - key: SENTRY_DSN
+        sync: false
+      # public testnet RPC until the QuickNode endpoint replaces it
+      - key: RPC_URL
+        value: https://soroban-testnet.stellar.org
+      - key: NETWORK_PASSPHRASE
+        value: "Test SDF Network ; September 2015"
+      - key: SEP10_HOME_DOMAIN
+        value: terwa.io
+      # must match the public host serving /auth/challenge (the onrender.com
+      # host until api.terwa.io points at the service)
+      - key: SEP10_WEB_AUTH_DOMAIN
+        value: api.terwa.io
+      - key: SYNC_STALE_SECONDS
+        value: "300"
+      # browser origins allowed by CORS in production, no localhost
+      - key: CORS_ORIGINS
+        value: https://terwa.io,https://www.terwa.io,https://terwa.netlify.app
+      # contract ids of the current testnet deployment. sync: false so a
+      # blueprint re-sync never wipes the dashboard values (they change with
+      # each redeploy). The API reads them so /health reflects ingestion lag.
+      - key: VAULT_CONTRACTS
+        sync: false
+      - key: TOKEN_CONTRACTS
+        sync: false
+      - key: SALE_CONTRACT
+        sync: false
+
+  - name: terwa-worker
+    type: worker
+    runtime: node
+    plan: starter
+    region: frankfurt
+    rootDir: backend
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node dist/worker.js
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: terwa-db
+          property: connectionString
+      # secrets, entered in the dashboard at blueprint creation
+      - key: MERCURY_JWT
+        sync: false
+      - key: DELIVERY_KEY
+        sync: false
+      - key: ALLOWLIST_SECRET
+        sync: false
+      - key: ORACLE_SECRET
+        sync: false
+      - key: POSTMARK_TOKEN
+        sync: false
+      - key: SENTRY_DSN
+        sync: false
+      # public testnet RPC until the QuickNode endpoint replaces it
+      - key: RPC_URL
+        value: https://soroban-testnet.stellar.org
+      - key: NETWORK_PASSPHRASE
+        value: "Test SDF Network ; September 2015"
+      - key: NOTIFY_FROM
+        value: "TERWA <cave@terwa.io>"
+      # contract ids of the current testnet deployment. sync: false so a
+      # blueprint re-sync never wipes the dashboard values (they change with
+      # each redeploy).
+      - key: VAULT_CONTRACTS
+        sync: false
+      - key: TOKEN_CONTRACTS
+        sync: false
+      - key: SALE_CONTRACT
+        sync: false
+
+databases:
+  - name: terwa-db
+    plan: basic-1gb
+    region: frankfurt
+    databaseName: terwa
+    user: terwa

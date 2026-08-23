@@ -8,6 +8,12 @@ const DAY_LEDGERS: u32 = 17_280; // ~5s per ledger
 pub const TTL_THRESHOLD: u32 = 30 * DAY_LEDGERS;
 pub const TTL_EXTEND: u32 = 120 * DAY_LEDGERS;
 
+/// A single maturity extension may not push the date more than one year out.
+/// Force majeure (late harvest, weather, logistics) can require pushing
+/// maturity arbitrarily far, done through repeated deliberate extensions, but
+/// bounding each step keeps one mistaken call from being irreversible.
+pub const MAX_MATURITY_EXTENSION: u64 = 366 * 24 * 60 * 60;
+
 #[contracttype]
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum VaultState {
@@ -49,9 +55,12 @@ pub enum DataKey {
     Attestation,
     /// When true, redeem and physical claims require an allowlisted address.
     ExitCheck,
-    /// USDC deposited by the producer at settlement.
+    /// Only address allowed to manage the allowlist. Defaults to the admin.
+    /// A low-privilege role so the KYC backend never holds the admin key.
+    AllowlistManager,
+    /// Cumulative USDC deposited by the producer for repurchases.
     SettledPool,
-    /// Circulating lots snapshotted at settlement, payout denominator.
+    /// Circulating lots snapshotted at first settlement, payout denominator.
     RedeemableLots,
     Allowed(Address),
     Claim(Address),

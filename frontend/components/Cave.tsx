@@ -9,6 +9,8 @@ import { loadBalances, type Balances } from "@/lib/trustlines";
 import { useT } from "@/components/I18nProvider";
 import { LocaleLink } from "@/components/LocaleLink";
 import { isDemo } from "@/lib/demo";
+import { CaveHistorique } from "./CaveHistorique";
+import { CaveSuivi } from "./CaveSuivi";
 import { VintagePanel } from "./VintageActions";
 import { useWallet } from "./WalletProvider";
 
@@ -255,6 +257,9 @@ export function Cave() {
           </div>
         </div>
       )}
+
+      <CaveSuivi address={address} />
+      <CaveHistorique address={address} />
 
       {usdcSolde !== null && (
         <p className="mt-4 text-sm text-stone-500">

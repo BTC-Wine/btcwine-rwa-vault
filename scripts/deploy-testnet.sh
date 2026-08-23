@@ -13,7 +13,7 @@ OUT="${OUT_FILE:-$ROOT/scripts/.deploy-testnet.env}"
 # unit_price is stroops of stablecoin per token (3 bottles, 7 decimals).
 UNIT_PRICE="${UNIT_PRICE:-2060000000}"    # 206 USDC, 181 EUR at 1.1383
 MAX_SUPPLY="${MAX_SUPPLY:-1660}"          # tokens per vintage = allocations total
-VINTAGES="${VINTAGES:-2026 2027 2028 2029 2030}"   # placeholder years
+VINTAGES="${VINTAGES:-2025 2026 2027 2028 2029}"   # real vintages, delivery mi-2031
 # bottles of vintage N are available june 1st of N+2 at the latest
 
 command -v stellar >/dev/null || { echo "stellar CLI missing"; exit 1; }
@@ -32,13 +32,17 @@ ensure_key() {
 echo "== identities =="
 for k in terwa-admin terwa-oracle terwa-producer terwa-user "$ISSUER_KEY"; do ensure_key "$k"; done
 ADMIN=$(stellar keys address terwa-admin)
-ORACLE=$(stellar keys address terwa-oracle)
+# oracle and allowlist manager are the low-privilege service keys whose secrets
+# live in the backend (Render). The admin key never leaves this machine.
+ORACLE=$(stellar keys address "${ORACLE_SVC_KEY:-terwa-oracle-svc}")
+ALLOWLIST_MANAGER=$(stellar keys address "${ALLOWLIST_SVC_KEY:-terwa-allowlist-svc}")
 PRODUCER=$(stellar keys address terwa-producer)
 ISSUER=$(stellar keys address "$ISSUER_KEY")
-echo "admin    $ADMIN"
-echo "oracle   $ORACLE"
-echo "producer $PRODUCER"
-echo "issuer   $ISSUER"
+echo "admin     $ADMIN"
+echo "oracle    $ORACLE"
+echo "allowlist $ALLOWLIST_MANAGER"
+echo "producer  $PRODUCER"
+echo "issuer    $ISSUER"
 
 echo "== stablecoin (mock for testnet, real USDC on mainnet) =="
 USDM_ID=$(stellar contract asset deploy --asset "USDM:$ISSUER" --network "$NETWORK" --source "$ISSUER_KEY" 2>/dev/null \
@@ -90,10 +94,17 @@ SALE_ID=$(stellar contract deploy \
   --vaults "$VAULTS_JSON" 2>/dev/null | tail -1)
 echo "sale $SALE_ID"
 
-echo "== wiring: deposits only through the sale contract =="
+echo "== wiring: router, allowlist manager and exit check =="
 for VAULT_ID in $VAULT_IDS; do
+  # deposits only through the sale contract
   stellar contract invoke --id "$VAULT_ID" --network "$NETWORK" --source terwa-admin \
     -- set_router --router "$SALE_ID" >/dev/null
+  # the KYC backend key manages the allowlist, never the admin key
+  stellar contract invoke --id "$VAULT_ID" --network "$NETWORK" --source terwa-admin \
+    -- set_allowlist_manager --manager "$ALLOWLIST_MANAGER" >/dev/null
+  # KYC required at exit (redeem and physical claim)
+  stellar contract invoke --id "$VAULT_ID" --network "$NETWORK" --source terwa-admin \
+    -- set_exit_check --required true >/dev/null
 done
 
 echo "== smoke check =="
@@ -105,6 +116,7 @@ cat > "$OUT" <<EOF
 NETWORK=$NETWORK
 ADMIN=$ADMIN
 ORACLE=$ORACLE
+ALLOWLIST_MANAGER=$ALLOWLIST_MANAGER
 PRODUCER=$PRODUCER
 ISSUER=$ISSUER
 ISSUER_KEY=$ISSUER_KEY

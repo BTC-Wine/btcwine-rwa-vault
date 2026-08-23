@@ -93,12 +93,94 @@
     "redeemSettledNote": "Die Mittel des Erzeugers sind hinterlegt: Ihre Rücknahme ist sofort ausführbar.",
     "requestCta": "Rücknahme anfragen",
     "requestTitle": "Rücknahmeanfrage",
-    "requestBody": "Die Rücknahme erfolgt nicht automatisch: Ihre Anfrage geht an den Erzeuger, der sie genehmigt und die Mittel hinterlegt. Anschließend bestätigen Sie die Rücknahme hier und erhalten die USDC in Ihre Wallet. Übliche Bearbeitungszeit: innerhalb von 72 Stunden.",
+    "requestBody": "Die Rücknahme erfolgt nicht automatisch: Ihre Anfrage geht an den Erzeuger, der sie genehmigt und die Mittel hinterlegt. Anschließend bestätigen Sie die Rücknahme hier und erhalten die USDC in Ihre Wallet. Auszahlung in der Regel innerhalb von 72 Stunden: dieser Zeitraum ist üblich, nie garantiert.",
     "requestNote": "Ihre Anfrage geht direkt an unser Team, mit Ihrer Wallet-Adresse zur Identifikation. Nichts Persönliches wird on-chain veröffentlicht.",
+    "requestQueueNote": "Ihre Anfrage wird mit Ihrer Wallet signiert und in unsere Bearbeitungsliste aufgenommen. Nichts Persönliches wird on-chain veröffentlicht.",
     "requestSend": "Anfrage senden",
     "requestEmail": "Ihre Kontakt-E-Mail",
-    "requestSent": "Anfrage gesendet. Der Erzeuger antwortet in der Regel innerhalb von 72 Stunden.",
+    "requestSent": "Anfrage gesendet. Der Erzeuger antwortet in der Regel innerhalb von 72 Stunden; dieser Zeitraum ist nicht garantiert.",
+    "requestQueued": "Anfrage gesendet. Das Weingut wird benachrichtigt und zahlt in der Regel innerhalb von 72 Stunden aus; dieser Zeitraum ist nicht garantiert. Verfolgen Sie den Stand in Ihrem Weinkeller.",
     "sendFailed": "Ihre Angaben konnten nicht automatisch übermittelt werden.",
-    "sendByEmail": "Per E-Mail senden"
+    "sendByEmail": "Per E-Mail senden",
+    "claimTracking": "Status: {status}",
+    "claimStatus": {
+      "draft": "Anfrage erhalten",
+      "onchain": "on-chain erfasst",
+      "preparing": "Lieferung in Vorbereitung",
+      "shipped": "versandt",
+      "fulfilled": "zugestellt"
+    },
+    "close": "Schließen"
+  },
+  "tracking": {
+    "title": "Meine Vorgänge",
+    "kyc": {
+      "title": "Identitätsprüfung",
+      "status": {
+        "none": "nicht begonnen",
+        "pending": "in Prüfung",
+        "approved": "bestätigt",
+        "rejected": "nicht bestätigt"
+      },
+      "body": {
+        "none": "Der Kauf steht allen offen. Die Prüfung wird erst beim Ausstieg verlangt: Rücknahme durch den Erzeuger oder Lieferung Ihrer Flaschen.",
+        "pending": "Ihre Unterlagen werden geprüft. Von Ihrer Seite ist nichts zu tun.",
+        "approved": "Ihre Identität ist bestätigt: Rücknahme und Lieferung stehen dieser Adresse offen.",
+        "rejected": "Ihre Unterlagen konnten nicht bestätigt werden. Schreiben Sie uns an contact@terwa.io, wir sehen sie gemeinsam durch."
+      },
+      "startCta": "Prüfung beginnen",
+      "startBusy": "Wird geöffnet...",
+      "unavailable": "Die Prüfung startet in Kürze. Bitte schauen Sie etwas später wieder vorbei.",
+      "failed": "Der Prüfdienst hat nicht geantwortet. Bitte versuchen Sie es erneut.",
+      "sdkError": "Das Prüfmodul konnte nicht geladen werden. Schließen Sie dieses Fenster und versuchen Sie es erneut.",
+      "allowlisted": "Ihre Adresse ist on-chain für Rücknahme und Lieferung freigeschaltet.",
+      "allowlistPending": "Die On-chain-Freischaltung Ihrer Adresse läuft."
+    },
+    "unlock": {
+      "body": "Bestätigen Sie, dass Sie diese Adresse kontrollieren, um Ihren Prüfstatus und Ihre Anfragen zu sehen. Ihre Wallet signiert einen einfachen Nachweis: nichts wird veröffentlicht, nichts verlässt Ihre Wallet.",
+      "cta": "Meine Vorgänge anzeigen",
+      "busy": "Warten auf die Wallet..."
+    },
+    "repurchases": {
+      "title": "Rücknahmeanfragen",
+      "empty": "Derzeit keine Rücknahmeanfrage.",
+      "row": "{bottles} Flaschen, Jahrgang {vintage}",
+      "rowUnknown": "{bottles} Flaschen",
+      "requestedOn": "angefragt am {date}",
+      "note": "Der Erzeuger zahlt auf Anfrage aus, in der Regel innerhalb von 72 Stunden. Dieser Zeitraum ist üblich, nie garantiert.",
+      "status": {
+        "requested": "Anfrage gesendet",
+        "notified": "Weingut benachrichtigt",
+        "funded": "Auszahlung verfügbar",
+        "redeemed": "Rücknahme abgeschlossen",
+        "cancelled": "storniert"
+      },
+      "fundedHint": "Die Mittel des Erzeugers sind hinterlegt: öffnen Sie oben den Jahrgang und bestätigen Sie die Rücknahme, um Ihre USDC zu erhalten."
+    }
+  },
+  "history": {
+    "title": "Verlauf",
+    "empty": "Für diese Adresse sind noch keine Vorgänge verzeichnet.",
+    "rows": {
+      "deposit": "Kauf en primeur",
+      "transferIn": "Zertifikate per Übertragung erhalten",
+      "transferOut": "Zertifikate per Übertragung gesendet",
+      "redeem": "Rücknahme durch den Erzeuger",
+      "claim": "Lieferanfrage",
+      "mint": "Zertifikate ausgestellt"
+    },
+    "detail": "{n} Flaschen, Jahrgang {vintage}",
+    "detailNoVintage": "{n} Flaschen",
+    "paid": "{amount} USDC",
+    "received": "{amount} USDC erhalten",
+    "noEntryCost": "per Übertragung erworben, ohne Einstandskosten",
+    "viewTx": "Transaktion ansehen",
+    "note": "Neueste zuerst, wie im öffentlichen Stellar-Register verzeichnet."
+  },
+  "demo": {
+    "tag": "Vorschau",
+    "note": "Beispieldaten: was Sie nach dem Verbinden Ihrer Wallet sehen werden.",
+    "kycHint": "Die Identitätsprüfung öffnet sich hier, sobald Ihre echte Wallet verbunden ist.",
+    "rowTag": "Beispiel"
   }
 }

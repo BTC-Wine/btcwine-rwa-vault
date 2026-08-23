@@ -93,12 +93,94 @@
     "redeemSettledNote": "酒庄资金已到账：您的回购可立即执行。",
     "requestCta": "申请回购",
     "requestTitle": "回购申请",
-    "requestBody": "回购并非自动执行：您的申请将发送给酒庄，由其批准并存入资金。之后您在此确认回购，USDC 将到账您的钱包。通常处理时间：72 小时内。",
+    "requestBody": "回购并非自动执行：您的申请将发送给酒庄，由其批准并存入资金。之后您在此确认回购，USDC 将到账您的钱包。款项通常在 72 小时内结算，该时限仅为惯例，不作保证。",
     "requestNote": "您的请求直接发送给我们的团队，并附上您的钱包地址以便识别。链上不会公开任何个人信息。",
+    "requestQueueNote": "您的申请经钱包签名后进入我们的处理队列。链上不会公开任何个人信息。",
     "requestSend": "发送申请",
     "requestEmail": "您的联系邮箱",
-    "requestSent": "请求已发送。生产者通常在72小时内回复。",
+    "requestSent": "申请已发送。酒庄通常在 72 小时内回复，该时限不作保证。",
+    "requestQueued": "申请已发送。酒庄将收到通知，通常在 72 小时内结算，该时限不作保证。您可在“我的酒窖”中跟踪进度。",
     "sendFailed": "您的信息未能自动发送。",
-    "sendByEmail": "通过电子邮件发送"
+    "sendByEmail": "通过电子邮件发送",
+    "claimTracking": "进度：{status}",
+    "claimStatus": {
+      "draft": "已收到申请",
+      "onchain": "已上链记录",
+      "preparing": "配送准备中",
+      "shipped": "已发货",
+      "fulfilled": "已送达"
+    },
+    "close": "关闭"
+  },
+  "tracking": {
+    "title": "我的跟踪",
+    "kyc": {
+      "title": "身份核验",
+      "status": {
+        "none": "未开始",
+        "pending": "审核中",
+        "approved": "已通过",
+        "rejected": "未通过"
+      },
+      "body": {
+        "none": "购买不设门槛。仅在退出时需要核验身份：酒庄回购或葡萄酒配送。",
+        "pending": "您的资料正在审核中，无需任何操作。",
+        "approved": "您的身份已通过核验：此地址可申请酒庄回购与配送。",
+        "rejected": "您的资料未能通过核验。请致信 contact@terwa.io，我们将与您一同处理。"
+      },
+      "startCta": "开始核验",
+      "startBusy": "正在打开...",
+      "unavailable": "身份核验即将开放，请稍后再来。",
+      "failed": "核验服务暂时没有响应，请重试。",
+      "sdkError": "核验模块加载失败。请关闭此窗口后重试。",
+      "allowlisted": "您的地址已在链上启用回购与配送权限。",
+      "allowlistPending": "您的地址正在进行链上启用。"
+    },
+    "unlock": {
+      "body": "确认您对该地址的控制权，即可查看身份核验状态与各项申请。您的钱包只签署一份简单的证明：不会公开任何信息，也不会转出任何资产。",
+      "cta": "查看我的跟踪",
+      "busy": "等待钱包签名..."
+    },
+    "repurchases": {
+      "title": "回购申请",
+      "empty": "暂无回购申请。",
+      "row": "{bottles} 瓶，{vintage} 年份",
+      "rowUnknown": "{bottles} 瓶",
+      "requestedOn": "申请于 {date}",
+      "note": "酒庄按申请结算，通常在 72 小时内完成。该时限仅为惯例，不作保证。",
+      "status": {
+        "requested": "申请已发送",
+        "notified": "已通知酒庄",
+        "funded": "可以结算",
+        "redeemed": "回购已完成",
+        "cancelled": "已取消"
+      },
+      "fundedHint": "酒庄资金已到账：请在上方打开对应年份并确认回购，即可收到您的 USDC。"
+    }
+  },
+  "history": {
+    "title": "历史记录",
+    "empty": "该地址暂无任何记录。",
+    "rows": {
+      "deposit": "期酒购买",
+      "transferIn": "凭证转入",
+      "transferOut": "凭证转出",
+      "redeem": "酒庄回购",
+      "claim": "配送申请",
+      "mint": "凭证发放"
+    },
+    "detail": "{n} 瓶，{vintage} 年份",
+    "detailNoVintage": "{n} 瓶",
+    "paid": "{amount} USDC",
+    "received": "收到 {amount} USDC",
+    "noEntryCost": "经转账获得，无购入成本",
+    "viewTx": "查看交易",
+    "note": "按时间倒序排列，与 Stellar 公共账本记录一致。"
+  },
+  "demo": {
+    "tag": "预览",
+    "note": "示例数据：连接钱包后您将看到的内容。",
+    "kycHint": "连接真实钱包后，身份核验将在此处开始。",
+    "rowTag": "示例"
   }
 }

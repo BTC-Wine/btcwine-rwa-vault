@@ -34,13 +34,13 @@ Detailed technical implementation specification including:
 
 ## Key Features
 
-- **Tokenized Presale**: Purchase TERWA tokens with USDC during presale window
-- **Proof of Ownership**: Each token represents a right to claim physical wine assets
-- **Fixed-Term Model**: Capital locked until vault maturity for asset appreciation
-- **Dual Redemption**: At maturity, redeem for USDC (appraised value) or claim physical wine
+- **En Primeur Presale**: pre-order allocations, payable in USDC (or in XLM, converted client side)
+- **Proof of Ownership**: each token represents a lot of three bottles and the right to claim them
+- **Fixed-Term Presale**: tokens are held until each vintage reaches its release date
+- **Three Exit Options**: at each release, physical delivery of the bottles, free resale of the certificates, or the producer take-back
 - **Multi-Wallet Support**: Stellar Wallet Kit integration (Freighter, xBull, Lobstr, etc.)
-- **Independent Valuation**: Annual wine expert appraisals with transparent methodology
-- **Buyback Guarantee**: Legal commitment from RWA provider (annex available)
+- **Indicative Valuation**: an annual valuation by a wine expert, published for information only, that never drives payouts
+- **Producer Take-back Floor**: a minimum take-back price committed in advance by the producer (a producer commitment, not a contract guarantee)
 
 ## Milestone 1 Implementation
 
@@ -51,3 +51,15 @@ The MVP delivery for milestone 1 lives in this repository:
 - `scripts/` : testnet deployment and environment scripts
 - `legal/` : buyer attestation text (its hash is signed on-chain at purchase)
 - [`MILESTONE-1.md`](MILESTONE-1.md) : delivery report with completion criteria, deployed contract addresses and a step-by-step verification procedure
+
+## Milestone 2 Implementation (Testnet)
+
+Milestone 2 delivers the full end-to-end platform on the Stellar testnet: the
+backend services, SEP-10 web authentication, identity verification at exit, and
+the maturity flows (producer take-back and physical claim) exercised live
+on-chain with allowlist gating.
+
+- `backend/` : event indexer, transaction history API, delivery claim service, producer take-back queue, valuation oracle service, holder notifications, admin operations and health monitoring (TypeScript, Fastify, PostgreSQL)
+- `contracts/`, `frontend/`, `scripts/` : updated for the testnet platform
+- [`MILESTONE-2.md`](MILESTONE-2.md) : delivery report against criterion D3, deployed contract addresses, the on-chain redeem and claim transaction hashes, measured test coverage, and the tranche 1 addendum commitments held
+- [`DESIGN.md`](DESIGN.md) : the platform design system

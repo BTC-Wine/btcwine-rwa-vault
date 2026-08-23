@@ -1,5 +1,5 @@
 // Source unique des faits domaine et prix. Donnees fournies par le Chateau
-// Coutet (dataroom juin 2026), usage du nom, des images et des notes accorde
+// Coutet (juin 2026), usage du nom, des images et des notes accorde
 // a TERWA. Toute mise a jour passe par ce fichier, jamais en dur dans un
 // composant.
 
@@ -33,7 +33,7 @@ export const domaine = {
 };
 
 // Historique de production et de mise en marche de la cuvee Les Demoiselles,
-// tel que communique par la propriete (App5, dataroom).
+// tel que communique par la propriete.
 // marche* : fourchettes communiquees par la propriete (mars 2026).
 // releveTTC : prix constate en ligne chez Gute Weine Lobenberg (bouteille de
 // 75 cl, TTC Allemagne), releve le 2 juillet 2026. "souscription" = vin vendu
@@ -45,16 +45,16 @@ export const releveSource =
   "Gute Weine Lobenberg, bouteilles de 75 cl, prix TTC Allemagne, relevé le 2 juillet 2026";
 
 export const historique = [
-  { millesime: 2016, production: 2800, departChateau: 40, marche: null, marcheMin: null, marcheMax: null, releveTTC: 140, releveStatut: null },
-  { millesime: 2017, production: 2800, departChateau: 42, marche: null, marcheMin: null, marcheMax: null, releveTTC: null, releveStatut: null },
-  { millesime: 2018, production: 5300, departChateau: 42, marche: "120", marcheMin: 120, marcheMax: 120, releveTTC: null, releveStatut: null },
-  { millesime: 2019, production: 4250, departChateau: 44, marche: "90 à 120", marcheMin: 90, marcheMax: 120, releveTTC: null, releveStatut: null },
-  { millesime: 2020, production: 4250, departChateau: 44, marche: "75 à 100", marcheMin: 75, marcheMax: 100, releveTTC: 133, releveStatut: null },
-  { millesime: 2021, production: 4500, departChateau: 44, marche: "75 à 100", marcheMin: 75, marcheMax: 100, releveTTC: 99, releveStatut: null },
-  { millesime: 2022, production: 4400, departChateau: 44, marche: "90 à 140", marcheMin: 90, marcheMax: 140, releveTTC: 144, releveStatut: null },
-  { millesime: 2023, production: 7600, departChateau: 45, marche: "70 à 90", marcheMin: 70, marcheMax: 90, releveTTC: 133, releveStatut: null },
-  { millesime: 2024, production: 4250, departChateau: 45, marche: null, marcheMin: null, marcheMax: null, releveTTC: 89, releveStatut: "souscription" },
-  { millesime: 2025, production: 9975, departChateau: 45, marche: null, marcheMin: null, marcheMax: null, releveTTC: 99, releveStatut: "souscription" },
+  { millesime: 2016, production: 2800, marche: null, marcheMin: null, marcheMax: null, releveTTC: 140, releveStatut: null },
+  { millesime: 2017, production: 2800, marche: null, marcheMin: null, marcheMax: null, releveTTC: null, releveStatut: null },
+  { millesime: 2018, production: 5300, marche: "120", marcheMin: 120, marcheMax: 120, releveTTC: null, releveStatut: null },
+  { millesime: 2019, production: 4250, marche: "90 à 120", marcheMin: 90, marcheMax: 120, releveTTC: null, releveStatut: null },
+  { millesime: 2020, production: 4250, marche: "75 à 100", marcheMin: 75, marcheMax: 100, releveTTC: 133, releveStatut: null },
+  { millesime: 2021, production: 4500, marche: "75 à 100", marcheMin: 75, marcheMax: 100, releveTTC: 99, releveStatut: null },
+  { millesime: 2022, production: 4400, marche: "90 à 140", marcheMin: 90, marcheMax: 140, releveTTC: 144, releveStatut: null },
+  { millesime: 2023, production: 7600, marche: "70 à 90", marcheMin: 70, marcheMax: 90, releveTTC: 133, releveStatut: null },
+  { millesime: 2024, production: 4250, marche: null, marcheMin: null, marcheMax: null, releveTTC: 89, releveStatut: "souscription" },
+  { millesime: 2025, production: 9975, marche: null, marcheMin: null, marcheMax: null, releveTTC: 99, releveStatut: "souscription" },
 ];
 
 // Le meme millesime 2025, vendu en souscription classique chez un
@@ -67,13 +67,11 @@ export const souscription2025 = {
   url: "https://www.gute-weine.de/suche/?tx_solr%5Bq%5D=coutet+demoiselle",
 };
 
-// Prix de reference du millesime en cours (dataroom, HT par bouteille).
-// Le depart chateau est un tarif professionnel reserve au negoce.
+// Prix de reference du millesime en cours (HT par bouteille).
 export const prixActuels = {
   precommande: 60.33,
   proprieteB2C: 70,
   distributeurB2C: 80,
-  departChateauB2B: 45,
 };
 
 // Prix de detail moyens constates par marche pour la cuvee, moyenne des 7

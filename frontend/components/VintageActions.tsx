@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {
+  createClaim,
+  createRepurchase,
+  getSession,
+  myClaims,
+  type ClaimRecord,
+} from "@/lib/api";
 import { STROOPS, config } from "@/lib/config";
 import { isDemo } from "@/lib/demo";
 import { postForm, randomNonce } from "@/lib/forms";
@@ -38,6 +45,7 @@ export function VintagePanel({
   const demo = isDemo();
   const [state, setState] = useState<string | null>(null);
   const [claim, setClaim] = useState<ClaimData>(null);
+  const [suivi, setSuivi] = useState<ClaimRecord | null>(null);
   const [modal, setModal] = useState<"redeem" | "deliver" | "sell" | "request" | null>(null);
   const [done, setDone] = useState<"redeem" | "deliver" | null>(null);
 
@@ -49,6 +57,16 @@ export function VintagePanel({
     readVaultState(vaultId).then(setState).catch(() => {});
     readClaim(vaultId, address).then(setClaim).catch(() => {});
   }, [vaultId, address, demo]);
+
+  // Suivi backend de la demande de livraison, seulement si une session
+  // est deja ouverte : jamais de signature spontanee pour de l'affichage.
+  useEffect(() => {
+    if (demo || !getSession(address)) return;
+    myClaims(address).then((claims) => {
+      const c = claims?.find((x) => x.vault_contract === vaultId);
+      if (c) setSuivi(c);
+    });
+  }, [vaultId, address, demo, done]);
 
   const claimPending = claim !== null && !claim.fulfilled;
   const settled = state === "Settled";
@@ -70,13 +88,22 @@ export function VintagePanel({
           <p className="font-serif text-lg text-[#5a1f2b]">{t("actions.deliver")}</p>
           <p className="mt-1 flex-1 text-xs text-stone-500">{t("actions.deliverDesc")}</p>
           {done === "deliver" || claimPending ? (
-            <p className="mt-3 text-xs text-green-800">
-              {done === "deliver"
-                ? t("actions.deliverSuccess")
-                : t("actions.claimPending", {
-                    date: new Date(Number(claim?.timestamp ?? 0) * 1000).toLocaleDateString("fr-FR"),
+            <div className="mt-3 text-xs text-green-800">
+              <p>
+                {done === "deliver"
+                  ? t("actions.deliverSuccess")
+                  : t("actions.claimPending", {
+                      date: new Date(Number(claim?.timestamp ?? 0) * 1000).toLocaleDateString("fr-FR"),
+                    })}
+              </p>
+              {suivi && (
+                <p className="mt-1 text-stone-500">
+                  {t("actions.claimTracking", {
+                    status: t(`actions.claimStatus.${suivi.status}`),
                   })}
-            </p>
+                </p>
+              )}
+            </div>
           ) : (
             <button
               onClick={() => setModal("deliver")}
@@ -159,7 +186,9 @@ export function VintagePanel({
       {modal === "sell" && <SellModal onClose={() => setModal(null)} />}
       {modal === "request" && (
         <RequestModal
+          vaultId={vaultId}
           vintage={vintage}
+          tokens={tokens}
           bottles={bottles}
           address={address}
           onClose={() => setModal(null)}
@@ -170,20 +199,29 @@ export function VintagePanel({
 }
 
 function RequestModal({
+  vaultId,
   vintage,
+  tokens,
   bottles,
   address,
   onClose,
 }: {
+  vaultId: string;
   vintage: string;
+  tokens: number;
   bottles: number;
   address: string;
   onClose: () => void;
 }) {
   const t = useT("cellar");
+  // La demande part par defaut dans la file backend, signee avec le wallet ;
+  // si la signature est refusee ou l'API injoignable, submit() bascule sur la
+  // collecte email historique. Pas de pre-sonde /health : les bloqueurs la
+  // filtrent souvent et forceraient l'email a tort.
+  const [mode, setMode] = useState<"backend" | "email">("backend");
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
-  const [sent, setSent] = useState(false);
+  const [sent, setSent] = useState<"backend" | "email" | null>(null);
   const [failed, setFailed] = useState(false);
 
   const mailto = `mailto:contact@terwa.io?subject=${encodeURIComponent(
@@ -195,6 +233,18 @@ function RequestModal({
   async function submit() {
     setBusy(true);
     setFailed(false);
+    if (mode === "backend") {
+      const req = await createRepurchase(address, vaultId, tokens);
+      if (req) {
+        setSent("backend");
+        setBusy(false);
+        return;
+      }
+      // Signature refusee ou API tombee entre-temps : bascule vers l'email
+      setMode("email");
+      setBusy(false);
+      return;
+    }
     try {
       await postForm("repurchase-request", {
         vintage,
@@ -202,7 +252,7 @@ function RequestModal({
         wallet: address,
         email,
       });
-      setSent(true);
+      setSent("email");
     } catch {
       setFailed(true);
     }
@@ -214,7 +264,7 @@ function RequestModal({
       <Modal onClose={onClose}>
         <h3 className="font-serif text-xl text-[#5a1f2b]">{t("actions.requestTitle")}</h3>
         <p className="mt-3 rounded-lg bg-green-50 p-3 text-sm text-green-800">
-          {t("actions.requestSent")}
+          {sent === "backend" ? t("actions.requestQueued") : t("actions.requestSent")}
         </p>
         <button
           onClick={onClose}
@@ -230,16 +280,20 @@ function RequestModal({
     <Modal onClose={onClose}>
       <h3 className="font-serif text-xl text-[#5a1f2b]">{t("actions.requestTitle")}</h3>
       <p className="mt-2 text-sm text-stone-600">{t("actions.requestBody")}</p>
-      <label className="mt-4 block text-xs text-stone-500">
-        {t("actions.requestEmail")}
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm text-stone-800 focus:border-[#5a1f2b] focus:outline-none"
-        />
-      </label>
-      <p className="mt-3 text-xs text-stone-500">{t("actions.requestNote")}</p>
+      {mode === "email" && (
+        <label className="mt-4 block text-xs text-stone-500">
+          {t("actions.requestEmail")}
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm text-stone-800 focus:border-[#5a1f2b] focus:outline-none"
+          />
+        </label>
+      )}
+      <p className="mt-3 text-xs text-stone-500">
+        {mode === "backend" ? t("actions.requestQueueNote") : t("actions.requestNote")}
+      </p>
       {failed && (
         <div className="mt-3 rounded-lg bg-red-50 p-3 text-sm text-red-800">
           {t("actions.sendFailed")}{" "}
@@ -257,7 +311,7 @@ function RequestModal({
         </button>
         <button
           onClick={submit}
-          disabled={busy || !email.includes("@")}
+          disabled={busy || (mode === "email" && !email.includes("@"))}
           className="min-h-11 flex-1 rounded-xl bg-[#5a1f2b] px-4 py-2 text-white hover:bg-[#71303e] disabled:opacity-40"
         >
           {busy ? t("actions.processing") : t("actions.requestSend")}
@@ -439,31 +493,42 @@ function DeliverModal({
       const nonce = randomNonce();
       const payload = JSON.stringify({ ...form, wallet: address, vintage, tokens, nonce });
       const hash = await sha256Hex(payload);
+      // Enregistrement backend avant la transaction : la meme chaine JSON
+      // que celle hachee localement part au serveur, qui la chiffre au repos
+      // et renvoie son propre hash. En cas d'ecart (ne devrait jamais
+      // arriver), le hash local fait foi : c'est lui qui part on-chain.
+      const backendClaim = await createClaim(address, vaultId, tokens, payload);
+      if (backendClaim && backendClaim.deliveryHashHex !== hash) {
+        console.warn("hash backend different du hash local, hash local conserve");
+      }
       const tx = await buildClaimTx(vaultId, address, tokens, hash);
       const signed = await signTx(tx.toXDR(), address);
       await submitSigned(signed);
-      try {
-        await postForm("delivery-request", {
-          ...form,
-          vintage,
-          tokens: String(tokens),
-          bottles: String(bottles),
-          wallet: address,
-          hash,
-          nonce,
-        });
-      } catch {
-        // La demande est actee on-chain : on propose un envoi manuel des
-        // coordonnees plutot que de bloquer.
-        setSendFailed(
-          `mailto:contact@terwa.io?subject=${encodeURIComponent(
-            `Livraison - millesime ${vintage}`
-          )}&body=${encodeURIComponent(
-            `Millesime : ${vintage}\nBouteilles : ${bottles}\nWallet : ${address}\nNonce : ${nonce}\n\nNom : ${form.name}\nAdresse : ${form.address}\n${form.postal} ${form.city}, ${form.country}\nEmail : ${form.email}\nTelephone : ${form.phone}`
-          )}`
-        );
-        setBusy(false);
-        return;
+      if (!backendClaim) {
+        // API injoignable : collecte historique des coordonnees, inchangee
+        try {
+          await postForm("delivery-request", {
+            ...form,
+            vintage,
+            tokens: String(tokens),
+            bottles: String(bottles),
+            wallet: address,
+            hash,
+            nonce,
+          });
+        } catch {
+          // La demande est actee on-chain : on propose un envoi manuel des
+          // coordonnees plutot que de bloquer.
+          setSendFailed(
+            `mailto:contact@terwa.io?subject=${encodeURIComponent(
+              `Livraison - millesime ${vintage}`
+            )}&body=${encodeURIComponent(
+              `Millesime : ${vintage}\nBouteilles : ${bottles}\nWallet : ${address}\nNonce : ${nonce}\n\nNom : ${form.name}\nAdresse : ${form.address}\n${form.postal} ${form.city}, ${form.country}\nEmail : ${form.email}\nTelephone : ${form.phone}`
+            )}`
+          );
+          setBusy(false);
+          return;
+        }
       }
       onDone();
     } catch (e) {
